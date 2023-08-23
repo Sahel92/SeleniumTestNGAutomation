@@ -14,7 +14,9 @@ import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 import java.util.Properties;
 
-
+/**
+ * Factory class to initialize WebDriver
+ */
 public class DriverFactory {
     private static WebDriver driver;
 

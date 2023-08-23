@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Your Test Suite">
+    <listeners>
+        <listener class-name="com.sahel.booking.utilities.ExtentTestNGListeners"/>
+    </listeners>
+
+    <test name="Your Test">
+        <classes>
+
+            <!-- Add more test classes as needed -->
+        </classes>
+    </test>
+
+    <!-- ... Define more <test> blocks and configurations ... -->
+
+</suite>
