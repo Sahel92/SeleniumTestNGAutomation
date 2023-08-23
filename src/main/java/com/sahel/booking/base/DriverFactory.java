@@ -20,12 +20,14 @@ import java.util.Properties;
 public class DriverFactory {
     private static WebDriver driver;
 
+
     /**
      * @return WebDriver
      */
-    public WebDriver getDriver() {
+    public WebDriver getDriver(){
         return driver;
     }
+
 
     /**
      * Loads and returns a Properties object from a specified properties file.
@@ -35,7 +37,7 @@ public class DriverFactory {
      */
     private Properties loadProperties() throws IOException {
         Properties properties = new Properties();
-        String propertiesFilePath = System.getProperty(("user.dir") + "/src/main/resources/qa_env.properties");
+        String propertiesFilePath = System.getProperty("user.dir") + "/src/main/resources/qa_env.properties";
 
         try (FileInputStream fileInputStream = getFileInput(propertiesFilePath)) {
             properties.load(fileInputStream);
@@ -88,9 +90,11 @@ public class DriverFactory {
         String url = this.getProperty("url");
         String headless = this.getProperty("headless");
         driver = createWebDriver(browser, headless);
-        driver.get(url);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.of(10, ChronoUnit.SECONDS));
+        driver.get(url);
+
+
     }
 
     /**

@@ -1,11 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Your Test Suite">
+<suite name="Smoke Suite">
     <listeners>
         <listener class-name="com.sahel.booking.utilities.ExtentTestNGListeners"/>
     </listeners>
 
     <test name="Your Test">
         <classes>
+            <class name="SmokeTest"/>
 
             <!-- Add more test classes as needed -->
         </classes>

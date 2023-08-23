@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Added Browser classes &amp; DriverFactory Class">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/smoke-suite.xml" afterDir="false" />
+    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Implementing ExtentReports">
+      <change afterPath="$PROJECT_DIR$/src/test/java/SmokeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/qa_env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/qa_env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/smoke-suite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/smoke-suite.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +64,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml">
     <configuration name="ExtentTestNGListeners" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sahel.booking.utilities.ExtentTestNGListeners" />
       <module name="BookingAutomation" />
@@ -80,8 +78,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookingAutomation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-xml-files/smoke-suite.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookingAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SmokeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookingAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SmokeTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml" />
+        <item itemvalue="TestNG.SmokeTest.test1" />
+        <item itemvalue="TestNG.SmokeTest" />
         <item itemvalue="Application.ExtentTestNGListeners" />
       </list>
     </recent_temporary>
@@ -103,13 +137,22 @@
       <option name="project" value="LOCAL" />
       <updated>1692757052264</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implementing ExtentReports">
+      <option name="closed" value="true" />
+      <created>1692771341672</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692771341672</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Browser classes &amp; DriverFactory Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Browser classes &amp; DriverFactory Class" />
+    <MESSAGE value="Implementing ExtentReports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing ExtentReports" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
