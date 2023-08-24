@@ -118,3 +118,7 @@
 2023-08-23 18:52:06.039 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
 2023-08-23 18:52:06.041 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
 2023-08-23 18:52:06.042 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-24 00:21:49.919 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-24 00:21:50.531 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 00:23:16.831 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-24 00:23:22.839 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1

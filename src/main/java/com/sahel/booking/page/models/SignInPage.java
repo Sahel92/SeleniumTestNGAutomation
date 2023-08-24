@@ -3,11 +3,13 @@ package com.sahel.booking.page.models;
 import com.sahel.booking.utilities.WebDriverUtils;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage extends WebDriverUtils {
+public class SignInPage extends WebDriverUtils {
 
-    public HomePage(){
+    public SignInPage(){
         PageFactory.initElements(getDriver(), this);
     }
+
+
 
 
 }
