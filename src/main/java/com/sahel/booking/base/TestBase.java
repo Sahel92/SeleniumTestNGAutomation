@@ -7,7 +7,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+
+import java.io.IOException;
 
 
 public class TestBase extends WebDriverUtils {
@@ -17,10 +20,10 @@ public class TestBase extends WebDriverUtils {
     private static final String TEST_DEVICE = "Windows 11 PC,  Chrome Browser v-116";
     protected static final Logger logger = LogManager.getLogger(TestBase.class);
 
-    //    @BeforeMethod
-//    public void launchTests() throws IOException {
-//        super.openBrowser();
-//    }
+    @BeforeMethod
+    public void launchTests() throws IOException {
+        super.openBrowser();
+    }
 
     /**
      * Close WebDriver and do other teardown steps

@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="reporters working properly">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Added Logger, fixed report fixed pom xml">
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/Browsers/ChromeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/ChromeBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/Browsers/EdgeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/EdgeBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/Browsers/FireFoxBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/FireFoxBrowser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SmokeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/smoke-suite.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +44,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2ULU0RwHIq9oWKCrzoxJaXxfgzj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -71,11 +70,29 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\msahe\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="c4e57928-40ce-4b98-8ecc-5bd592872c69" />
+        <option name="reportName" value="BookingAutomation/qodana/2023-08-23" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\msahe\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="c4e57928-40ce-4b98-8ecc-5bd592872c69" reportId="BookingAutomation/qodana/2023-08-23" />
+    </option>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\log4j-reports" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\testng-xml-files" />
       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation" />
     </key>
   </component>
@@ -264,8 +281,27 @@
       <option name="project" value="LOCAL" />
       <updated>1692823147740</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Logger, fixed report fixed pom xml">
+      <option name="closed" value="true" />
+      <created>1692841989416</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692841989416</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -273,7 +309,8 @@
     <MESSAGE value="Implementing ExtentReports" />
     <MESSAGE value="Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing." />
     <MESSAGE value="reporters working properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="reporters working properly" />
+    <MESSAGE value="Added Logger, fixed report fixed pom xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Logger, fixed report fixed pom xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

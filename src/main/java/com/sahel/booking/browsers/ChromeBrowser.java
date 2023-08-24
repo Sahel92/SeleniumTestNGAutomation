@@ -1,4 +1,4 @@
-package com.sahel.booking.Browsers;
+package com.sahel.booking.browsers;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

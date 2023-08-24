@@ -3,6 +3,7 @@ package com.sahel.booking.utilities;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.sahel.booking.base.DriverFactory;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -15,7 +16,7 @@ public class ExtentTestNGListeners implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         // Create a new test instance in the report
-        test = WebDriverUtils.getReport().createTest(context.getName());
+        test = DriverFactory.getReport().createTest(context.getName());
         // Assign category, author, and device information
     }
 
