@@ -1,10 +1,12 @@
 package com.sahel.booking.base;
 
+import com.aventstack.extentreports.testng.listener.ExtentITestListenerClassAdapter;
 import com.sahel.booking.Browsers.ChromeBrowser;
 import com.sahel.booking.Browsers.EdgeBrowser;
 import com.sahel.booking.Browsers.FireFoxBrowser;
 import org.apache.commons.io.IOIndexedException;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Listeners;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,6 +19,7 @@ import java.util.Properties;
 /**
  * Factory class to initialize WebDriver
  */
+
 public class DriverFactory {
     private static WebDriver driver;
 
@@ -24,7 +27,7 @@ public class DriverFactory {
     /**
      * @return WebDriver
      */
-    public WebDriver getDriver(){
+    public WebDriver getDriver() {
         return driver;
     }
 

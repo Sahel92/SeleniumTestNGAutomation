@@ -4,23 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing.">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css" afterDir="false" />
+    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="reporters working properly">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SmokeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/smoke-suite.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sahel92 &lt;m.sahel.sadiq0526@outlook.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -59,32 +64,91 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/msahe/IdeaProjects/DataDriven_Phantom-main",
+    "last_opened_file_path": "C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/log4j-reports",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\log4j-reports" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn package -Dmaven.plugin.validation=brief" />
       <command value="mvn install" />
+      <command value="mvn clean install" />
+      <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml">
-    <configuration name="ExtentTestNGListeners" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sahel.booking.utilities.ExtentTestNGListeners" />
-      <module name="BookingAutomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sahel.booking.utilities.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="TestNG.&lt;default&gt;">
+    <configuration name="BookingAutomation [org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test]" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings">
+          <MavenGeneralSettings>
+            <option name="alwaysUpdateSnapshots" value="false" />
+            <option name="checksumPolicy" value="NOT_SET" />
+            <option name="emulateTerminal" value="false" />
+            <option name="failureBehavior" value="NOT_SET" />
+            <option name="localRepository" value="" />
+            <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="nonRecursive" value="false" />
+            <option name="outputLevel" value="INFO" />
+            <option name="printErrorStackTraces" value="false" />
+            <option name="showDialogWithAdvancedSettings" value="false" />
+            <option name="threads" />
+            <option name="useMavenConfig" value="true" />
+            <option name="usePluginRegistry" value="false" />
+            <option name="userSettingsFile" value="" />
+            <option name="workOffline" value="false" />
+          </MavenGeneralSettings>
+        </option>
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="#USE_PROJECT_JDK" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <configuration name="C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BookingAutomation" />
@@ -96,11 +160,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="C:/Users/msahe/IdeaProjects/BookingAutomation/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookingAutomation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BookingAutomation" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SmokeTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
@@ -119,12 +203,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookingAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/testng.xml" />
         <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml" />
         <item itemvalue="TestNG.SmokeTest.test1" />
         <item itemvalue="TestNG.SmokeTest" />
-        <item itemvalue="Application.ExtentTestNGListeners" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692779611949</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="reporters working properly">
+      <option name="closed" value="true" />
+      <created>1692823147740</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692823147740</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,7 +272,8 @@
     <MESSAGE value="Added Browser classes &amp; DriverFactory Class" />
     <MESSAGE value="Implementing ExtentReports" />
     <MESSAGE value="Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing." />
+    <MESSAGE value="reporters working properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="reporters working properly" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,0 +1,120 @@
+2023-08-23 17:18:14.843 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692836294839
+2023-08-23 17:18:14.853 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 17:18:14.856 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692836294856
+2023-08-23 17:18:14.857 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 17:45:31.201 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692837931196
+2023-08-23 17:45:31.210 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 17:45:31.213 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692837931213
+2023-08-23 17:45:31.216 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 17:50:34.661 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692838234657
+2023-08-23 17:50:34.670 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 17:50:34.674 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692838234674
+2023-08-23 17:50:34.675 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 17:50:43.935 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692838243931
+2023-08-23 17:50:43.943 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 17:50:43.946 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692838243946
+2023-08-23 17:50:43.947 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 17:51:46.242 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692838306238
+2023-08-23 17:51:46.250 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 17:51:46.254 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692838306254
+2023-08-23 17:51:46.255 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 17:52:32.141 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692838352137
+2023-08-23 17:52:32.150 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 17:52:32.153 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692838352153
+2023-08-23 17:52:32.155 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 17:55:08.974 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692838508970
+2023-08-23 17:55:08.982 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 17:55:08.987 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692838508987
+2023-08-23 17:55:08.988 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:01:30.739 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692838890734
+2023-08-23 18:01:30.749 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:01:30.752 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692838890752
+2023-08-23 18:01:30.753 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:01:40.740 - com.sahel.booking.base.TestBase - INFO - Test 1 starting 1692838900736
+2023-08-23 18:01:40.749 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:01:40.752 - com.sahel.booking.base.TestBase - INFO - Test 2 starting 1692838900752
+2023-08-23 18:01:40.753 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:28:27.309 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:28:27.320 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:28:27.323 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:28:27.325 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:37:22.332 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:37:22.341 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:37:22.343 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:37:22.344 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:37:47.482 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:37:47.490 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:37:47.492 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:37:47.493 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:38:22.702 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:38:22.711 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:38:22.713 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:38:22.714 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:39:13.663 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:39:13.672 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:39:13.673 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:39:13.674 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:39:19.298 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:39:19.307 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:39:19.310 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:39:19.311 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:39:33.504 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:39:33.515 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:39:33.518 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:39:33.519 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:39:51.780 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:39:51.789 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:39:51.790 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:39:51.791 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:39:59.803 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:39:59.812 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:39:59.815 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:39:59.816 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:40:08.326 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:40:08.335 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:40:08.337 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:40:08.339 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:41:04.187 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:41:04.196 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:41:04.198 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:41:04.199 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:41:11.556 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:41:11.565 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:41:11.568 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:41:11.569 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:41:21.897 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:41:21.905 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:41:21.907 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:41:21.908 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:42:15.320 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:42:15.330 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:42:15.333 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:42:15.334 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:42:20.660 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:42:20.669 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:42:20.672 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:42:20.673 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:42:27.469 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:42:27.479 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:42:27.481 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:42:27.482 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:42:30.735 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:42:30.745 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:42:30.747 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:42:30.749 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:49:36.799 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:49:36.808 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:49:36.810 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:49:36.811 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:51:36.124 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:51:36.134 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:51:36.137 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:51:36.138 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:51:51.211 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:51:51.220 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:51:51.225 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:51:51.226 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2
+2023-08-23 18:52:06.030 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
+2023-08-23 18:52:06.039 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-23 18:52:06.041 - com.sahel.booking.base.TestBase - INFO - Test 2 starting
+2023-08-23 18:52:06.042 - com.sahel.booking.base.TestBase - INFO - Test Passed: test2

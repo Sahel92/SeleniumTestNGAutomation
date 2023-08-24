@@ -16,6 +16,7 @@ public class ExtentTestNGListeners implements ITestListener {
     public void onStart(ITestContext context) {
         // Create a new test instance in the report
         test = WebDriverUtils.getReport().createTest(context.getName());
+        // Assign category, author, and device information
     }
 
 

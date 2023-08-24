@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <!-- Define the appenders for different types of logs -->
+    <Appenders>
+        <!-- Console Appender to log to the console -->
+        <Console name="CONSOLE" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
+        </Console>
+
+        <!-- RollingFile Appender for daily log files (reset every 2 days) -->
+        <RollingFile name="R" fileName="src/test/resources/log4j-reports/test-suite-log.log"
+                     filePattern="src/test/resources/log4j-reports/test-suite-log-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
+            <Policies>
+                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+                <TimeBasedTriggeringPolicy interval="2"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!-- Additional RollingFile Appender for a different log file -->
+        <RollingFile name="TTCC" fileName="src/test/resources/log4j-reports/test-details-log.log"
+                     filePattern="src/test/resources/log4j-reports/test-details-log-%d{yyyy-MM-dd}.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
+            <Policies>
+                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+                <TimeBasedTriggeringPolicy interval="2"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+        <!-- File Appender to log to an HTML file -->
+        <File name="HTML" fileName="src/test/resources/log4j-reports/application-log.html">
+            <HTMLLayout title="Application log" locationInfo="true"/>
+        </File>
+    </Appenders>
+
+    <!-- Define the loggers and their appenders -->
+    <Loggers>
+        <!-- Root logger level is set to INFO -->
+        <Root level="INFO">
+            <AppenderRef ref="CONSOLE"/>
+            <AppenderRef ref="R"/>
+            <AppenderRef ref="TTCC"/>
+            <AppenderRef ref="HTML"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
