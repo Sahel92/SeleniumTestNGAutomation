@@ -9,8 +9,6 @@ S
 .src/test/resources/testng-xml-files/testng.xml,3\b\3b586bf63a24db85bd6556041ef64c36361a4560
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
-k
-;src/main/java/com/sahel/booking/browsers/ChromeBrowser.java,3\3\336f23ac99bb62b66e304aa1e741c2aceeb3dc48
 i
 9src/main/java/com/sahel/booking/browsers/EdgeBrowser.java,0\7\07c48ad3fe37585eec3718195730beefa0d01d5e
 t

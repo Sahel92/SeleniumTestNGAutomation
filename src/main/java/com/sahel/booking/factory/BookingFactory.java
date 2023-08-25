@@ -3,7 +3,7 @@ package com.sahel.booking.factory;
 import com.sahel.booking.page.models.HomePage;
 import com.sahel.booking.page.models.SignInPage;
 
-public class BookingFactory {
+public class BookingFactory{
 
     private HomePage homePage;
     private SignInPage signInPage;
