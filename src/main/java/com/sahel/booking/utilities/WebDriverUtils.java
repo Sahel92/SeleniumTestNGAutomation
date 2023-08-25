@@ -43,7 +43,7 @@ public class WebDriverUtils extends DriverFactory {
 
     /**
      * Clicks on the provided element after ensuring it's clickable.
-     *
+     * implements waitTillVisible();
      * @param element Element to be clicked
      */
     public void click(WebElement element) {

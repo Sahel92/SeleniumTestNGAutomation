@@ -122,3 +122,21 @@
 2023-08-24 00:21:50.531 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
 2023-08-24 00:23:16.831 - com.sahel.booking.base.TestBase - INFO - Test 1 starting
 2023-08-24 00:23:22.839 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 20:02:12.747 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 20:02:41.328 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 20:09:00.935 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 20:09:22.608 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 20:58:09.265 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
+2023-08-24 20:58:09.338 - com.sahel.booking.base.TestBase - ERROR - Test Failed: test1
+2023-08-24 20:58:09.339 - com.sahel.booking.base.TestBase - ERROR - Error Message: Cannot invoke "com.sahel.booking.page.models.HomePage.clickSignIn()" because "this.homePage" is null
+2023-08-24 20:59:07.581 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
+2023-08-24 20:59:10.490 - com.sahel.booking.base.TestBase - ERROR - Test Failed: test1
+2023-08-24 20:59:10.490 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Booking.com | Official site | The best hotels, flights, car rentals & accommodations ] but found [Booking.com]
+2023-08-24 21:00:36.252 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
+2023-08-24 21:00:39.049 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 21:01:17.991 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
+2023-08-24 21:01:20.858 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 21:05:27.789 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
+2023-08-24 21:05:31.140 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
+2023-08-24 21:09:58.837 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
+2023-08-24 21:10:01.327 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1

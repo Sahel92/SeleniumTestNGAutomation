@@ -32,7 +32,10 @@
 
         <!-- File Appender to log to an HTML file -->
         <File name="HTML" fileName="src/test/resources/log4j-reports/application-log.html">
-            <HTMLLayout title="Application log" locationInfo="true"/>
+            <HTMLLayout charset="UTF-8">
+                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
+                <Title>Booking Automation Testing Log</Title>
+            </HTMLLayout>
         </File>
     </Appenders>
 

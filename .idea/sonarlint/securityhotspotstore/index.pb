@@ -23,5 +23,3 @@ Dsrc/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java,5\5\55e54
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 g
 7src/main/java/com/sahel/booking/base/DriverFactory.java,8\d\8db496c061b58c18056d990912dc85cc2361b01b
-m
-=src/main/java/com/sahel/booking/utilities/WebDriverUtils.java,0\4\04f83da61cf08d75cf045f9e775cc504aa45caaa

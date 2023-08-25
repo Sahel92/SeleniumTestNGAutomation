@@ -23,5 +23,3 @@ l
 <src/main/java/com/sahel/booking/browsers/FireFoxBrowser.java,8\c\8cbcaf7c41ed72ccd235d1a12de2510d4891da61
 ;
 qodana.yaml,8\5\85c3a901608a6b9adf48d245fa84828b66304e51
-m
-=src/main/java/com/sahel/booking/utilities/WebDriverUtils.java,0\4\04f83da61cf08d75cf045f9e775cc504aa45caaa
