@@ -5,8 +5,6 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 <
 settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ^
 .src/test/resources/testng-xml-files/testng.xml,3\b\3b586bf63a24db85bd6556041ef64c36361a4560
 l
@@ -21,5 +19,3 @@ t
 Dsrc/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java,5\5\55e54efb7865556c64833127efaa64a4c2a8a076
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
-g
-7src/main/java/com/sahel/booking/base/DriverFactory.java,8\d\8db496c061b58c18056d990912dc85cc2361b01b

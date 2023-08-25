@@ -4,43 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="BookingFactory to initialize POM classes and UI elements.">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07c48ad3fe37585eec3718195730beefa0d01d5e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d784fce58c3719506730fb9749600554125b511" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/336f23ac99bb62b66e304aa1e741c2aceeb3dc48" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b586bf63a24db85bd6556041ef64c36361a4560" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55e54efb7865556c64833127efaa64a4c2a8a076" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85c3a901608a6b9adf48d245fa84828b66304e51" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8cbcaf7c41ed72ccd235d1a12de2510d4891da61" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8db496c061b58c18056d990912dc85cc2361b01b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/7/07c48ad3fe37585eec3718195730beefa0d01d5e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/d/1d784fce58c3719506730fb9749600554125b511" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/3/336f23ac99bb62b66e304aa1e741c2aceeb3dc48" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3b586bf63a24db85bd6556041ef64c36361a4560" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/496a238a6afa168dbaf6efd37bb459331589579c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/5/55e54efb7865556c64833127efaa64a4c2a8a076" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/5/85c3a901608a6b9adf48d245fa84828b66304e51" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/8/88a9255124c95bdc913197c120a8d560edc59c8e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/c/8cbcaf7c41ed72ccd235d1a12de2510d4891da61" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/d/8db496c061b58c18056d990912dc85cc2361b01b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/f/9fe84ebb15faf917b7def6236dba604453cc61e0" afterDir="false" />
+    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Test Harness Ready">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8db496c061b58c18056d990912dc85cc2361b01b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/d/8db496c061b58c18056d990912dc85cc2361b01b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SmokeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SmokeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +75,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/log4j-reports",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.sourceCode.Java"
@@ -315,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692911873549</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Test Harness Ready">
+      <option name="closed" value="true" />
+      <created>1692939987084</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692939987084</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -338,7 +319,8 @@
     <MESSAGE value="Added Logger, fixed report fixed pom xml" />
     <MESSAGE value="Added WebDriverUtils Methods :)" />
     <MESSAGE value="BookingFactory to initialize POM classes and UI elements." />
-    <option name="LAST_COMMIT_MESSAGE" value="BookingFactory to initialize POM classes and UI elements." />
+    <MESSAGE value="Test Harness Ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Harness Ready" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
