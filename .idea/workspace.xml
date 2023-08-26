@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Test Harness Ready">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-24.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-24.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SmokeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +61,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2ULU0RwHIq9oWKCrzoxJaXxfgzj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -161,10 +166,24 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BookingLoginTest.performSignIn" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BookingAutomation" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-xml-files/smoke-suite.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookingLoginTest" />
+      <option name="METHOD_NAME" value="performSignIn" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookingLoginTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BookingAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BookingLoginTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -191,18 +210,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmokeTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BookingAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SmokeTest" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BookingAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -216,10 +223,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml" />
-        <item itemvalue="TestNG.SmokeTest.test1" />
+        <item itemvalue="TestNG.BookingLoginTest.performSignIn" />
+        <item itemvalue="TestNG.BookingLoginTest.test1" />
         <item itemvalue="TestNG.&lt;default&gt;" />
         <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/testng.xml" />
-        <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/smoke-suite.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692948030132</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Test Harness Ready">
+      <option name="closed" value="true" />
+      <created>1692962171359</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1692962171359</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

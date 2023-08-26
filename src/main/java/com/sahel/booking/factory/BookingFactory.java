@@ -5,11 +5,12 @@ import com.sahel.booking.page.models.SignInPage;
 
 public class BookingFactory{
 
-    private HomePage homePage;
-    private SignInPage signInPage;
+    private final HomePage homePage;
+    private final SignInPage signInPage;
 
     public BookingFactory(){
         this.homePage = new HomePage();
+        this.signInPage = new SignInPage();
     }
 
 

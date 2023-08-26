@@ -2,6 +2,7 @@ package com.sahel.booking.base;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+import com.sahel.booking.factory.BookingFactory;
 import com.sahel.booking.utilities.WebDriverUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,15 +21,19 @@ public class TestBase extends WebDriverUtils {
     private static final String TEST_DEVICE = "Windows 11 PC,  Chrome Browser v-116";
     protected static final Logger logger = LogManager.getLogger(TestBase.class);
 
+    protected static BookingFactory factory;
+
+
     @BeforeMethod
     public void launchTests() throws IOException {
         super.openBrowser();
+        factory = new BookingFactory();
     }
 
     /**
      * Close WebDriver and do other teardown steps
      */
-    @AfterMethod
+  //  @AfterMethod
     public void tearDown() {
         super.quitBrowser();
     }

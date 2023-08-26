@@ -11,6 +11,9 @@ public class HomePage extends WebDriverUtils {
         PageFactory.initElements(getDriver(), this);
     }
 
+    /***
+     * LOGIN
+     */
     @FindBy(xpath = "//button[@aria-label = 'Dismiss sign-in info.']")
     private WebElement modalExitButton; // exit button for the modal window that appears when opening Booking.com
 
@@ -31,6 +34,13 @@ public class HomePage extends WebDriverUtils {
     private void closeModal() {
         if(isElementDisplayed(modalExitButton)) click(modalExitButton);
     }
+// END LOGIN
+
+
+    // SEARCH FUNCTIONALITIES
+
+
 
 
 }
+
