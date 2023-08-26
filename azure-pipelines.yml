@@ -1,0 +1,24 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+- master
+
+pool:
+  vmImage: windows-latest
+
+steps:
+- task: UseJavaVersion@1
+  inputs:
+    versionSpec: '17'
+    addToPath: true
+
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'C:\Users\msahe\IdeaProjects\BookingAutomation\pom.xml'
+    mavenOptions: '-Xmx3072m'
+    goals: 'clean test'
+    publishJUnitResults: true
+    testResultsFiles: '**\surefire-reports\TEST-*.xml'
