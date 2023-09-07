@@ -10,7 +10,6 @@ import com.sahel.booking.browsers.FireFoxBrowser;
 import org.apache.commons.io.IOIndexedException;
 import org.openqa.selenium.WebDriver;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -19,15 +18,17 @@ import java.time.temporal.ChronoUnit;
 import java.util.Properties;
 
 /**
- * Factory class to initialize WebDriver
+ * Factory class to initialize WebDriver and ExtentReports
  */
 
 public class DriverFactory {
     private static WebDriver driver;
-    private static ExtentReports extent;
+    private static ExtentReports extentReports;
 
+
+    // ExtentReport configurations
     public static ExtentReports getReport() {
-        if (extent == null) {
+        if (extentReports == null) {
             ExtentSparkReporter spark = new ExtentSparkReporter("src/test/resources/extent-reports");
             spark.config().setTheme(Theme.DARK);
             spark.config().setDocumentTitle("Booking Automation Testing Framework");
@@ -35,16 +36,16 @@ public class DriverFactory {
             spark.config().setProtocol(Protocol.HTTP);
             spark.config().enableOfflineMode(true);
             spark.config().setTimelineEnabled(false);
-            extent = new ExtentReports();
-            extent.attachReporter(spark);
+            extentReports = new ExtentReports();
+            extentReports.attachReporter(spark);
         }
-        return extent;
+        return extentReports;
     }
 
     /**
      * @return WebDriver
      */
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
         return driver;
     }
 
@@ -79,7 +80,7 @@ public class DriverFactory {
      */
     public static FileInputStream getFileInput(String filepath) throws FileNotFoundException {
         try {
-            return new FileInputStream(new File(filepath));
+            return new FileInputStream(filepath);
         } catch (FileNotFoundException e) {
             throw new FileNotFoundException("The file could not be found on this path : " + filepath);
         }
@@ -125,14 +126,14 @@ public class DriverFactory {
      * @return A WebDriver instance for the specified browser and mode.
      * @throws IllegalArgumentException If an unsupported browser name is provided.
      */
-    private static WebDriver createWebDriver(String browser, String headless) {
+    private WebDriver createWebDriver(String browser, String headless) {
         switch (browser.toLowerCase()) {
             case "chrome" -> driver = ChromeBrowser.createChromeDriver(headless);
             case "firefox" -> driver = FireFoxBrowser.createFireFoxDriver(headless);
             case "edge" -> driver = EdgeBrowser.createEdgeDriver(headless);
             default -> throw new IllegalArgumentException("Unsupported browser");
         }
-        return driver;
+        return DriverFactory.driver;
     }
 
     /**

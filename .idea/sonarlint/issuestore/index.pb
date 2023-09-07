@@ -5,8 +5,6 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 <
 settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
-^
-.src/test/resources/testng-xml-files/testng.xml,3\b\3b586bf63a24db85bd6556041ef64c36361a4560
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
 i

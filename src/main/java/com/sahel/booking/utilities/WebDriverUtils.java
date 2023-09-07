@@ -6,7 +6,12 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Calendar;
+import java.util.Locale;
+import java.util.Random;
 import java.util.Set;
 
 public class WebDriverUtils extends DriverFactory {
@@ -44,6 +49,7 @@ public class WebDriverUtils extends DriverFactory {
     /**
      * Clicks on the provided element after ensuring it's clickable.
      * implements waitTillVisible();
+     *
      * @param element Element to be clicked
      */
     public void click(WebElement element) {
@@ -267,14 +273,24 @@ public class WebDriverUtils extends DriverFactory {
     }
 
     /**
-     * Selects a calendar date using JavaScript by setting the 'value' attribute.
+     * Sets a random calendar date between today and next year.
      *
      * @param date    Date value to set
      * @param element Calendar element
      */
-    public void selectCalendarDateWithJS(String date, WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) getDriver();
-        js.executeScript("arguments[0].setAttribute('value', '" + date + "');", element);
+    public void setRandomCalendarDate(WebElement element) {
+        // Generate calendar with random date between today and next year.
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.DAY_OF_YEAR, new Random().nextInt(365));
+
+        // Change format to Day of Week, Month Day
+        DateFormat dateFormat = new SimpleDateFormat("EEE, MMM d", Locale.US);
+        String randomDate = dateFormat.format(calendar.getTime());
+
+        // Use JavaScript to set the random date
+        JavascriptExecutor javascriptExecutor = ((JavascriptExecutor) getDriver());
+        javascriptExecutor.executeScript("arguments[0].innerText = arguments[1];", element, randomDate);
+
     }
 
     /**

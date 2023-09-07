@@ -1,0 +1,2695 @@
+Index: src/test/resources/extent-reports/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n<head>\r\n<meta charset=\"UTF-8\">\r\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n<title>Booking Automation Testing Framework</title>\r\n<link rel=\"apple-touch-icon\" href=\"spark/logo.png\">\r\n<link rel=\"shortcut icon\" href=\"spark/logo.png\">\r\n<link rel=\"stylesheet\" href=\"spark/spark-style.css\">\r\n<link rel=\"stylesheet\" href=\"spark/font-awesome.min.css\">\r\n<script src=\"spark/jsontree.js\"></script>\r\n<style type=\"text/css\"></style></head><body class=\"spa -report dark\">\r\n  <div class=\"app\">\r\n    <div class=\"layout\">\r\n<div class=\"header navbar\">\r\n<div class=\"vheader\">\r\n<div class=\"nav-logo\">\r\n<a href=\"#\">\r\n<div class=\"logo\" style=\"background-image: url('spark/logo.png')\"></div>\r\n</a>\r\n</div>\r\n<ul class=\"nav-left\">\r\n<li class=\"search-box\">\r\n<a class=\"search-toggle\" href=\"#\">\r\n<i class=\"search-icon fa fa-search\"></i>\r\n<i class=\"search-icon-close fa fa-close\"></i>\r\n</a>\r\n</li>\r\n<li class=\"search-input\"><input id=\"search-tests\" class=\"form-control\" type=\"text\" placeholder=\"Search...\"></li>\r\n</ul>\r\n<ul class=\"nav-right\">\r\n<li class=\"m-r-10\">\r\n<a href=\"#\"><span class=\"badge badge-primary\">Test Result's</span></a>\r\n</li>\r\n<li class=\"m-r-10\">\r\n<a href=\"#\"><span class=\"badge badge-primary\">Aug 26, 2023 12:43:00 AM</span></a>\r\n</li>\r\n</ul>\r\n</div>\r\n</div><div class=\"side-nav\">\r\n<div class=\"side-nav-inner\">\r\n<ul class=\"side-nav-menu\">\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('test-view')\">\r\n<a id=\"nav-test\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-list\"></i></span>\r\n</a>\r\n</li>\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('category-view')\">\r\n<a id=\"nav-category\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-tag\"></i></span>\r\n</a>\r\n</li>\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('device-view')\">\r\n<a id=\"nav-device\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-tablet\"></i></span>\r\n</a>\r\n</li>\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('author-view')\">\r\n<a id=\"nav-author\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-user\"></i></span>\r\n</a>\r\n</li>\r\n<li class=\"nav-item dropdown\" onclick=\"toggleView('dashboard-view')\">\r\n<a id=\"nav-dashboard\" class=\"dropdown-toggle\" href=\"#\">\r\n<span class=\"ico\"><i class=\"fa fa-bar-chart\"></i></span>\r\n</a>\r\n</li>\r\n</ul>\r\n</div>\r\n</div>      <div class=\"vcontainer\">\r\n        <div class=\"main-content\">\r\n<div class=\"test-wrapper row view test-view\">\r\n  <div class=\"test-list\">\r\n    <div class=\"test-list-tools\">\r\n<ul class=\"tools pull-left\">\r\n<li><a href=\"#\"><span class=\"font-size-14\">Tests</span></a></li>\r\n</ul>\r\n<ul class=\"tools text-right\">\r\n<li class=\"dropdown\">\r\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-exclamation-circle\"></i></a>\r\n<ul id=\"status-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\r\n<a class=\"dropdown-item\" status=\"pass\" href=\"#\"><span>Pass</span><span class=\"status success\"></span></a>\r\n<div class=\"dropdown-divider\"></div>\r\n<a status=\"clear\" class=\"dropdown-item\" href=\"#\"><span>Clear</span><span class=\"pull-right\"><i class=\"fa fa-close\"></i></span></a>\r\n</ul>\r\n</li>\r\n<li class=\"dropdown\">\r\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-user\"></i></a>\r\n<ul id=\"author-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\r\n<a class=\"dropdown-item\" href=\"#\">Sahel</a>\r\n</ul>\r\n</li>\r\n<li class=\"dropdown\">\r\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-tag\"></i></a>\r\n<ul id=\"tag-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\r\n<a class=\"dropdown-item\" href=\"#\">TestSuite</a>\r\n</ul>\r\n</li>\r\n<li class=\"dropdown\">\r\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-tablet\"></i></a>\r\n<ul id=\"device-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\r\n<a class=\"dropdown-item\" href=\"#\">Windows11PC,ChromeBrowserv-116</a>\r\n</ul>\r\n</li>\r\n</ul>\r\n</div>    <div class=\"test-list-wrapper scrollable\">\r\n      <ul class=\"test-list-item\">\r\n        <li class=\"test-item\"  status=\"pass\" test-id=\"1\"\r\n          author=\"Sahel\"\r\n          tag=\"TestSuite\"\r\n          device=\"Windows11PC,ChromeBrowserv-116\">\r\n          <div class=\"test-detail\">\r\n            <p class=\"name\">BookingLoginTest</p>\r\n            <p class=\"text-sm\">\r\n              <span>12:43:00 AM</span> / <span>00:00:10:206</span>\r\n              <span class=\"badge pass-bg log float-right\">Pass</span>\r\n            </p>\r\n          </div>\r\n          <div class=\"test-contents d-none\">\r\n<div class=\"detail-head\">\r\n<div class=\"p-v-10\">\r\n<div class=\"info\">\r\n<h5 class=\"test-status text-pass\">BookingLoginTest</h5>\r\n<span class='badge badge-success'>08.26.2023 12:43:00 AM</span>\r\n<span class='badge badge-danger'>08.26.2023 12:43:11 AM</span>\r\n<span class='badge badge-default'>00:00:10:206</span>\r\n&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>\r\n<span class='badge badge-default pointer float-right ml-1 et'><i class=\"fa fa-chevron-down\"></i></span>\r\n<span class='badge badge-default pointer float-right ct'><i class=\"fa fa-chevron-up\"></i></span>\r\n</div>\r\n<div class=\"m-t-15\"><span class=\"badge badge-pill badge-default\">Sahel</span>\r\n<span class=\"badge badge-pill badge-default\">TestSuite</span>\r\n<span class=\"badge badge-pill badge-default\">Windows11PC,ChromeBrowserv-116</span></div>\r\n</div>\r\n</div><div class=\"detail-body mt-4\">\r\n<table class=\"table table-sm\">\r\n  <thead><tr><th class=\"status-col\">Status</th><th class=\"timestamp-col\">Timestamp</th><th class=\"details-col\">Details</th></tr></thead>\r\n  <tbody>\r\n      <tr class=\"event-row\">\r\n        <td><span class=\"badge log pass-bg\">Pass</span></td>\r\n        <td>12:43:11 AM</td>\r\n        <td>\r\n          Test Passed: performSignIn\r\n        </td>\r\n      </tr>\r\n      <tr class=\"event-row\">\r\n        <td><span class=\"badge log info-bg\">Info</span></td>\r\n        <td>12:43:11 AM</td>\r\n        <td>\r\n          Test Class: BookingLoginTest\r\n        </td>\r\n      </tr>\r\n      <tr class=\"event-row\">\r\n        <td><span class=\"badge log info-bg\">Info</span></td>\r\n        <td>12:43:11 AM</td>\r\n        <td>\r\n          Test Name: performSignIn\r\n        </td>\r\n      </tr>\r\n      <tr class=\"event-row\">\r\n        <td><span class=\"badge log info-bg\">Info</span></td>\r\n        <td>12:43:11 AM</td>\r\n        <td>\r\n          Test Status: Passed\r\n        </td>\r\n      </tr>\r\n  </tbody>\r\n</table>\r\n</div>\r\n          </div>\r\n        </li>\r\n        <li class=\"test-item\"  status=\"pass\" test-id=\"2\"\r\n          author=\"\"\r\n          tag=\"\"\r\n          device=\"\">\r\n          <div class=\"test-detail\">\r\n            <p class=\"name\">Login-Test</p>\r\n            <p class=\"text-sm\">\r\n              <span>12:43:00 AM</span> / <span>00:00:10:201</span>\r\n              <span class=\"badge pass-bg log float-right\">Pass</span>\r\n            </p>\r\n          </div>\r\n          <div class=\"test-contents d-none\">\r\n<div class=\"detail-head\">\r\n<div class=\"p-v-10\">\r\n<div class=\"info\">\r\n<h5 class=\"test-status text-pass\">Login-Test</h5>\r\n<span class='badge badge-success'>08.26.2023 12:43:00 AM</span>\r\n<span class='badge badge-danger'>08.26.2023 12:43:11 AM</span>\r\n<span class='badge badge-default'>00:00:10:201</span>\r\n&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>\r\n<span class='badge badge-default pointer float-right ml-1 et'><i class=\"fa fa-chevron-down\"></i></span>\r\n<span class='badge badge-default pointer float-right ct'><i class=\"fa fa-chevron-up\"></i></span>\r\n</div>\r\n</div>\r\n</div><div class=\"detail-body mt-4\">\r\n<table class=\"table table-sm\">\r\n  <thead><tr><th class=\"status-col\">Status</th><th class=\"timestamp-col\">Timestamp</th><th class=\"details-col\">Details</th></tr></thead>\r\n  <tbody>\r\n      <tr class=\"event-row\">\r\n        <td><span class=\"badge log info-bg\">Info</span></td>\r\n        <td>12:43:07 AM</td>\r\n        <td>\r\n          Test started: performSignIn\r\n        </td>\r\n      </tr>\r\n      <tr class=\"event-row\">\r\n        <td><span class=\"badge log pass-bg\">Pass</span></td>\r\n        <td>12:43:11 AM</td>\r\n        <td>\r\n          Test passed: performSignIn\r\n        </td>\r\n      </tr>\r\n  </tbody>\r\n</table>\r\n</div>\r\n          </div>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n<div class=\"test-content scrollable\">\r\n<div class=\"test-content-tools\">\r\n<ul><li><a class=\"back-to-test\" href=\"#\"><i class=\"fa fa-arrow-left\"></i></a></li></ul>\r\n</div>\r\n<div class=\"test-content-detail\"><div class=\"detail-body\"></div></div>\r\n</div></div>\r\n<div class=\"test-wrapper row view category-view attributes-view\">\r\n<div class=\"test-list\">\r\n<div class=\"test-list-tools\">\r\n<ul class=\"tools pull-left\"><li><a href=\"\"><span class=\"font-size-14\">Category</span></a></li></ul>\r\n<ul class=\"tools text-right\"><li><a href=\"#\"><span class=\"badge badge-primary\">1</span></a></li></ul>\r\n</div>\r\n<div class=\"test-list-wrapper scrollable\">\r\n<ul class=\"test-list-item\">\r\n<li class=\"test-item\">\r\n<div class=\"test-detail\">\r\n<span class=\"meta\">\r\n<span class='badge log pass-bg'>1</span>\r\n</span>\r\n<p class=\"name\">TestSuite</p>\r\n<p class=\"duration text-sm\">1 tests</p>\r\n</div>\r\n<div class=\"test-contents d-none\">\r\n<div class=\"info\">\r\n<h4>TestSuite</h4>\r\n<span status=\"pass\" class='badge log pass-bg'>1 passed</span>\r\n</div>\r\n<table class='table table-sm mt-4'>\r\n<thead>\r\n<tr>\r\n<th class=\"status-col\">Status</th>\r\n<th class=\"timestamp-col\">Timestamp</th>\r\n<th>TestName</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr class=\"tag-test-status\" status=\"pass\">\r\n<td><span class=\"badge log pass-bg\">Pass</span></td>\r\n<td>00:43:00 AM</td>\r\n<td>\r\n<a href=\"#\" class=\"linked\" test-id='1' id='1'>BookingLoginTest</a>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n</li>\r\n</ul>\r\n</div>\r\n</div>\r\n<div class=\"test-content scrollable\">\r\n<div class=\"test-content-detail\">\r\n<div class=\"detail-body\"></div>\r\n</div>\r\n</div>\r\n</div><div class=\"test-wrapper row view device-view attributes-view\">\r\n<div class=\"test-list\">\r\n<div class=\"test-list-tools\">\r\n<ul class=\"tools pull-left\"><li><a href=\"\"><span class=\"font-size-14\">Device</span></a></li></ul>\r\n<ul class=\"tools text-right\"><li><a href=\"#\"><span class=\"badge badge-primary\">1</span></a></li></ul>\r\n</div>\r\n<div class=\"test-list-wrapper scrollable\">\r\n<ul class=\"test-list-item\">\r\n<li class=\"test-item\">\r\n<div class=\"test-detail\">\r\n<span class=\"meta\">\r\n<span class='badge log pass-bg'>1</span>\r\n</span>\r\n<p class=\"name\">Windows11PC,ChromeBrowserv-116</p>\r\n<p class=\"duration text-sm\">1 tests</p>\r\n</div>\r\n<div class=\"test-contents d-none\">\r\n<div class=\"info\">\r\n<h4>Windows11PC,ChromeBrowserv-116</h4>\r\n<span status=\"pass\" class='badge log pass-bg'>1 passed</span>\r\n</div>\r\n<table class='table table-sm mt-4'>\r\n<thead>\r\n<tr>\r\n<th class=\"status-col\">Status</th>\r\n<th class=\"timestamp-col\">Timestamp</th>\r\n<th>TestName</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr class=\"tag-test-status\" status=\"pass\">\r\n<td><span class=\"badge log pass-bg\">Pass</span></td>\r\n<td>00:43:00 AM</td>\r\n<td>\r\n<a href=\"#\" class=\"linked\" test-id='1' id='1'>BookingLoginTest</a>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n</li>\r\n</ul>\r\n</div>\r\n</div>\r\n<div class=\"test-content scrollable\">\r\n<div class=\"test-content-detail\">\r\n<div class=\"detail-body\"></div>\r\n</div>\r\n</div>\r\n</div><div class=\"test-wrapper row view author-view attributes-view\">\r\n<div class=\"test-list\">\r\n<div class=\"test-list-tools\">\r\n<ul class=\"tools pull-left\"><li><a href=\"\"><span class=\"font-size-14\">Author</span></a></li></ul>\r\n<ul class=\"tools text-right\"><li><a href=\"#\"><span class=\"badge badge-primary\">1</span></a></li></ul>\r\n</div>\r\n<div class=\"test-list-wrapper scrollable\">\r\n<ul class=\"test-list-item\">\r\n<li class=\"test-item\">\r\n<div class=\"test-detail\">\r\n<span class=\"meta\">\r\n<span class='badge log pass-bg'>1</span>\r\n</span>\r\n<p class=\"name\">Sahel</p>\r\n<p class=\"duration text-sm\">1 tests</p>\r\n</div>\r\n<div class=\"test-contents d-none\">\r\n<div class=\"info\">\r\n<h4>Sahel</h4>\r\n<span status=\"pass\" class='badge log pass-bg'>1 passed</span>\r\n</div>\r\n<table class='table table-sm mt-4'>\r\n<thead>\r\n<tr>\r\n<th class=\"status-col\">Status</th>\r\n<th class=\"timestamp-col\">Timestamp</th>\r\n<th>TestName</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr class=\"tag-test-status\" status=\"pass\">\r\n<td><span class=\"badge log pass-bg\">Pass</span></td>\r\n<td>00:43:00 AM</td>\r\n<td>\r\n<a href=\"#\" class=\"linked\" test-id='1' id='1'>BookingLoginTest</a>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</div>\r\n</li>\r\n</ul>\r\n</div>\r\n</div>\r\n<div class=\"test-content scrollable\">\r\n<div class=\"test-content-detail\">\r\n<div class=\"detail-body\"></div>\r\n</div>\r\n</div>\r\n</div><div class=\"container-fluid p-4 view dashboard-view\">\r\n<div class=\"row\">\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0\">Started</p>\r\n<h3>Aug 26, 2023 12:43:00 AM</h3>\r\n</div></div>\r\n</div>\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0\">Ended</p>\r\n<h3>Aug 26, 2023 12:43:11 AM</h3>\r\n</div></div>\r\n</div>\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0 text-pass\">Tests Passed</p>\r\n<h3>2</h3>\r\n</div></div>\r\n</div>\r\n<div class=\"col-md-3\">\r\n<div class=\"card\"><div class=\"card-body\">\r\n<p class=\"m-b-0 text-fail\">Tests Failed</p>\r\n<h3>0</h3>\r\n</div></div>\r\n</div>\r\n</div>\r\n<div class=\"row\">\r\n<div class=\"col-md-6\">\r\n<div class=\"card\">\r\n<div class=\"card-header\">\r\n<h6 class=\"card-title\">Tests</h6>\r\n</div>\r\n<div class=\"card-body\">\r\n<div class=\"\">\r\n<canvas id='parent-analysis' width='115' height='90'></canvas>\r\n</div>\r\n</div>\r\n<div class=\"card-footer\">\r\n<div><small data-tooltip='100%'>\r\n<b>2</b> tests passed\r\n</small>\r\n</div>\r\n<div>\r\n<small data-tooltip='0%'><b>0</b> tests failed,\r\n<b>0</b> skipped, <b data-tooltip='0%'>0</b> others\r\n</small>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"col-md-6\">\r\n<div class=\"card\">\r\n<div class=\"card-header\">\r\n<h6 class=\"card-title\">Log events</h6>\r\n</div>\r\n<div class=\"card-body\">\r\n<div class=\"\">\r\n<canvas id='events-analysis' width='115' height='90'></canvas>\r\n</div>\r\n</div>\r\n<div class=\"card-footer\">\r\n<div><small data-tooltip='33%'><b>2</b> events passed</small></div>\r\n<div>\r\n<small data-tooltip='0%'><b>0</b> events failed,\r\n<b data-tooltip='%'>4</b> others\r\n</small>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<div class=\"row\">\r\n<div class=\"col-lg-6 col-md-12 author-container\">\r\n<div class=\"card\">\r\n<div class=\"card-header\"><p>Author</p></div>\r\n<div class=\"card-body pb-0 pt-0\"><table class=\"table table-sm table-bordered\">\r\n<thead><tr class=\"bg-gray\"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n<td>Sahel</td>\r\n<td>1</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>100%</td>\r\n</tr>\r\n</tbody>\r\n</table></div>\r\n</div>\r\n</div>\r\n<div class=\"col-lg-6 col-md-12 category-container\">\r\n<div class=\"card\">\r\n<div class=\"card-header\"><p>Tags</p></div>\r\n<div class=\"card-body pb-0 pt-0\"><table class=\"table table-sm table-bordered\">\r\n<thead><tr class=\"bg-gray\"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>\r\n<tr>\r\n<td>TestSuite</td>\r\n<td>1</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>100%</td>\r\n</tr>\r\n</tbody>\r\n</table></div>\r\n</div>\r\n</div>\r\n<div class=\"col-lg-6 col-md-12 device-container\">\r\n<div class=\"card\">\r\n<div class=\"card-header\"><p>Device</p></div>\r\n<div class=\"card-body pb-0 pt-0\"><table class=\"table table-sm table-bordered\">\r\n<thead><tr class=\"bg-gray\"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>\r\n<tbody>\r\n<tr>\r\n<td>Windows11PC,ChromeBrowserv-116</td>\r\n<td>1</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>0</td>\r\n<td>100%</td>\r\n</tr>\r\n</tbody>\r\n</table></div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<script>\r\nvar statusGroup = {\r\nparentCount: 5,\r\npassParent: 2,\r\nfailParent: 0,\r\nwarningParent: 0,\r\nskipParent: 0,\r\nchildCount: 5,\r\npassChild: 0,\r\nfailChild: 0,\r\nwarningChild: 0,\r\nskipChild: 0,\r\ninfoChild: 0,\r\ngrandChildCount: 5,\r\npassGrandChild: 0,\r\nfailGrandChild: 0,\r\nwarningGrandChild: 0,\r\nskipGrandChild: 0,\r\ninfoGrandChild: 0,\r\neventsCount: 5,\r\npassEvents: 2,\r\nfailEvents: 0,\r\nwarningEvents: 0,\r\nskipEvents: 0,\r\ninfoEvents: 4\r\n};\r\n</script>        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n<script src=\"spark/spark-script.js\"></script>\r\n<script type=\"text/javascript\"></script></body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/extent-reports/index.html b/src/test/resources/extent-reports/Index.html
+rename from src/test/resources/extent-reports/index.html
+rename to src/test/resources/extent-reports/Index.html
+--- a/src/test/resources/extent-reports/index.html	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/src/test/resources/extent-reports/Index.html	(date 1693988532165)
+@@ -35,7 +35,7 @@
+ <a href="#"><span class="badge badge-primary">Test Result's</span></a>
+ </li>
+ <li class="m-r-10">
+-<a href="#"><span class="badge badge-primary">Aug 26, 2023 12:43:00 AM</span></a>
++<a href="#"><span class="badge badge-primary">Sep 6, 2023 01:22:00 AM</span></a>
+ </li>
+ </ul>
+ </div>
+@@ -114,7 +114,7 @@
+           <div class="test-detail">
+             <p class="name">BookingLoginTest</p>
+             <p class="text-sm">
+-              <span>12:43:00 AM</span> / <span>00:00:10:206</span>
++              <span>1:22:00 AM</span> / <span>00:00:10:788</span>
+               <span class="badge pass-bg log float-right">Pass</span>
+             </p>
+           </div>
+@@ -123,9 +123,9 @@
+ <div class="p-v-10">
+ <div class="info">
+ <h5 class="test-status text-pass">BookingLoginTest</h5>
+-<span class='badge badge-success'>08.26.2023 12:43:00 AM</span>
+-<span class='badge badge-danger'>08.26.2023 12:43:11 AM</span>
+-<span class='badge badge-default'>00:00:10:206</span>
++<span class='badge badge-success'>09.06.2023 1:22:00 AM</span>
++<span class='badge badge-danger'>09.06.2023 1:22:11 AM</span>
++<span class='badge badge-default'>00:00:10:788</span>
+ &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+ <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+ <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+@@ -140,28 +140,28 @@
+   <tbody>
+       <tr class="event-row">
+         <td><span class="badge log pass-bg">Pass</span></td>
+-        <td>12:43:11 AM</td>
++        <td>1:22:11 AM</td>
+         <td>
+           Test Passed: performSignIn
+         </td>
+       </tr>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>12:43:11 AM</td>
++        <td>1:22:11 AM</td>
+         <td>
+           Test Class: BookingLoginTest
+         </td>
+       </tr>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>12:43:11 AM</td>
++        <td>1:22:11 AM</td>
+         <td>
+           Test Name: performSignIn
+         </td>
+       </tr>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>12:43:11 AM</td>
++        <td>1:22:11 AM</td>
+         <td>
+           Test Status: Passed
+         </td>
+@@ -178,7 +178,7 @@
+           <div class="test-detail">
+             <p class="name">Login-Test</p>
+             <p class="text-sm">
+-              <span>12:43:00 AM</span> / <span>00:00:10:201</span>
++              <span>1:22:00 AM</span> / <span>00:00:10:783</span>
+               <span class="badge pass-bg log float-right">Pass</span>
+             </p>
+           </div>
+@@ -187,9 +187,9 @@
+ <div class="p-v-10">
+ <div class="info">
+ <h5 class="test-status text-pass">Login-Test</h5>
+-<span class='badge badge-success'>08.26.2023 12:43:00 AM</span>
+-<span class='badge badge-danger'>08.26.2023 12:43:11 AM</span>
+-<span class='badge badge-default'>00:00:10:201</span>
++<span class='badge badge-success'>09.06.2023 1:22:00 AM</span>
++<span class='badge badge-danger'>09.06.2023 1:22:11 AM</span>
++<span class='badge badge-default'>00:00:10:783</span>
+ &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+ <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+ <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+@@ -201,14 +201,14 @@
+   <tbody>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>12:43:07 AM</td>
++        <td>1:22:11 AM</td>
+         <td>
+           Test started: performSignIn
+         </td>
+       </tr>
+       <tr class="event-row">
+         <td><span class="badge log pass-bg">Pass</span></td>
+-        <td>12:43:11 AM</td>
++        <td>1:22:11 AM</td>
+         <td>
+           Test passed: performSignIn
+         </td>
+@@ -259,7 +259,7 @@
+ <tbody>
+ <tr class="tag-test-status" status="pass">
+ <td><span class="badge log pass-bg">Pass</span></td>
+-<td>00:43:00 AM</td>
++<td>01:22:00 AM</td>
+ <td>
+ <a href="#" class="linked" test-id='1' id='1'>BookingLoginTest</a>
+ </td>
+@@ -308,7 +308,7 @@
+ <tbody>
+ <tr class="tag-test-status" status="pass">
+ <td><span class="badge log pass-bg">Pass</span></td>
+-<td>00:43:00 AM</td>
++<td>01:22:00 AM</td>
+ <td>
+ <a href="#" class="linked" test-id='1' id='1'>BookingLoginTest</a>
+ </td>
+@@ -357,7 +357,7 @@
+ <tbody>
+ <tr class="tag-test-status" status="pass">
+ <td><span class="badge log pass-bg">Pass</span></td>
+-<td>00:43:00 AM</td>
++<td>01:22:00 AM</td>
+ <td>
+ <a href="#" class="linked" test-id='1' id='1'>BookingLoginTest</a>
+ </td>
+@@ -379,13 +379,13 @@
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0">Started</p>
+-<h3>Aug 26, 2023 12:43:00 AM</h3>
++<h3>Sep 6, 2023 01:22:00 AM</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0">Ended</p>
+-<h3>Aug 26, 2023 12:43:11 AM</h3>
++<h3>Sep 6, 2023 01:22:12 AM</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+Index: src/main/java/com/sahel/booking/page/models/HomePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.page.models;\r\n\r\nimport com.sahel.booking.utilities.WebDriverUtils;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\nimport org.openqa.selenium.support.PageFactory;\r\n\r\npublic class HomePage extends WebDriverUtils {\r\n\r\n    public HomePage() {\r\n        PageFactory.initElements(getDriver(), this);\r\n    }\r\n\r\n    /***\r\n     * LOGIN\r\n     */\r\n    @FindBy(xpath = \"//button[@aria-label = 'Dismiss sign-in info.']\")\r\n    private WebElement modalExitButton; // exit button for the modal window that appears when opening Booking.com\r\n\r\n    @FindBy(css = \"a[data-testid ='header-sign-in-button']\")\r\n    private WebElement homePageSignInButton; // Homepage 'SignIn' button\r\n\r\n    /**\r\n     * Clicks on SignIn Button\r\n     */\r\n    public void clickSignIn() {\r\n        this.closeModal();\r\n        click((homePageSignInButton));\r\n    }\r\n\r\n    /**\r\n     * closes the modal dialog box\r\n     */\r\n    private void closeModal() {\r\n        if(isElementDisplayed(modalExitButton)) click(modalExitButton);\r\n    }\r\n// END LOGIN\r\n\r\n\r\n    // SEARCH FUNCTIONALITIES\r\n\r\n\r\n\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/page/models/HomePage.java b/src/main/java/com/sahel/booking/page/models/HomePage.java
+--- a/src/main/java/com/sahel/booking/page/models/HomePage.java	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/src/main/java/com/sahel/booking/page/models/HomePage.java	(date 1693987444901)
+@@ -32,7 +32,7 @@
+      * closes the modal dialog box
+      */
+     private void closeModal() {
+-        if(isElementDisplayed(modalExitButton)) click(modalExitButton);
++        if (isElementDisplayed(modalExitButton)) click(modalExitButton);
+     }
+ // END LOGIN
+ 
+@@ -40,7 +40,5 @@
+     // SEARCH FUNCTIONALITIES
+ 
+ 
+-
+-
+ }
+ 
+Index: src/main/resources/log4j2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Configuration status=\"WARN\">\r\n\r\n    <!-- Define the appenders for different types of logs -->\r\n    <Appenders>\r\n        <!-- Console Appender to log to the console -->\r\n        <Console name=\"CONSOLE\" target=\"SYSTEM_OUT\">\r\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n\"/>\r\n        </Console>\r\n\r\n        <!-- RollingFile Appender for daily log files (reset every 2 days) -->\r\n        <RollingFile name=\"R\" fileName=\"src/test/resources/log4j-reports/test-suite-log.log\"\r\n                     filePattern=\"src/test/resources/log4j-reports/test-suite-log-%d{yyyy-MM-dd}.log\">\r\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n\"/>\r\n            <Policies>\r\n                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->\r\n                <TimeBasedTriggeringPolicy interval=\"2\"/>\r\n            </Policies>\r\n            <DefaultRolloverStrategy max=\"10\"/>\r\n        </RollingFile>\r\n\r\n        <!-- Additional RollingFile Appender for a different log file -->\r\n        <RollingFile name=\"TTCC\" fileName=\"src/test/resources/log4j-reports/test-details-log.log\"\r\n                     filePattern=\"src/test/resources/log4j-reports/test-details-log-%d{yyyy-MM-dd}.log\">\r\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n\"/>\r\n            <Policies>\r\n                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->\r\n                <TimeBasedTriggeringPolicy interval=\"2\"/>\r\n            </Policies>\r\n            <DefaultRolloverStrategy max=\"10\"/>\r\n        </RollingFile>\r\n\r\n        <!-- File Appender to log to an HTML file -->\r\n        <File name=\"HTML\" fileName=\"src/test/resources/log4j-reports/application-log.html\">\r\n            <HTMLLayout charset=\"UTF-8\">\r\n                <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n\"/>\r\n                <Title>Booking Automation Testing Log</Title>\r\n            </HTMLLayout>\r\n        </File>\r\n    </Appenders>\r\n\r\n    <!-- Define the loggers and their appenders -->\r\n    <Loggers>\r\n        <!-- Root logger level is set to INFO -->\r\n        <Root level=\"INFO\">\r\n            <AppenderRef ref=\"CONSOLE\"/>\r\n            <AppenderRef ref=\"R\"/>\r\n            <AppenderRef ref=\"TTCC\"/>\r\n            <AppenderRef ref=\"HTML\"/>\r\n        </Root>\r\n    </Loggers>\r\n\r\n</Configuration>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/log4j2.xml b/src/main/resources/log4j2.xml
+--- a/src/main/resources/log4j2.xml	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/src/main/resources/log4j2.xml	(date 1693987918425)
+@@ -1,47 +1,21 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <Configuration status="WARN">
+-
+-    <!-- Define the appenders for different types of logs -->
+     <Appenders>
+-        <!-- Console Appender to log to the console -->
+         <Console name="CONSOLE" target="SYSTEM_OUT">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
++            <PatternLayout pattern="%5p [%t] (%F:%L) - %m%n"/>
+         </Console>
+-
+-        <!-- RollingFile Appender for daily log files (reset every 2 days) -->
+-        <RollingFile name="R" fileName="src/test/resources/log4j-reports/test-suite-log.log"
+-                     filePattern="src/test/resources/log4j-reports/test-suite-log-%d{yyyy-MM-dd}.log">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
+-            <Policies>
+-                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+-                <TimeBasedTriggeringPolicy interval="2"/>
+-            </Policies>
+-            <DefaultRolloverStrategy max="10"/>
+-        </RollingFile>
+-
+-        <!-- Additional RollingFile Appender for a different log file -->
+-        <RollingFile name="TTCC" fileName="src/test/resources/log4j-reports/test-details-log.log"
+-                     filePattern="src/test/resources/log4j-reports/test-details-log-%d{yyyy-MM-dd}.log">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
++        <RollingFile name="R" fileName="log4j-reports/booking-test.log" filePattern="log4j-reports/booking-test-%d{yyyy-MM-dd}.log">
++            <PatternLayout pattern="%d - %c - %p - %m%n"/>
+             <Policies>
+-                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+-                <TimeBasedTriggeringPolicy interval="2"/>
++                <TimeBasedTriggeringPolicy/>
+             </Policies>
+             <DefaultRolloverStrategy max="10"/>
+         </RollingFile>
+-
+-        <!-- File Appender to log to an HTML file -->
+-        <File name="HTML" fileName="src/test/resources/log4j-reports/application-log.html">
+-            <HTMLLayout charset="UTF-8">
+-                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
+-                <Title>Booking Automation Testing Log</Title>
+-            </HTMLLayout>
++        <File name="HTML" fileName="log4j-reports/booking-report-logs.html">
++            <HTMLLayout title="Application log" locationInfo="true"/>
+         </File>
+     </Appenders>
+-
+-    <!-- Define the loggers and their appenders -->
+     <Loggers>
+-        <!-- Root logger level is set to INFO -->
+         <Root level="INFO">
+             <AppenderRef ref="CONSOLE"/>
+             <AppenderRef ref="R"/>
+@@ -49,5 +23,4 @@
+             <AppenderRef ref="HTML"/>
+         </Root>
+     </Loggers>
+-
+-</Configuration>
++</Configuration>
+\ No newline at end of file
+Index: src/test/java/BookingLoginTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.sahel.booking.base.TestBase;\r\n\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.Parameters;\r\nimport org.testng.annotations.Test;\r\n\r\npublic class BookingLoginTest extends TestBase {\r\n\r\n    // Performs login action.\r\n    // Login scenarios cannot be automated for Booking.com. Unfortunate.....\r\n    @Parameters({\"email\", \"password\"})\r\n    @Test\r\n    public void performSignIn(String email, String password) {\r\n        Assert.assertEquals(factory.homePage().getTitle(), \"Booking.com | Official site | The best hotels, flights, car rentals\" + \" & \" + \"accommodations\");\r\n        logger.info(\"User is on Booking.com homepage\");\r\n        factory.homePage().clickSignIn();\r\n        logger.info(\"User clicked on 'SignIn' button\");\r\n        factory.signInPage().enterEmail(email);\r\n        logger.info(\"User entered valid email\");\r\n        factory.signInPage().clickContinueWithEmail();\r\n        logger.info(\"User clicked 'Continue with email' button\");\r\n        factory.signInPage().enterPassword(password);\r\n        logger.info(\"User entered valid password\");\r\n        factory.signInPage().clickSignIn();\r\n        logger.info(\"User clicked 'Sign in' button on the sign page\");\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/BookingLoginTest.java b/src/test/java/BookingLoginTest.java
+--- a/src/test/java/BookingLoginTest.java	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/src/test/java/BookingLoginTest.java	(date 1693987714648)
+@@ -13,16 +13,16 @@
+     public void performSignIn(String email, String password) {
+         Assert.assertEquals(factory.homePage().getTitle(), "Booking.com | Official site | The best hotels, flights, car rentals" + " & " + "accommodations");
+         logger.info("User is on Booking.com homepage");
+-        factory.homePage().clickSignIn();
+-        logger.info("User clicked on 'SignIn' button");
+-        factory.signInPage().enterEmail(email);
+-        logger.info("User entered valid email");
+-        factory.signInPage().clickContinueWithEmail();
+-        logger.info("User clicked 'Continue with email' button");
+-        factory.signInPage().enterPassword(password);
+-        logger.info("User entered valid password");
+-        factory.signInPage().clickSignIn();
+-        logger.info("User clicked 'Sign in' button on the sign page");
++//        factory.homePage().clickSignIn();
++//        logger.info("User clicked on 'SignIn' button");
++//        factory.signInPage().enterEmail(email);
++//        logger.info("User entered valid email");
++//        factory.signInPage().clickContinueWithEmail();
++//        logger.info("User clicked 'Continue with email' button");
++//        factory.signInPage().enterPassword(password);
++//        logger.info("User entered valid password");
++//        factory.signInPage().clickSignIn();
++//        logger.info("User clicked 'Sign in' button on the sign page");
+     }
+ 
+ 
+Index: src/test/resources/log4j-reports/application-log.html
+===================================================================
+diff --git a/src/test/resources/log4j-reports/application-log.html b/src/test/resources/log4j-reports/application-log.html
+deleted file mode 100644
+--- a/src/test/resources/log4j-reports/application-log.html	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ /dev/null	(revision af07264676451e558008b70124ea90ce695c1f33)
+@@ -1,2077 +0,0 @@
+-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+-<html>
+-<head>
+-<meta charset="UTF-8"/>
+-<title>Application log</title>
+-<style type="text/css">
+-<!--
+-body, table {font-family:arial,sans-serif; font-size: medium
+-;}th {background: #336699; color: #FFFFFF; text-align: left;}
+--->
+-</style>
+-</head>
+-<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+-<hr size="1" noshade="noshade">
+-Log session start time Wed Aug 23 17:18:14 PDT 2023<br>
+-<br>
+-<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+-<tr>
+-<th>Time</th>
+-<th>Thread</th>
+-<th>Level</th>
+-<th>Logger</th>
+-<th>File:Line</th>
+-<th>Message</th>
+-</tr>
+-
+-<tr>
+-<td>691</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692836294839</td>
+-</tr>
+-
+-<tr>
+-<td>701</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>704</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692836294856</td>
+-</tr>
+-
+-<tr>
+-<td>705</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>691</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692837931196</td>
+-</tr>
+-
+-<tr>
+-<td>700</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>703</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692837931213</td>
+-</tr>
+-
+-<tr>
+-<td>706</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>672</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692838234657</td>
+-</tr>
+-
+-<tr>
+-<td>681</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>685</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692838234674</td>
+-</tr>
+-
+-<tr>
+-<td>686</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>665</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692838243931</td>
+-</tr>
+-
+-<tr>
+-<td>673</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>676</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692838243946</td>
+-</tr>
+-
+-<tr>
+-<td>677</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>658</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692838306238</td>
+-</tr>
+-
+-<tr>
+-<td>666</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>670</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692838306254</td>
+-</tr>
+-
+-<tr>
+-<td>671</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>637</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692838352137</td>
+-</tr>
+-
+-<tr>
+-<td>646</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>649</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692838352153</td>
+-</tr>
+-
+-<tr>
+-<td>651</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>637</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692838508970</td>
+-</tr>
+-
+-<tr>
+-<td>645</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>650</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692838508987</td>
+-</tr>
+-
+-<tr>
+-<td>651</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>694</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692838890734</td>
+-</tr>
+-
+-<tr>
+-<td>704</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>707</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692838890752</td>
+-</tr>
+-
+-<tr>
+-<td>708</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>714</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting 1692838900736</td>
+-</tr>
+-
+-<tr>
+-<td>723</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>726</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting 1692838900752</td>
+-</tr>
+-
+-<tr>
+-<td>727</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>694</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>705</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>708</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>710</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>692</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>701</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>703</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>704</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>684</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>692</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>694</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>695</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>710</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>719</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>721</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>722</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>665</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>674</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>675</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>676</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>697</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>706</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>709</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>710</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>705</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>716</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>719</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>720</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>672</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>681</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>682</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>683</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>666</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>675</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>678</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>679</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>688</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>697</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>699</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>701</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>724</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>733</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>735</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>736</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>684</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>693</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>696</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>697</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>697</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>705</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>707</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>708</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>671</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>681</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>684</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>685</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>691</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>700</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>703</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>704</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>700</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>710</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>712</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>713</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>678</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>688</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>690</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>692</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>766</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>775</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>777</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>778</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>683</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>693</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>696</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>697</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>717</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>726</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>731</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>732</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>690</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>699</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>701</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:16</td>
+-<td title="Message">Test 2 starting</td>
+-</tr>
+-
+-<tr>
+-<td>702</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:63</td>
+-<td title="Message">Test Passed: test2</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>23701</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>24313</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>6519</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:10</td>
+-<td title="Message">Test 1 starting</td>
+-</tr>
+-
+-<tr>
+-<td>12527</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>23786</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>7183</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>12446</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>9998</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>8291</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:12</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>8364</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:61</td>
+-<td title="Message">Test Failed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>8365</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:62</td>
+-<td title="Message">Error Message: Cannot invoke &quot;com.sahel.booking.page.models.HomePage.clickSignIn()&quot; because &quot;this.homePage&quot; is null</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>7428</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:13</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>10337</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:61</td>
+-<td title="Message">Test Failed: test1</td>
+-</tr>
+-
+-<tr>
+-<td>10337</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:62</td>
+-<td title="Message">Error Message: expected [Booking.com | Official site | The best hotels, flights, car rentals &amp; accommodations ] but found [Booking.com]</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>12030</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:13</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>14827</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>10539</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:13</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>13406</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>6714</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:13</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>10065</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:66</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>9417</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>11907</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>16641</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>21196</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>14669</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>16645</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>9573</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>13475</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>16762</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>21135</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>14754</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>18580</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>13304</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>16209</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>10928</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>13256</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>8381</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>13734</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>10840</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>14552</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>11183</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Smoke Testing Commencing</td>
+-</tr>
+-
+-<tr>
+-<td>14939</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>19380</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>22307</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>22310</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: test1</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>43353</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>51101</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>51103</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>12343</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>14992</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>14995</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>10244</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>20476</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Failed: performSignIn</td>
+-</tr>
+-
+-<tr>
+-<td>20476</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Error Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@aria-label = 'Dismiss sign-in info.']&quot;}<br />  (Session info: chrome=116.0.5845.111)<br />For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br />Build info: version: '4.11.0', revision: '040bc5406b'<br />System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'<br />Driver info: org.openqa.selenium.chrome.ChromeDriver<br />Command: [a02edbc1ec6ec5d6fea3270d15bb7fd5, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]<br />Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61247/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br />Session ID: a02edbc1ec6ec5d6fea3270d15bb7fd5</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>8883</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>13147</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>13160</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>11703</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>17348</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>17355</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>9025</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>12071</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>12085</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid email</td>
+-</tr>
+-
+-<tr>
+-<td>22191</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Failed: performSignIn</td>
+-</tr>
+-
+-<tr>
+-<td>22191</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Error Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#password&quot;}<br />  (Session info: chrome=116.0.5845.111)<br />For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br />Build info: version: '4.11.0', revision: '040bc5406b'<br />System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'<br />Driver info: org.openqa.selenium.chrome.ChromeDriver<br />Command: [55124d49ce25ab165fe68d79f33dc92b, findElement {using=id, value=password}]<br />Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\msahe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65361/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br />Session ID: 55124d49ce25ab165fe68d79f33dc92b</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>9196</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>12068</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>12082</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid email</td>
+-</tr>
+-
+-<tr>
+-<td>12134</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Continue with email' button</td>
+-</tr>
+-
+-<tr>
+-<td>12794</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid password</td>
+-</tr>
+-
+-<tr>
+-<td>12839</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Sign in' button on the sign page</td>
+-</tr>
+-
+-<tr>
+-<td>17848</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>6118</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>10409</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>10421</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid email</td>
+-</tr>
+-
+-<tr>
+-<td>10466</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Continue with email' button</td>
+-</tr>
+-
+-<tr>
+-<td>10476</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid password</td>
+-</tr>
+-
+-<tr>
+-<td>10509</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Sign in' button on the sign page</td>
+-</tr>
+-
+-<tr>
+-<td>15515</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>8266</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>11087</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>11099</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid email</td>
+-</tr>
+-
+-<tr>
+-<td>11148</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Continue with email' button</td>
+-</tr>
+-
+-<tr>
+-<td>11753</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid password</td>
+-</tr>
+-
+-<tr>
+-<td>11793</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Sign in' button on the sign page</td>
+-</tr>
+-
+-<tr>
+-<td>16808</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>776</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Failed: performSignIn</td>
+-</tr>
+-
+-<tr>
+-<td>777</td>
+-<td title="main thread">main</td>
+-<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Error Message: Cannot invoke &quot;com.sahel.booking.factory.BookingFactory.homePage()&quot; because &quot;BookingLoginTest.factory&quot; is null</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+-
+-<tr>
+-<td>7322</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User is on Booking.com homepage</td>
+-</tr>
+-
+-<tr>
+-<td>9705</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked on 'SignIn' button</td>
+-</tr>
+-
+-<tr>
+-<td>9717</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid email</td>
+-</tr>
+-
+-<tr>
+-<td>9790</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Continue with email' button</td>
+-</tr>
+-
+-<tr>
+-<td>10891</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User entered valid password</td>
+-</tr>
+-
+-<tr>
+-<td>10929</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">User clicked 'Sign in' button on the sign page</td>
+-</tr>
+-
+-<tr>
+-<td>10932</td>
+-<td title="main thread">main</td>
+-<td title="Level">INFO</td>
+-<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td title="Message">Test Passed: performSignIn</td>
+-</tr>
+-</table>
+-<br>
+-</body></html>
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># BookITAutomation\r\nBooking.com Test Automation Framework\r\nThis repository contains a test automation framework for the booking.com website. The framework is designed to automate various scenarios related to user interactions on the website using Selenium WebDriver, Java, TestNG, and the Page Object Model (POM) design pattern.\r\n\r\nTools and Frameworks Used\r\nSelenium WebDriver: A popular open-source library for automating web browsers. It provides APIs to interact with web elements, simulate user actions, and perform assertions.\r\n\r\nJava: The programming language used to write the automation scripts. Java offers a rich set of libraries, object-oriented features, and platform independence.\r\n\r\nTestNG: A testing framework that enhances and extends JUnit. It provides features like parallel test execution, grouping, and reporting.\r\n\r\nExtentReports: A reporting library that generates detailed and visually appealing test reports. It provides insights into test execution results, logs, and screenshots.\r\n\r\nPage Object Model (POM): A design pattern that separates the representation of web elements and their interactions from the test scripts. POM enhances code modularity, reusability, and maintainability.\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/README.md	(date 1693985571363)
+@@ -1,3 +1,4 @@
++
+ # BookITAutomation
+ Booking.com Test Automation Framework
+ This repository contains a test automation framework for the booking.com website. The framework is designed to automate various scenarios related to user interactions on the website using Selenium WebDriver, Java, TestNG, and the Page Object Model (POM) design pattern.
+Index: output/logs/application.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/output/logs/application.html b/log4j-reports/booking-report-logs.html
+rename from output/logs/application.html
+rename to log4j-reports/booking-report-logs.html
+--- a/output/logs/application.html	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/log4j-reports/booking-report-logs.html	(date 1693988532259)
+@@ -12,7 +12,7 @@
+ </head>
+ <body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+ <hr size="1" noshade="noshade">
+-Log session start time Wed Sep 06 00:26:47 PDT 2023<br>
++Log session start time Wed Sep 06 01:13:52 PDT 2023<br>
+ <br>
+ <table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+ <tr>
+@@ -25,7 +25,7 @@
+ </tr>
+ 
+ <tr>
+-<td>28167</td>
++<td>9258</td>
+ <td title="main thread">main</td>
+ <td title="Level">INFO</td>
+ <td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+@@ -34,7 +34,28 @@
+ </tr>
+ 
+ <tr>
+-<td>28170</td>
++<td>9261</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:71</td>
++<td title="Message">Test Passed: performSignIn</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>11452</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>BookingLoginTest.java:15</td>
++<td title="Message">User is on Booking.com homepage</td>
++</tr>
++
++<tr>
++<td>11455</td>
+ <td title="main thread">main</td>
+ <td title="Level">INFO</td>
+ <td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+Index: log4j-reports/booking-test.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/log4j-reports/booking-test.log b/log4j-reports/booking-test.log
+new file mode 100644
+--- /dev/null	(date 1693988531747)
++++ b/log4j-reports/booking-test.log	(date 1693988531747)
+@@ -0,0 +1,4 @@
++2023-09-06 01:14:00,860 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
++2023-09-06 01:14:00,863 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
++2023-09-06 01:22:11,744 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
++2023-09-06 01:22:11,747 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
+Index: src/main/java/com/sahel/booking/base/TestBase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.base;\r\n\r\nimport com.aventstack.extentreports.ExtentTest;\r\nimport com.aventstack.extentreports.Status;\r\nimport com.sahel.booking.factory.BookingFactory;\r\nimport com.sahel.booking.utilities.WebDriverUtils;\r\nimport org.apache.logging.log4j.LogManager;\r\nimport org.apache.logging.log4j.Logger;\r\nimport org.testng.ITestResult;\r\nimport org.testng.annotations.AfterMethod;\r\nimport org.testng.annotations.BeforeMethod;\r\nimport org.testng.annotations.BeforeSuite;\r\n\r\nimport java.io.IOException;\r\n\r\n\r\npublic class TestBase extends WebDriverUtils {\r\n    protected static ExtentTest test;\r\n    private static final String TEST_CATEGORY = \"Test Suite\";\r\n    private static final String TEST_AUTHOR = \"Sahel\";\r\n    private static final String TEST_DEVICE = \"Windows 11 PC,  Chrome Browser v-116\";\r\n    protected static final Logger logger = LogManager.getLogger(TestBase.class);\r\n\r\n    protected static BookingFactory factory;\r\n\r\n\r\n    @BeforeMethod\r\n    public void launchTests() throws IOException {\r\n        super.openBrowser();\r\n        factory = new BookingFactory();\r\n    }\r\n\r\n    /**\r\n     * Close WebDriver and do other teardown steps\r\n     */\r\n  //  @AfterMethod\r\n    public void tearDown() {\r\n        super.quitBrowser();\r\n    }\r\n\r\n\r\n    @BeforeSuite\r\n    public void setUpReporting() {\r\n        //Load Log4j2 configuration\r\n        System.setProperty(\"log4j.configurationFile\", \"src/main/resources/log4j2.xml\");\r\n        test = WebDriverUtils.getReport().createTest(getClass().getSimpleName());\r\n        test.assignCategory(TEST_CATEGORY);\r\n        test.assignAuthor(TEST_AUTHOR);\r\n        test.assignDevice(TEST_DEVICE);\r\n    }\r\n\r\n    /**\r\n     * creates the extent report for us\r\n     *\r\n     * @param result extent report\r\n     */\r\n    @AfterMethod\r\n    public void extentResults(ITestResult result) {\r\n        String testName = result.getName();\r\n        String methodName = result.getMethod().getMethodName();\r\n        String className = result.getTestClass().getName();\r\n        String status = getTestStatus(result.getStatus());\r\n        // Log test status and details\r\n        if (result.getStatus() == ITestResult.FAILURE) {\r\n            String errorMessage = result.getThrowable().getMessage();\r\n            logger.error(\"Test Failed: {}\", methodName);\r\n            logger.error(\"Error Message: {}\", errorMessage);\r\n            test.log(Status.FAIL, \"Test Failed: \" + methodName);\r\n            test.log(Status.FAIL, \"Error Message: \" + errorMessage);\r\n        } else if (result.getStatus() == ITestResult.SUCCESS) {\r\n            logger.info(\"Test Passed: {}\", methodName);\r\n            test.log(Status.PASS, \"Test Passed: \" + methodName);\r\n        } else if (result.getStatus() == ITestResult.SKIP) {\r\n            logger.info(\"Test Skipped: {}\", methodName);\r\n            test.log(Status.SKIP, \"Test Skipped: \" + methodName);\r\n        }\r\n\r\n        // Add more detailed information to the report\r\n        test.info(\"Test Class: \" + className);\r\n        test.info(\"Test Name: \" + testName);\r\n        test.info(\"Test Status: \" + status);\r\n\r\n    }\r\n\r\n    // Helper method to convert test status to readable text\r\n    private String getTestStatus(int status) {\r\n        return switch (status) {\r\n            case ITestResult.FAILURE -> \"Failed\";\r\n            case ITestResult.SUCCESS -> \"Passed\";\r\n            case ITestResult.SKIP -> \"Skipped\";\r\n            default -> \"Unknown\";\r\n        };\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/base/TestBase.java b/src/main/java/com/sahel/booking/base/TestBase.java
+--- a/src/main/java/com/sahel/booking/base/TestBase.java	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/src/main/java/com/sahel/booking/base/TestBase.java	(date 1693987196070)
+@@ -33,7 +33,7 @@
+     /**
+      * Close WebDriver and do other teardown steps
+      */
+-  //  @AfterMethod
++    @AfterMethod
+     public void tearDown() {
+         super.quitBrowser();
+     }
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>com.sahel.booking</groupId>\r\n    <artifactId>BookingAutomation</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>17</maven.compiler.source>\r\n        <maven.compiler.target>17</maven.compiler.target>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->\r\n        <dependency>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n            <artifactId>maven-compiler-plugin</artifactId>\r\n            <version>3.11.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->\r\n        <dependency>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n            <artifactId>maven-resources-plugin</artifactId>\r\n            <version>3.3.1</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.testng/testng -->\r\n        <dependency>\r\n            <groupId>org.testng</groupId>\r\n            <artifactId>testng</artifactId>\r\n            <version>7.8.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->\r\n        <dependency>\r\n            <groupId>org.seleniumhq.selenium</groupId>\r\n            <artifactId>selenium-java</artifactId>\r\n            <version>4.11.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->\r\n        <dependency>\r\n            <groupId>io.github.bonigarcia</groupId>\r\n            <artifactId>webdrivermanager</artifactId>\r\n            <version>5.5.0</version>\r\n        </dependency>\r\n\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->\r\n        <dependency>\r\n            <groupId>org.apache.logging.log4j</groupId>\r\n            <artifactId>log4j-core</artifactId>\r\n            <version>2.20.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->\r\n        <dependency>\r\n            <groupId>com.aventstack</groupId>\r\n            <artifactId>extentreports</artifactId>\r\n            <version>5.1.0</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>com.aventstack</groupId>\r\n            <artifactId>extentreports-testng-adapter</artifactId>\r\n            <version>1.2.2</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.apache.logging.log4j</groupId>\r\n            <artifactId>log4j-api</artifactId>\r\n            <version>2.20.0</version>\r\n        </dependency>\r\n    </dependencies>\r\n    <build>\r\n        <plugins>\r\n\r\n            <!-- Maven Surefire Plugin -->\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-surefire-plugin</artifactId>\r\n                <version>3.0.0-M5</version> <!-- Use a compatible version with your Maven version -->\r\n                <configuration>\r\n                    <suiteXmlFiles>\r\n                        <suiteXmlFile>\r\n                            C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\testng-xml-files\\testng.xml\r\n                        </suiteXmlFile>\r\n                    </suiteXmlFiles>\r\n                </configuration>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-compiler-plugin</artifactId>\r\n                <version>3.11.0</version> <!-- Use a compatible version -->\r\n                <configuration>\r\n                    <source>17</source>\r\n                    <target>17</target>\r\n                </configuration>\r\n            </plugin>\r\n        </plugins>\r\n    </build>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/pom.xml	(date 1693987608580)
+@@ -9,8 +9,8 @@
+     <version>1.0-SNAPSHOT</version>
+ 
+     <properties>
+-        <maven.compiler.source>17</maven.compiler.source>
+-        <maven.compiler.target>17</maven.compiler.target>
++        <maven.compiler.source>18</maven.compiler.source>
++        <maven.compiler.target>18</maven.compiler.target>
+         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+     </properties>
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e983239e-c951-4741-8f6d-0fc2efb3d0f9\" name=\"Changes\" comment=\"Test Harness Ready\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/BookingLoginTest.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/SignInPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/SignInPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/SmokeTest.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/extent-reports/index.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/extent-reports/index.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"Sahel92 &lt;m.sahel.sadiq0526@outlook.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;Sahel92&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"3dfe06ab-8cd5-4d18-b2f2-032a173b9438\" />\r\n        <option name=\"url\" value=\"https://github.com/Sahel92/BookITAutomation.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0-sources.jar!/org/testng/ITestListener.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2ULU0RwHIq9oWKCrzoxJaXxfgzj\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/log4j-reports&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\log4j-reports\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\testng-xml-files\" />\r\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunAnythingCache\">\r\n    <option name=\"myCommands\">\r\n      <command value=\"mvn package -Dmaven.plugin.validation=brief\" />\r\n      <command value=\"mvn install\" />\r\n      <command value=\"mvn clean install\" />\r\n      <command value=\"mvn test\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml\">\r\n    <configuration name=\"BookingAutomation [org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test]\" type=\"MavenRunConfiguration\" factoryName=\"Maven\">\r\n      <MavenSettings>\r\n        <option name=\"myGeneralSettings\">\r\n          <MavenGeneralSettings>\r\n            <option name=\"alwaysUpdateSnapshots\" value=\"false\" />\r\n            <option name=\"checksumPolicy\" value=\"NOT_SET\" />\r\n            <option name=\"emulateTerminal\" value=\"false\" />\r\n            <option name=\"failureBehavior\" value=\"NOT_SET\" />\r\n            <option name=\"localRepository\" value=\"\" />\r\n            <option name=\"mavenHome\" value=\"Bundled (Maven 3)\" />\r\n            <option name=\"nonRecursive\" value=\"false\" />\r\n            <option name=\"outputLevel\" value=\"INFO\" />\r\n            <option name=\"printErrorStackTraces\" value=\"false\" />\r\n            <option name=\"showDialogWithAdvancedSettings\" value=\"false\" />\r\n            <option name=\"threads\" />\r\n            <option name=\"useMavenConfig\" value=\"true\" />\r\n            <option name=\"usePluginRegistry\" value=\"false\" />\r\n            <option name=\"userSettingsFile\" value=\"\" />\r\n            <option name=\"workOffline\" value=\"false\" />\r\n          </MavenGeneralSettings>\r\n        </option>\r\n        <option name=\"myRunnerSettings\">\r\n          <MavenRunnerSettings>\r\n            <option name=\"delegateBuildToMaven\" value=\"false\" />\r\n            <option name=\"environmentProperties\">\r\n              <map />\r\n            </option>\r\n            <option name=\"jreName\" value=\"#USE_PROJECT_JDK\" />\r\n            <option name=\"mavenProperties\">\r\n              <map />\r\n            </option>\r\n            <option name=\"passParentEnv\" value=\"true\" />\r\n            <option name=\"runMavenInBackground\" value=\"true\" />\r\n            <option name=\"skipTests\" value=\"false\" />\r\n            <option name=\"vmOptions\" value=\"\" />\r\n          </MavenRunnerSettings>\r\n        </option>\r\n        <option name=\"myRunnerParameters\">\r\n          <MavenRunnerParameters>\r\n            <option name=\"cmdOptions\" />\r\n            <option name=\"profiles\">\r\n              <set />\r\n            </option>\r\n            <option name=\"goals\">\r\n              <list>\r\n                <option value=\"org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test\" />\r\n              </list>\r\n            </option>\r\n            <option name=\"pomFileName\" value=\"pom.xml\" />\r\n            <option name=\"profilesMap\">\r\n              <map />\r\n            </option>\r\n            <option name=\"projectsCmdOptionValues\">\r\n              <list />\r\n            </option>\r\n            <option name=\"resolveToWorkspace\" value=\"false\" />\r\n            <option name=\"workingDirPath\" value=\"$PROJECT_DIR$\" />\r\n          </MavenRunnerParameters>\r\n        </option>\r\n      </MavenSettings>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"BookingLoginTest.performSignIn\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"BookingLoginTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"performSignIn\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"BookingLoginTest.test1\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"BookingLoginTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"C:/Users/msahe/IdeaProjects/BookingAutomation/testng.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/testng.xml\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"&lt;default&gt;\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"PACKAGE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml\" />\r\n        <item itemvalue=\"TestNG.BookingLoginTest.performSignIn\" />\r\n        <item itemvalue=\"TestNG.BookingLoginTest.test1\" />\r\n        <item itemvalue=\"TestNG.&lt;default&gt;\" />\r\n        <item itemvalue=\"TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/testng.xml\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e983239e-c951-4741-8f6d-0fc2efb3d0f9\" name=\"Changes\" comment=\"\" />\r\n      <created>1692718130805</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1692718130805</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Added Browser classes &amp; DriverFactory Class\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692757052264</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692757052264</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Implementing ExtentReports\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692771341672</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692771341672</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692779611949</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692779611949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"reporters working properly\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692823147740</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692823147740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Added Logger, fixed report fixed pom xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692841989416</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692841989416</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Added WebDriverUtils Methods :)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692852705247</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692852705247</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"BookingFactory to initialize POM classes and UI elements.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692911873549</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692911873549</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692939987084</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692939987084</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692943226013</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692943226013</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692944465674</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692944465674</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692945977728</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692945977728</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692948030132</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692948030132</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692962171359</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692962171359</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Added Browser classes &amp; DriverFactory Class\" />\r\n    <MESSAGE value=\"Implementing ExtentReports\" />\r\n    <MESSAGE value=\"Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing.\" />\r\n    <MESSAGE value=\"reporters working properly\" />\r\n    <MESSAGE value=\"Added Logger, fixed report fixed pom xml\" />\r\n    <MESSAGE value=\"Added WebDriverUtils Methods :)\" />\r\n    <MESSAGE value=\"BookingFactory to initialize POM classes and UI elements.\" />\r\n    <MESSAGE value=\"Test Harness Ready\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Test Harness Ready\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/.idea/workspace.xml	(date 1693988638069)
+@@ -5,20 +5,29 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Test Harness Ready">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/log4j-reports/booking-test.log" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/output/logs/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/log4j-reports/booking-report-logs.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/output/logs/testlog.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/output/logs/testlog1.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/SignInPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/SmokeTest.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-24.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-24.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -49,7 +58,7 @@
+   <component name="GithubPullRequestsUISettings">
+     <option name="selectedUrlAndAccountId">
+       <UrlAndAccount>
+-        <option name="accountId" value="3dfe06ab-8cd5-4d18-b2f2-032a173b9438" />
++        <option name="accountId" value="8f1b8192-28ea-483c-a857-e6d1648e684f" />
+         <option name="url" value="https://github.com/Sahel92/BookITAutomation.git" />
+       </UrlAndAccount>
+     </option>
+@@ -60,8 +69,15 @@
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
++  <component name="MavenImportPreferences">
++    <option name="generalSettings">
++      <MavenGeneralSettings>
++        <option name="useMavenConfig" value="true" />
++      </MavenGeneralSettings>
++    </option>
++  </component>
+   <component name="ProblemsViewState">
+-    <option name="selectedTabId" value="ProjectErrors" />
++    <option name="selectedTabId" value="CurrentFile" />
+   </component>
+   <component name="ProjectId" id="2ULU0RwHIq9oWKCrzoxJaXxfgzj" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+@@ -71,21 +87,22 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/log4j-reports&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ASKED_ADD_EXTERNAL_FILES": "true",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
++    "git-widget-placeholder": "master",
++    "ignore.virus.scanning.warn.message": "true",
++    "last_opened_file_path": "C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/log4j-reports",
++    "project.structure.last.edited": "SDKs",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "configurable.group.appearance"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\log4j-reports" />
+@@ -98,8 +115,8 @@
+   <component name="RunAnythingCache">
+     <option name="myCommands">
+       <command value="mvn package -Dmaven.plugin.validation=brief" />
+-      <command value="mvn install" />
+       <command value="mvn clean install" />
++      <command value="mvn install" />
+       <command value="mvn test" />
+     </option>
+   </component>
+@@ -116,6 +133,7 @@
+             <option name="mavenHome" value="Bundled (Maven 3)" />
+             <option name="nonRecursive" value="false" />
+             <option name="outputLevel" value="INFO" />
++            <option name="pluginUpdatePolicy" value="DEFAULT" />
+             <option name="printErrorStackTraces" value="false" />
+             <option name="showDialogWithAdvancedSettings" value="false" />
+             <option name="threads" />
+@@ -143,7 +161,6 @@
+         </option>
+         <option name="myRunnerParameters">
+           <MavenRunnerParameters>
+-            <option name="cmdOptions" />
+             <option name="profiles">
+               <set />
+             </option>
+@@ -155,9 +172,6 @@
+             <option name="pomFileName" value="pom.xml" />
+             <option name="profilesMap">
+               <map />
+-            </option>
+-            <option name="projectsCmdOptionValues">
+-              <list />
+             </option>
+             <option name="resolveToWorkspace" value="false" />
+             <option name="workingDirPath" value="$PROJECT_DIR$" />
+@@ -351,7 +365,19 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="origin/BOOK-1-User-Story-1-Setup-Framework-Priority-High" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
+           </value>
+         </entry>
+       </map>
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ExternalStorageConfigurationManager\" enabled=\"true\" />\r\n  <component name=\"MavenProjectsManager\">\r\n    <option name=\"originalFiles\">\r\n      <list>\r\n        <option value=\"$PROJECT_DIR$/pom.xml\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_17\" default=\"true\" project-jdk-name=\"17\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision af07264676451e558008b70124ea90ce695c1f33)
++++ b/.idea/misc.xml	(date 1693728726329)
+@@ -8,7 +8,7 @@
+       </list>
+     </option>
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
