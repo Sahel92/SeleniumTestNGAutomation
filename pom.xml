@@ -86,7 +86,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\testng-xml-files\testng.xml
+                            C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\testng-xml-files\search-test.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>

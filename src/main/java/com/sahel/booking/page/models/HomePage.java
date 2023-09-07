@@ -11,14 +11,23 @@ public class HomePage extends WebDriverUtils {
         PageFactory.initElements(getDriver(), this);
     }
 
-    /***
-     * LOGIN
-     */
+
     @FindBy(xpath = "//button[@aria-label = 'Dismiss sign-in info.']")
     private WebElement modalExitButton; // exit button for the modal window that appears when opening Booking.com
 
     @FindBy(css = "a[data-testid ='header-sign-in-button']")
     private WebElement homePageSignInButton; // Homepage 'SignIn' button
+
+    @FindBy(xpath = "//input[@placeholder = 'Where are you going?']")
+    public WebElement locationSearchBox;
+
+    @FindBy(xpath = "//button[@type = 'button' and @data-testid ='date-display-field-start']")
+    public WebElement datePicker;
+
+
+
+
+
 
     /**
      * Clicks on SignIn Button
@@ -32,14 +41,8 @@ public class HomePage extends WebDriverUtils {
      * closes the modal dialog box
      */
     private void closeModal() {
-        if(isElementDisplayed(modalExitButton)) click(modalExitButton);
+        if (isElementDisplayed(modalExitButton)) click(modalExitButton);
     }
-// END LOGIN
-
-
-    // SEARCH FUNCTIONALITIES
-
-
 
 
 }

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Smoke Suite">
+<suite name="Login Test">
     <listeners>
         <listener class-name="com.sahel.booking.utilities.ExtentTestNGListeners"/>
     </listeners>
 
     <test name="Login-Test">
+
         <parameter name="email" value="bookingautomationtesting25@gmail.com"/>
         <parameter name="password" value="Tester98031$"/>
         <classes>
             <class name="BookingLoginTest"/>
         </classes>
+        -->
         <!-- Add more test classes as needed -->
 
     </test>

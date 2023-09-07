@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke">
+    <listeners>
+        <listener class-name="com.sahel.booking.utilities.ExtentTestNGListeners"/>
+    </listeners>
+
+    <test name="SearchFunctionality">
+
+
+        <classes>
+            <class name="SearchFunctionalityTest"/>
+        </classes>
+        -->
+        <!-- Add more test classes as needed -->
+
+    </test>
+
+    <!-- ... Define more <test> blocks and configurations ... -->
+
+</suite>

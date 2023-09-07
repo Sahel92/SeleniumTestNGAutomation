@@ -5,6 +5,7 @@ import com.sahel.booking.page.models.SignInPage;
 
 public class BookingFactory{
 
+    // This class instantiates my page object model classes.
     private final HomePage homePage;
     private final SignInPage signInPage;
 
