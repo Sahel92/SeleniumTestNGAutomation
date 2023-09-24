@@ -1,83 +1,87 @@
-2023-08-25 00:20:57.044 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
-2023-08-25 00:21:01.417 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 03:22:32.216 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
-2023-08-25 03:22:36.042 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 03:27:54.737 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
-2023-08-25 03:27:57.642 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 03:31:00.512 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
-2023-08-25 03:31:02.840 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 03:33:34.533 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
-2023-08-25 03:33:39.886 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 03:33:52.805 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
-2023-08-25 03:33:56.517 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 03:35:53.372 - com.sahel.booking.base.TestBase - INFO - Smoke Testing Commencing
-2023-08-25 03:35:57.128 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 04:52:49.722 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-25 04:52:52.649 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-25 04:52:52.652 - com.sahel.booking.base.TestBase - INFO - Test Passed: test1
-2023-08-25 11:53:56.647 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-25 11:54:04.395 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-25 11:54:04.397 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
-2023-08-25 11:54:40.187 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-25 11:54:42.836 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-25 11:54:42.839 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
-2023-08-25 13:32:18.726 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-25 13:32:28.958 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
-2023-08-25 13:32:28.958 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+2023-09-23 17:28:13.239 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:28:32.237 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:28:49.218 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:30:18.990 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:39:12.910 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:39:40.732 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:41:26.993 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:43:33.852 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:53:28.018 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:54:04.067 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:54:53.393 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:56:24.603 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 17:56:24.605 - com.sahel.booking.base.TestBase - ERROR - Error Message: class jdk.proxy2.$Proxy32 cannot be cast to class org.openqa.selenium.WebElement (jdk.proxy2.$Proxy32 is in module jdk.proxy2 of loader 'app'; org.openqa.selenium.WebElement is in unnamed module of loader 'app')
+2023-09-23 17:57:43.534 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 17:58:21.788 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:02:28.598 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:02:51.040 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:03:01.324 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:10:29.637 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 18:10:29.639 - com.sahel.booking.base.TestBase - ERROR - Error Message: class org.openqa.selenium.support.ui.ExpectedConditions$9 cannot be cast to class org.openqa.selenium.WebElement (org.openqa.selenium.support.ui.ExpectedConditions$9 and org.openqa.selenium.WebElement are in unnamed module of loader 'app')
+2023-09-23 18:13:38.854 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:15:14.045 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 18:15:14.046 - com.sahel.booking.base.TestBase - ERROR - Error Message: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-33-generic', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a02edbc1ec6ec5d6fea3270d15bb7fd5, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61247}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61247/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a02edbc1ec6ec5d6fea3270d15bb7fd5
-2023-08-25 15:32:15.100 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-25 15:32:19.364 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-25 15:32:19.377 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
-2023-08-25 23:46:22.515 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-25 23:46:28.160 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-25 23:46:28.167 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
-2023-08-26 00:32:00.033 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-26 00:32:03.079 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-26 00:32:03.093 - com.sahel.booking.base.TestBase - INFO - User entered valid email
-2023-08-26 00:32:13.199 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
-2023-08-26 00:32:13.199 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"css selector","selector":"#password"}
-  (Session info: chrome=116.0.5845.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Command: [f0b19e0e4d035bbf92d3b58e91e749da, getElementText {id=113E365A3506A3E5462F0A8558FF7ED9_element_145}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40567}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40567/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (f0b19e0e4d035bbf92d3b58e91e749da)] -> xpath: //li[@class = 'a80e7dc237']]
+Session ID: f0b19e0e4d035bbf92d3b58e91e749da
+2023-09-23 18:15:55.118 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 18:15:55.119 - com.sahel.booking.base.TestBase - ERROR - Error Message: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-33-generic', java.version: '20.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [55124d49ce25ab165fe68d79f33dc92b, findElement {using=id, value=password}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.111, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\msahe\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65361/devtoo..., se:cdpVersion: 116.0.5845.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 55124d49ce25ab165fe68d79f33dc92b
-2023-08-26 00:37:45.643 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-26 00:37:48.515 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-26 00:37:48.529 - com.sahel.booking.base.TestBase - INFO - User entered valid email
-2023-08-26 00:37:48.581 - com.sahel.booking.base.TestBase - INFO - User clicked 'Continue with email' button
-2023-08-26 00:37:49.241 - com.sahel.booking.base.TestBase - INFO - User entered valid password
-2023-08-26 00:37:49.286 - com.sahel.booking.base.TestBase - INFO - User clicked 'Sign in' button on the sign page
-2023-08-26 00:37:54.295 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
-2023-08-26 00:39:54.551 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-26 00:39:58.842 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-26 00:39:58.854 - com.sahel.booking.base.TestBase - INFO - User entered valid email
-2023-08-26 00:39:58.899 - com.sahel.booking.base.TestBase - INFO - User clicked 'Continue with email' button
-2023-08-26 00:39:58.909 - com.sahel.booking.base.TestBase - INFO - User entered valid password
-2023-08-26 00:39:58.942 - com.sahel.booking.base.TestBase - INFO - User clicked 'Sign in' button on the sign page
-2023-08-26 00:40:03.948 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
-2023-08-26 00:42:03.264 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-26 00:42:06.085 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-26 00:42:06.097 - com.sahel.booking.base.TestBase - INFO - User entered valid email
-2023-08-26 00:42:06.146 - com.sahel.booking.base.TestBase - INFO - User clicked 'Continue with email' button
-2023-08-26 00:42:06.751 - com.sahel.booking.base.TestBase - INFO - User entered valid password
-2023-08-26 00:42:06.791 - com.sahel.booking.base.TestBase - INFO - User clicked 'Sign in' button on the sign page
-2023-08-26 00:42:11.806 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
-2023-08-26 00:42:46.778 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
-2023-08-26 00:42:46.779 - com.sahel.booking.base.TestBase - ERROR - Error Message: Cannot invoke "com.sahel.booking.factory.BookingFactory.homePage()" because "BookingLoginTest.factory" is null
-2023-08-26 00:43:07.531 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
-2023-08-26 00:43:09.914 - com.sahel.booking.base.TestBase - INFO - User clicked on 'SignIn' button
-2023-08-26 00:43:09.926 - com.sahel.booking.base.TestBase - INFO - User entered valid email
-2023-08-26 00:43:09.999 - com.sahel.booking.base.TestBase - INFO - User clicked 'Continue with email' button
-2023-08-26 00:43:11.100 - com.sahel.booking.base.TestBase - INFO - User entered valid password
-2023-08-26 00:43:11.138 - com.sahel.booking.base.TestBase - INFO - User clicked 'Sign in' button on the sign page
-2023-08-26 00:43:11.141 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
+Command: [381ad03d0a5307f85dd7485cc0f9cf67, getElementText {id=8A9A3BD6E5225447700DF33CC1F411E8_element_137}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34167}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34167/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (381ad03d0a5307f85dd7485cc0f9cf67)] -> xpath: //li[@class = 'a80e7dc237']]
+Session ID: 381ad03d0a5307f85dd7485cc0f9cf67
+2023-09-23 18:16:34.874 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 18:16:34.876 - com.sahel.booking.base.TestBase - ERROR - Error Message: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-33-generic', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [05aabfd5cab8a729848d2f570aacfa28, getElementText {id=EDC8A0115703784BCD44107EF6C4EE14_element_201}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36953}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36953/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (05aabfd5cab8a729848d2f570aacfa28)] -> xpath: //li[@class = 'a80e7dc237']]
+Session ID: 05aabfd5cab8a729848d2f570aacfa28
+2023-09-23 18:17:43.326 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 18:17:43.328 - com.sahel.booking.base.TestBase - ERROR - Error Message: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-33-generic', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [082cc786ee2fdf5309f8a79ac62f5936, getElementText {id=D603F1D72CF987B56E85E83E27AB8E4C_element_128}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34417}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34417/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (082cc786ee2fdf5309f8a79ac62f5936)] -> xpath: //li[@class = 'a80e7dc237']]
+Session ID: 082cc786ee2fdf5309f8a79ac62f5936
+2023-09-23 18:21:22.626 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:25:12.827 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 18:25:12.828 - com.sahel.booking.base.TestBase - ERROR - Error Message: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.88)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.2.0-33-generic', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a9d2e3e5b9942694567f7d5a4a825363, getElementText {id=4129A1DD1645AE3538BA4A7684576F7A_element_133}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.88, chrome: {chromedriverVersion: 117.0.5938.92 (67649b10b92b..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:45189}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:45189/devtoo..., se:cdpVersion: 117.0.5938.88, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (a9d2e3e5b9942694567f7d5a4a825363)] -> xpath: //li[@class = 'a80e7dc237']]
+Session ID: a9d2e3e5b9942694567f7d5a4a825363
+2023-09-23 18:26:31.994 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:26:52.800 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:27:12.982 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:28:07.614 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:28:42.561 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:33:25.593 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:33:44.254 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-23 18:34:01.446 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-23 18:34:01.447 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Booking.com: Hotels in Athens. Book your hotel now!] but found [Booking.com: Hotels in Las Vegas. Book your hotel now!]
+2023-09-23 18:34:29.949 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination

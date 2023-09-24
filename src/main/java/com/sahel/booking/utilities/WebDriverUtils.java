@@ -7,10 +7,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.*;
 
 import java.time.Duration;
+import java.util.List;
 import java.util.Set;
 
 public class WebDriverUtils extends DriverFactory {
-    static final int WEB_DRIVER_WAIT = 15;
+    static final int WEB_DRIVER_WAIT = 10;
 
     /**
      * Returns a WebDriverWait instance with the given duration in seconds.

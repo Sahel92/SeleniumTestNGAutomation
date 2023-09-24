@@ -1,0 +1,88 @@
+2023-09-11 09:32:49.097 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-11 09:32:59.234 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-11 09:32:59.234 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b85c89405034133748fe716c2672fd10, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62329}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62329/devtoo..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b85c89405034133748fe716c2672fd10
+2023-09-11 11:33:12.959 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-11 11:33:23.663 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-11 11:33:23.664 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [66c48383003adbf554db45e555a2ddf7, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62536}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62536/devtoo..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 66c48383003adbf554db45e555a2ddf7
+2023-09-11 13:33:10.654 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-11 13:33:20.719 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-11 13:33:20.720 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ebc21acac53cee89e67cec21baae9c55, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51727}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51727/devtoo..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebc21acac53cee89e67cec21baae9c55
+2023-09-11 15:33:11.810 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-11 15:33:21.899 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-11 15:33:21.899 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cea2d0479a72225720b61b9db774e8b, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56824/devtoo..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cea2d0479a72225720b61b9db774e8b
+2023-09-12 09:33:20.513 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-12 09:33:30.546 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-12 09:33:30.547 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.187)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a965371b5c71259f6ab118974900afec, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.187, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63833/devtoo..., se:cdpVersion: 116.0.5845.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a965371b5c71259f6ab118974900afec
+2023-09-12 11:33:13.190 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-12 11:33:23.290 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-12 11:33:23.291 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.187)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [84ad0a16f3d07371f64d576388365784, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.187, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52719}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52719/devtoo..., se:cdpVersion: 116.0.5845.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 84ad0a16f3d07371f64d576388365784
+2023-09-12 13:33:05.946 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-12 13:33:15.983 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-12 13:33:15.983 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d40a727e093e7cb90d44dd5b0fc2b0c, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58631/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4d40a727e093e7cb90d44dd5b0fc2b0c
+2023-09-12 15:33:29.620 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+2023-09-12 15:33:40.211 - com.sahel.booking.base.TestBase - ERROR - Test Failed: performSignIn
+2023-09-12 15:33:40.212 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+  (Session info: chrome=116.0.5845.188)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed64ac7ee3851c8a855921e70a07d015, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65473/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed64ac7ee3851c8a855921e70a07d015

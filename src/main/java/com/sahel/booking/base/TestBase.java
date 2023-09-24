@@ -33,7 +33,7 @@ public class TestBase extends WebDriverUtils {
     /**
      * Close WebDriver and do other teardown steps
      */
-  //  @AfterMethod
+ //   @AfterMethod
     public void tearDown() {
         super.quitBrowser();
     }
