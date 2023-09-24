@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Login Functionalities cannot be automated dur to captcha challenge." />
+    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Login Functionalities cannot be automated dur to captcha challenge.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -376,7 +379,9 @@
     <MESSAGE value="BookingFactory to initialize POM classes and UI elements." />
     <MESSAGE value="Test Harness Ready" />
     <MESSAGE value="Login Functionalities cannot be automated dur to captcha challenge." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Functionalities cannot be automated dur to captcha challenge." />
+    <MESSAGE value="Search Functionality Test" />
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

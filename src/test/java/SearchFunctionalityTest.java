@@ -11,4 +11,5 @@ public class SearchFunctionalityTest extends TestBase {
         logger.info("User searched for desired destination");
     }
 
+
 }
