@@ -6,3 +6,21 @@
 2023-09-24 02:14:17,921 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
 2023-09-24 02:15:08,808 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
 2023-09-24 02:15:08,812 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-24 15:37:44,060 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
+2023-09-24 15:37:44,065 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-24 15:38:05,813 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
+2023-09-24 15:38:05,818 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-24 15:40:06,764 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
+2023-09-24 15:40:06,769 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-24 15:41:52,723 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
+2023-09-24 15:41:52,728 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-24 16:11:35,922 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
+2023-09-24 16:11:35,938 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-24 16:27:54,961 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-24 16:27:54,963 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Booking.com: Hotels in Athens. Book your hotel now!] but found [10 Best Athens Hotels, Greece (From $35)]
+2023-09-24 16:28:13,146 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
+2023-09-24 16:28:13,147 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Booking.com: Hotels in Athens. Book your hotel now!] but found [10 Best Athens Hotels, Greece (From $35)]
+2023-09-24 16:29:07,891 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
+2023-09-24 16:29:07,906 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2023-09-24 16:29:41,922 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
+2023-09-24 16:29:41,937 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination

@@ -89,7 +89,7 @@ public class DriverFactory {
     /**
      * Retrieves the value of a property from the properties file.
      *
-     * @param propertyKey-Key The key of the property to retrieve.
+     * @param propertyKey
      * @return The value of the specified property.
      * @throws IOException If an I/O error occurs while loading the properties file.
      */
