@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Merge" />
+    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog-2023-09-23.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/Booking_Test_Logs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/Booking_Test_Logs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,8 +97,8 @@
     <option name="myCommands">
       <command value="mvn package -Dmaven.plugin.validation=brief" />
       <command value="mvn install" />
-      <command value="mvn clean install" />
       <command value="mvn test" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunManager" selected="TestNG.SearchFunctionalityTest.searchDestination">
