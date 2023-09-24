@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/ChromeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/ChromeBrowser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
