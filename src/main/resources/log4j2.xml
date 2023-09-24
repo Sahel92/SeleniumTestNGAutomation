@@ -4,17 +4,21 @@
         <Console name="CONSOLE" target="SYSTEM_OUT">
             <PatternLayout pattern="%5p [%t] (%F:%L) - %m%n"/>
         </Console>
-        <RollingFile name="R" fileName="./output/logs/testlog.log" filePattern="./output/logs/testlog-%d{yyyy-MM-dd}.log">
+        <RollingFile name="R" fileName="src/test/resources/log4j-reports/testlog.log" filePattern="src/test/resources/log4j-reports/testlog-%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d - %c - %p - %m%n"/>
             <Policies>
-                <TimeBasedTriggeringPolicy/>
+                <TimeBasedTriggeringPolicy/>in	INFO	com.sahel.booking.base.TestBase	SearchFunctionalityTest.java:11	User searched for desired destination
+6456	main	INFO	com.sahel.booking.base.TestBase	TestBase.java:71	Test Passed: searchDestination
+
             </Policies>
             <DefaultRolloverStrategy max="10"/>
         </RollingFile>
-        <File name="HTML" fileName="./output/logs/Booking_Test_Logs.html">
+        <File name="HTML" fileName="src/test/resources/log4j-reports/Booking_Test_Logs.html">
             <HTMLLayout title="Application log" locationInfo="true"/>
         </File>
-    </Appenders>
+    </Appenders>in	INFO	com.sahel.booking.base.TestBase	SearchFunctionalityTest.java:11	User searched for desired destination
+6456	main	INFO	com.sahel.booking.base.TestBase	TestBase.java:71	Test Passed: searchDestination
+
     <Loggers>
         <Root level="INFO">
             <AppenderRef ref="CONSOLE"/>

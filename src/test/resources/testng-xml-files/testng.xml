@@ -5,11 +5,10 @@
         <listener class-name="com.sahel.booking.utilities.ExtentTestNGListeners"/>
     </listeners>
 
-    <test name="Login-Test">
-     <!--   <parameter name="email" value=""/> -->
-     <!--   <parameter name="password" value=""/> -->
+    <test name="Search Functionality">
+
         <classes>
-          <!---  <class name="BookingLoginTest"/> -->
+         <class name="SearchFunctionalityTest"></class>
 
         </classes>
         <!-- Add more test classes as needed -->

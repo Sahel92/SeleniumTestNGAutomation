@@ -17,8 +17,8 @@ import java.io.IOException;
 public class TestBase extends WebDriverUtils {
     protected static ExtentTest test;
     private static final String TEST_CATEGORY = "Test Suite";
-    private static final String TEST_AUTHOR = "Sahel";
-    private static final String TEST_DEVICE = "Windows 11 PC,  Chrome Browser v-116";
+    private static final String TEST_AUTHOR = "SahelAutomationEngineer";
+    private static final String TEST_DEVICE = "Ubuntu 22.04, Chrome Browser v-117";
     protected static final Logger logger = LogManager.getLogger(TestBase.class);
 
     protected static BookingFactory factory;
@@ -33,7 +33,7 @@ public class TestBase extends WebDriverUtils {
     /**
      * Close WebDriver and do other teardown steps
      */
- //   @AfterMethod
+    @AfterMethod
     public void tearDown() {
         super.quitBrowser();
     }
