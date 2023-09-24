@@ -5,38 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Merge">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/Booking_Test_Logs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/log4j-reports/Booking_Test_Logs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/log4j-reports/testlog.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_6_2023_10_45_PM_[Changes]1/screenshot_20230906_224409.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_6_2023_10_45_PM_[Changes]1/screenshot_20230906_224412.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_6_2023_10_45_PM_[Changes]1/screenshot_20230906_224414.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_6_2023_10_45_PM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_6_2023_10_45_PM__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-09-08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-09-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-24.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-26.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-29.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-09-08.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-09-13.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/qa_env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/qa_env.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
