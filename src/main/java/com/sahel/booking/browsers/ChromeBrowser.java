@@ -13,6 +13,7 @@ public class ChromeBrowser {
         ChromeOptions chromeOptions = new ChromeOptions();
         if ("true".equalsIgnoreCase(headless)) {
             chromeOptions.addArguments("--headless");
+            chromeOptions.addArguments("--remote-allow-origins=*");
         }
         return new ChromeDriver(chromeOptions);
 

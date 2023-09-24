@@ -6,13 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Merge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/ChromeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/ChromeBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/EdgeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/EdgeBrowser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/qa_env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/qa_env.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/Booking_Test_Logs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/Booking_Test_Logs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -424,7 +418,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BookingAutomation$_default___1_.ic" NAME="&lt;default&gt; (1) Coverage Results" MODIFIED="1695595199280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/BookingAutomation$SearchFunctionalityTest.ic" NAME="SearchFunctionalityTest Coverage Results" MODIFIED="1695597087120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/BookingAutomation$SearchFunctionalityTest.ic" NAME="SearchFunctionalityTest Coverage Results" MODIFIED="1695598173985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/BookingAutomation$_default_.ic" NAME="&lt;default&gt; Coverage Results" MODIFIED="1695595078331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/BookingAutomation$_default___2_.ic" NAME="&lt;default&gt; (2) Coverage Results" MODIFIED="1695595305313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/BookingAutomation$SearchFunctionalityTest_searchDestination.ic" NAME="SearchFunctionalityTest.searchDestination Coverage Results" MODIFIED="1695598066272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
