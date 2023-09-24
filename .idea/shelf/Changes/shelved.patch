@@ -1,0 +1,380 @@
+Index: src/main/java/com/sahel/booking/base/TestBase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.base;\n\nimport com.aventstack.extentreports.ExtentTest;\nimport com.aventstack.extentreports.Status;\nimport com.sahel.booking.factory.BookingFactory;\nimport com.sahel.booking.utilities.WebDriverUtils;\nimport org.apache.logging.log4j.LogManager;\nimport org.apache.logging.log4j.Logger;\nimport org.testng.ITestResult;\nimport org.testng.annotations.AfterMethod;\nimport org.testng.annotations.BeforeMethod;\nimport org.testng.annotations.BeforeSuite;\n\nimport java.io.IOException;\n\n\npublic class TestBase extends WebDriverUtils {\n    protected static ExtentTest test;\n    private static final String TEST_CATEGORY = \"Test Suite\";\n    private static final String TEST_AUTHOR = \"Sahel\";\n    private static final String TEST_DEVICE = \"Windows 11 PC,  Chrome Browser v-116\";\n    protected static final Logger logger = LogManager.getLogger(TestBase.class);\n\n    protected static BookingFactory factory;\n\n\n    @BeforeMethod\n    public void launchTests() throws IOException {\n        super.openBrowser();\n        factory = new BookingFactory();\n    }\n\n    /**\n     * Close WebDriver and do other teardown steps\n     */\n //   @AfterMethod\n    public void tearDown() {\n        super.quitBrowser();\n    }\n\n\n    @BeforeSuite\n    public void setUpReporting() {\n        //Load Log4j2 configuration\n        System.setProperty(\"log4j.configurationFile\", \"src/main/resources/log4j2.xml\");\n        test = WebDriverUtils.getReport().createTest(getClass().getSimpleName());\n        test.assignCategory(TEST_CATEGORY);\n        test.assignAuthor(TEST_AUTHOR);\n        test.assignDevice(TEST_DEVICE);\n    }\n\n    /**\n     * creates the extent report for us\n     *\n     * @param result extent report\n     */\n    @AfterMethod\n    public void extentResults(ITestResult result) {\n        String testName = result.getName();\n        String methodName = result.getMethod().getMethodName();\n        String className = result.getTestClass().getName();\n        String status = getTestStatus(result.getStatus());\n        // Log test status and details\n        if (result.getStatus() == ITestResult.FAILURE) {\n            String errorMessage = result.getThrowable().getMessage();\n            logger.error(\"Test Failed: {}\", methodName);\n            logger.error(\"Error Message: {}\", errorMessage);\n            test.log(Status.FAIL, \"Test Failed: \" + methodName);\n            test.log(Status.FAIL, \"Error Message: \" + errorMessage);\n        } else if (result.getStatus() == ITestResult.SUCCESS) {\n            logger.info(\"Test Passed: {}\", methodName);\n            test.log(Status.PASS, \"Test Passed: \" + methodName);\n        } else if (result.getStatus() == ITestResult.SKIP) {\n            logger.info(\"Test Skipped: {}\", methodName);\n            test.log(Status.SKIP, \"Test Skipped: \" + methodName);\n        }\n\n        // Add more detailed information to the report\n        test.info(\"Test Class: \" + className);\n        test.info(\"Test Name: \" + testName);\n        test.info(\"Test Status: \" + status);\n\n    }\n\n    // Helper method to convert test status to readable text\n    private String getTestStatus(int status) {\n        return switch (status) {\n            case ITestResult.FAILURE -> \"Failed\";\n            case ITestResult.SUCCESS -> \"Passed\";\n            case ITestResult.SKIP -> \"Skipped\";\n            default -> \"Unknown\";\n        };\n    }\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/base/TestBase.java b/src/main/java/com/sahel/booking/base/TestBase.java
+--- a/src/main/java/com/sahel/booking/base/TestBase.java	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/src/main/java/com/sahel/booking/base/TestBase.java	(date 1695520531598)
+@@ -15,17 +15,26 @@
+ 
+ 
+ public class TestBase extends WebDriverUtils {
+-    protected static ExtentTest test;
++    protected static ExtentTest extentTest;
+     private static final String TEST_CATEGORY = "Test Suite";
+-    private static final String TEST_AUTHOR = "Sahel";
++    private static final String TEST_AUTHOR = "Sahel92";
+     private static final String TEST_DEVICE = "Windows 11 PC,  Chrome Browser v-116";
+     protected static final Logger logger = LogManager.getLogger(TestBase.class);
+ 
+     protected static BookingFactory factory;
+ 
++    @BeforeSuite
++    public void setUpReporting() {
++        //Load Log4j2 configuration
++        System.setProperty("log4j.configurationFile", "src/main/resources/log4j2.xml");
++        extentTest = WebDriverUtils.getReport().createTest(getClass().getSimpleName());
++        extentTest.assignCategory(TEST_CATEGORY);
++        extentTest.assignAuthor(TEST_AUTHOR);
++        extentTest.assignDevice(TEST_DEVICE);
++    }
+ 
+     @BeforeMethod
+-    public void launchTests() throws IOException {
++    public void initializeTestExecution() throws IOException {
+         super.openBrowser();
+         factory = new BookingFactory();
+     }
+@@ -33,27 +42,17 @@
+     /**
+      * Close WebDriver and do other teardown steps
+      */
++<<<<<<< HEAD
+  //   @AfterMethod
++=======
++    // @AfterMethod
++>>>>>>> c9d3d48ecfedae874c1253e96e5f49214f831b72
+     public void tearDown() {
+         super.quitBrowser();
+     }
+ 
+ 
+-    @BeforeSuite
+-    public void setUpReporting() {
+-        //Load Log4j2 configuration
+-        System.setProperty("log4j.configurationFile", "src/main/resources/log4j2.xml");
+-        test = WebDriverUtils.getReport().createTest(getClass().getSimpleName());
+-        test.assignCategory(TEST_CATEGORY);
+-        test.assignAuthor(TEST_AUTHOR);
+-        test.assignDevice(TEST_DEVICE);
+-    }
+-
+-    /**
+-     * creates the extent report for us
+-     *
+-     * @param result extent report
+-     */
++    // Generates the test results after test execution.
+     @AfterMethod
+     public void extentResults(ITestResult result) {
+         String testName = result.getName();
+@@ -65,20 +64,20 @@
+             String errorMessage = result.getThrowable().getMessage();
+             logger.error("Test Failed: {}", methodName);
+             logger.error("Error Message: {}", errorMessage);
+-            test.log(Status.FAIL, "Test Failed: " + methodName);
+-            test.log(Status.FAIL, "Error Message: " + errorMessage);
++            extentTest.log(Status.FAIL, "Test Failed: " + methodName);
++            extentTest.log(Status.FAIL, "Error Message: " + errorMessage);
+         } else if (result.getStatus() == ITestResult.SUCCESS) {
+             logger.info("Test Passed: {}", methodName);
+-            test.log(Status.PASS, "Test Passed: " + methodName);
++            extentTest.log(Status.PASS, "Test Passed: " + methodName);
+         } else if (result.getStatus() == ITestResult.SKIP) {
+             logger.info("Test Skipped: {}", methodName);
+-            test.log(Status.SKIP, "Test Skipped: " + methodName);
++            extentTest.log(Status.SKIP, "Test Skipped: " + methodName);
+         }
+ 
+         // Add more detailed information to the report
+-        test.info("Test Class: " + className);
+-        test.info("Test Name: " + testName);
+-        test.info("Test Status: " + status);
++        extentTest.info("Test Class: " + className);
++        extentTest.info("Test Name: " + testName);
++        extentTest.info("Test Status: " + status);
+ 
+     }
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"e983239e-c951-4741-8f6d-0fc2efb3d0f9\" name=\"Changes\" comment=\"Search Functionality Test\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\n      <list>\n        <option value=\"Sahel92 &lt;m.sahel.sadiq0526@outlook.com&gt;\" />\n      </list>\n    </option>\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Sahel92&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"selectedUrlAndAccountId\">\n      <UrlAndAccount>\n        <option name=\"accountId\" value=\"3dfe06ab-8cd5-4d18-b2f2-032a173b9438\" />\n        <option name=\"url\" value=\"https://github.com/Sahel92/BookITAutomation.git\" />\n      </UrlAndAccount>\n    </option>\n  </component>\n  <component name=\"HighlightingSettingsPerFile\">\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0-sources.jar!/org/testng/ITestListener.java\" root0=\"FORCE_HIGHLIGHTING\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2ULU0RwHIq9oWKCrzoxJaXxfgzj\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\n    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/log4j-reports&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\log4j-reports\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\testng-xml-files\" />\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\" />\n    </key>\n  </component>\n  <component name=\"RunAnythingCache\">\n    <option name=\"myCommands\">\n      <command value=\"mvn package -Dmaven.plugin.validation=brief\" />\n      <command value=\"mvn install\" />\n      <command value=\"mvn clean install\" />\n      <command value=\"mvn test\" />\n    </option>\n  </component>\n  <component name=\"RunManager\" selected=\"TestNG.SearchFunctionalityTest.searchDestination\">\n    <configuration name=\"BookingAutomation [org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test]\" type=\"MavenRunConfiguration\" factoryName=\"Maven\">\n      <MavenSettings>\n        <option name=\"myGeneralSettings\">\n          <MavenGeneralSettings>\n            <option name=\"alwaysUpdateSnapshots\" value=\"false\" />\n            <option name=\"checksumPolicy\" value=\"NOT_SET\" />\n            <option name=\"emulateTerminal\" value=\"false\" />\n            <option name=\"failureBehavior\" value=\"NOT_SET\" />\n            <option name=\"localRepository\" value=\"\" />\n            <option name=\"mavenHome\" value=\"Bundled (Maven 3)\" />\n            <option name=\"nonRecursive\" value=\"false\" />\n            <option name=\"outputLevel\" value=\"INFO\" />\n            <option name=\"printErrorStackTraces\" value=\"false\" />\n            <option name=\"showDialogWithAdvancedSettings\" value=\"false\" />\n            <option name=\"threads\" />\n            <option name=\"useMavenConfig\" value=\"true\" />\n            <option name=\"usePluginRegistry\" value=\"false\" />\n            <option name=\"userSettingsFile\" value=\"\" />\n            <option name=\"workOffline\" value=\"false\" />\n          </MavenGeneralSettings>\n        </option>\n        <option name=\"myRunnerSettings\">\n          <MavenRunnerSettings>\n            <option name=\"delegateBuildToMaven\" value=\"false\" />\n            <option name=\"environmentProperties\">\n              <map />\n            </option>\n            <option name=\"jreName\" value=\"#USE_PROJECT_JDK\" />\n            <option name=\"mavenProperties\">\n              <map />\n            </option>\n            <option name=\"passParentEnv\" value=\"true\" />\n            <option name=\"runMavenInBackground\" value=\"true\" />\n            <option name=\"skipTests\" value=\"false\" />\n            <option name=\"vmOptions\" value=\"\" />\n          </MavenRunnerSettings>\n        </option>\n        <option name=\"myRunnerParameters\">\n          <MavenRunnerParameters>\n            <option name=\"cmdOptions\" />\n            <option name=\"profiles\">\n              <set />\n            </option>\n            <option name=\"goals\">\n              <list>\n                <option value=\"org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test\" />\n              </list>\n            </option>\n            <option name=\"pomFileName\" value=\"pom.xml\" />\n            <option name=\"profilesMap\">\n              <map />\n            </option>\n            <option name=\"projectsCmdOptionValues\">\n              <list />\n            </option>\n            <option name=\"resolveToWorkspace\" value=\"false\" />\n            <option name=\"workingDirPath\" value=\"$PROJECT_DIR$\" />\n          </MavenRunnerParameters>\n        </option>\n      </MavenSettings>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"BookingLoginTest.performSignIn\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"BookingAutomation\" />\n      <option name=\"PACKAGE_NAME\" value=\"\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"BookingLoginTest\" />\n      <option name=\"METHOD_NAME\" value=\"performSignIn\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"BookingLoginTest.test1\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"BookingAutomation\" />\n      <option name=\"PACKAGE_NAME\" value=\"\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"BookingLoginTest\" />\n      <option name=\"METHOD_NAME\" value=\"test1\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"BookingAutomation\" />\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml\" />\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"SearchFunctionalityTest\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"BookingAutomation\" />\n      <option name=\"PACKAGE_NAME\" value=\"\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"SearchFunctionalityTest\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"SearchFunctionalityTest.searchDestination\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"BookingAutomation\" />\n      <option name=\"PACKAGE_NAME\" value=\"\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"SearchFunctionalityTest\" />\n      <option name=\"METHOD_NAME\" value=\"searchDestination\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"TestNG.SearchFunctionalityTest.searchDestination\" />\n        <item itemvalue=\"TestNG.SearchFunctionalityTest\" />\n        <item itemvalue=\"TestNG.BookingLoginTest.performSignIn\" />\n        <item itemvalue=\"TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml\" />\n        <item itemvalue=\"TestNG.BookingLoginTest.test1\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"e983239e-c951-4741-8f6d-0fc2efb3d0f9\" name=\"Changes\" comment=\"\" />\n      <created>1692718130805</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1692718130805</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Added Browser classes &amp; DriverFactory Class\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692757052264</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692757052264</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Implementing ExtentReports\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692771341672</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692771341672</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692779611949</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692779611949</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"reporters working properly\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692823147740</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692823147740</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Added Logger, fixed report fixed pom xml\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692841989416</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692841989416</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Added WebDriverUtils Methods :)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692852705247</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692852705247</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"BookingFactory to initialize POM classes and UI elements.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692911873549</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692911873549</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Test Harness Ready\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692939987084</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692939987084</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Test Harness Ready\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692943226013</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692943226013</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"Test Harness Ready\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692944465674</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692944465674</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"Test Harness Ready\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692945977728</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692945977728</updated>\n    </task>\n    <task id=\"LOCAL-00012\" summary=\"Test Harness Ready\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692948030132</created>\n      <option name=\"number\" value=\"00012\" />\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692948030132</updated>\n    </task>\n    <task id=\"LOCAL-00013\" summary=\"Test Harness Ready\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1692962171359</created>\n      <option name=\"number\" value=\"00013\" />\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1692962171359</updated>\n    </task>\n    <task id=\"LOCAL-00014\" summary=\"Login Functionalities cannot be automated dur to captcha challenge.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1693037429671</created>\n      <option name=\"number\" value=\"00014\" />\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1693037429671</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"15\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"Added Browser classes &amp; DriverFactory Class\" />\n    <MESSAGE value=\"Implementing ExtentReports\" />\n    <MESSAGE value=\"Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing.\" />\n    <MESSAGE value=\"reporters working properly\" />\n    <MESSAGE value=\"Added Logger, fixed report fixed pom xml\" />\n    <MESSAGE value=\"Added WebDriverUtils Methods :)\" />\n    <MESSAGE value=\"BookingFactory to initialize POM classes and UI elements.\" />\n    <MESSAGE value=\"Test Harness Ready\" />\n    <MESSAGE value=\"Login Functionalities cannot be automated dur to captcha challenge.\" />\n    <MESSAGE value=\"Search Functionality Test\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Search Functionality Test\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/BookingAutomation$SearchFunctionalityTest_searchDestination.ic\" NAME=\"SearchFunctionalityTest.searchDestination Coverage Results\" MODIFIED=\"1695515306170\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/.idea/workspace.xml	(date 1695520531594)
+@@ -4,8 +4,33 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
++<<<<<<< HEAD
+     <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Search Functionality Test">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++=======
++    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Test Harness Ready">
++      <change afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/search-tests.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-24.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-24.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/logintest.xml" afterDir="false" />
++>>>>>>> c9d3d48ecfedae874c1253e96e5f49214f831b72
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -29,15 +54,21 @@
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitHubPullRequestSearchHistory">{
++  &quot;history&quot;: [
++    {
++      &quot;state&quot;: &quot;CLOSED&quot;,
++      &quot;assignee&quot;: &quot;Sahel92&quot;
++    }
++  ],
+   &quot;lastFilter&quot;: {
+-    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;state&quot;: &quot;CLOSED&quot;,
+     &quot;assignee&quot;: &quot;Sahel92&quot;
+   }
+ }</component>
+   <component name="GithubPullRequestsUISettings">
+     <option name="selectedUrlAndAccountId">
+       <UrlAndAccount>
+-        <option name="accountId" value="3dfe06ab-8cd5-4d18-b2f2-032a173b9438" />
++        <option name="accountId" value="8f1b8192-28ea-483c-a857-e6d1648e684f" />
+         <option name="url" value="https://github.com/Sahel92/BookITAutomation.git" />
+       </UrlAndAccount>
+     </option>
+@@ -48,8 +79,15 @@
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
++  <component name="MavenImportPreferences">
++    <option name="generalSettings">
++      <MavenGeneralSettings>
++        <option name="useMavenConfig" value="true" />
++      </MavenGeneralSettings>
++    </option>
++  </component>
+   <component name="ProblemsViewState">
+-    <option name="selectedTabId" value="ProjectErrors" />
++    <option name="selectedTabId" value="CurrentFile" />
+   </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 1
+@@ -69,16 +107,22 @@
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+     &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/log4j-reports&quot;,
++    &quot;last_opened_file_path&quot;: &quot;A:/IntelliJWorkspace/BookITAutomation/src/test/resources/testng-xml-files&quot;,
+     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++<<<<<<< HEAD
+     &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
++=======
++    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
++>>>>>>> c9d3d48ecfedae874c1253e96e5f49214f831b72
+   }
+ }</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="A:\IntelliJWorkspace\BookITAutomation\src\test\resources\testng-xml-files" />
+       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\log4j-reports" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+@@ -89,12 +133,16 @@
+   <component name="RunAnythingCache">
+     <option name="myCommands">
+       <command value="mvn package -Dmaven.plugin.validation=brief" />
++      <command value="mvn clean install" />
+       <command value="mvn install" />
+-      <command value="mvn clean install" />
+       <command value="mvn test" />
+     </option>
+   </component>
++<<<<<<< HEAD
+   <component name="RunManager" selected="TestNG.SearchFunctionalityTest.searchDestination">
++=======
++  <component name="RunManager" selected="TestNG.SearchFunctionalityTest.validHotelSearch">
++>>>>>>> c9d3d48ecfedae874c1253e96e5f49214f831b72
+     <configuration name="BookingAutomation [org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test]" type="MavenRunConfiguration" factoryName="Maven">
+       <MavenSettings>
+         <option name="myGeneralSettings">
+@@ -107,6 +155,7 @@
+             <option name="mavenHome" value="Bundled (Maven 3)" />
+             <option name="nonRecursive" value="false" />
+             <option name="outputLevel" value="INFO" />
++            <option name="pluginUpdatePolicy" value="DEFAULT" />
+             <option name="printErrorStackTraces" value="false" />
+             <option name="showDialogWithAdvancedSettings" value="false" />
+             <option name="threads" />
+@@ -134,7 +183,6 @@
+         </option>
+         <option name="myRunnerParameters">
+           <MavenRunnerParameters>
+-            <option name="cmdOptions" />
+             <option name="profiles">
+               <set />
+             </option>
+@@ -147,9 +195,6 @@
+             <option name="profilesMap">
+               <map />
+             </option>
+-            <option name="projectsCmdOptionValues">
+-              <list />
+-            </option>
+             <option name="resolveToWorkspace" value="false" />
+             <option name="workingDirPath" value="$PROJECT_DIR$" />
+           </MavenRunnerParameters>
+@@ -191,11 +236,20 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
++<<<<<<< HEAD
+     <configuration name="SearchFunctionalityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="BookingAutomation" />
+       <option name="PACKAGE_NAME" value="" />
+       <option name="MAIN_CLASS_NAME" value="SearchFunctionalityTest" />
+       <option name="TEST_OBJECT" value="CLASS" />
++=======
++    <configuration name="SearchFunctionalityTest.validHotelSearch" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="BookingAutomation" />
++      <option name="PACKAGE_NAME" value="" />
++      <option name="MAIN_CLASS_NAME" value="SearchFunctionalityTest" />
++      <option name="METHOD_NAME" value="validHotelSearch" />
++      <option name="TEST_OBJECT" value="METHOD" />
++>>>>>>> c9d3d48ecfedae874c1253e96e5f49214f831b72
+       <properties />
+       <listeners />
+       <method v="2">
+@@ -216,11 +270,19 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++<<<<<<< HEAD
+         <item itemvalue="TestNG.SearchFunctionalityTest.searchDestination" />
+         <item itemvalue="TestNG.SearchFunctionalityTest" />
+         <item itemvalue="TestNG.BookingLoginTest.performSignIn" />
+         <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml" />
+         <item itemvalue="TestNG.BookingLoginTest.test1" />
++=======
++        <item itemvalue="TestNG.SearchFunctionalityTest.validHotelSearch" />
++        <item itemvalue="TestNG.BookingLoginTest.performSignIn" />
++        <item itemvalue="TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml" />
++        <item itemvalue="TestNG.BookingLoginTest.test1" />
++        <item itemvalue="TestNG.&lt;default&gt;" />
++>>>>>>> c9d3d48ecfedae874c1253e96e5f49214f831b72
+       </list>
+     </recent_temporary>
+   </component>
+@@ -353,7 +415,19 @@
+       <map>
+         <entry key="MAIN">
+           <value>
+-            <State />
++            <State>
++              <option name="FILTERS">
++                <map>
++                  <entry key="branch">
++                    <value>
++                      <list>
++                        <option value="origin/BOOK-1-User-Story-1-Setup-Framework-Priority-High" />
++                      </list>
++                    </value>
++                  </entry>
++                </map>
++              </option>
++            </State>
+           </value>
+         </entry>
+       </map>
+Index: src/main/java/com/sahel/booking/utilities/WebDriverUtils.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.utilities;\n\n\nimport com.sahel.booking.base.DriverFactory;\nimport org.openqa.selenium.*;\nimport org.openqa.selenium.interactions.Actions;\nimport org.openqa.selenium.support.ui.*;\n\nimport java.time.Duration;\nimport java.util.List;\nimport java.util.Set;\n\npublic class WebDriverUtils extends DriverFactory {\n    static final int WEB_DRIVER_WAIT = 10;\n\n    /**\n     * Returns a WebDriverWait instance with the given duration in seconds.\n     *\n     * @return WebDriverWait instance\n     */\n    public WebDriverWait getWait() {\n        return new WebDriverWait(getDriver(), Duration.ofSeconds(WEB_DRIVER_WAIT));\n    }\n\n    /**\n     * Waits until the provided element is clickable.\n     *\n     * @param element Element to wait for\n     * @return Clickable element\n     */\n    public WebElement waitTillClickable(WebElement element) {\n        return this.getWait().until(ExpectedConditions.elementToBeClickable(element));\n    }\n\n    /**\n     * Waits until the provided element is visible.\n     *\n     * @param element Element to wait for\n     * @return Visible element\n     */\n    public WebElement waitTillVisible(WebElement element) {\n        return this.getWait().until(ExpectedConditions.visibilityOf(element));\n    }\n\n    /**\n     * Clicks on the provided element after ensuring it's clickable.\n     * implements waitTillVisible();\n     * @param element Element to be clicked\n     */\n    public void click(WebElement element) {\n        this.waitTillClickable(element).click();\n    }\n\n    /**\n     * Enters the given text into the provided element after ensuring it's visible.\n     *\n     * @param element Element to which text will be sent\n     * @param value   Text value to send\n     */\n    public void sendText(WebElement element, String value) {\n        this.waitTillVisible(element).sendKeys(value);\n    }\n\n    /**\n     * Retrieves the text of the provided element after ensuring it's visible.\n     *\n     * @param element Element from which text will be retrieved\n     * @return Text of the element\n     */\n    public String getElementTextString(WebElement element) {\n        return this.waitTillVisible(element).getText();\n    }\n\n    /**\n     * Retrieves the title of the current page.\n     *\n     * @return Title of the current page\n     */\n    public String getTitle() {\n        return getDriver().getTitle();\n    }\n\n    /**\n     * Uses JavascriptExecutor to set a value to the provided element.\n     *\n     * @param element Element to which value will be set\n     * @param value   Value to set\n     */\n    public void sendValueUsingJS(WebElement element, String value) {\n        JavascriptExecutor executor = ((JavascriptExecutor) getDriver());\n        executor.executeScript(\"arguments[0].value='\" + value + \"';\", element);\n    }\n\n    /**\n     * Clears the text of the provided element using a combination of key presses.\n     *\n     * @param toClear Element to clear\n     */\n    public void clearTextUsingSendKeys(WebElement toClear) {\n        toClear.sendKeys(Keys.CONTROL + \"a\");\n        toClear.sendKeys(Keys.DELETE);\n    }\n\n    /**\n     * Selects an element from a dropdown using its index number.\n     *\n     * @param element Dropdown element\n     * @param index   Index of the option to select\n     */\n    public void selectByIndex(WebElement element, int index) {\n        Select select = new Select(element);\n        select.selectByIndex(index);\n    }\n\n    /**\n     * Selects an element from a dropdown by specified value.\n     *\n     * @param element Dropdown element\n     * @param value   Value of the option to select\n     */\n    public void selectByValue(WebElement element, String value) {\n        Select select = new Select(element);\n        select.selectByValue(value);\n    }\n\n    /**\n     * Selects an element from a dropdown by visible text.\n     *\n     * @param element     WebElement representing the dropdown\n     * @param visibleText Visible text of the option to select\n     */\n    public void selectByVisibleText(WebElement element, String visibleText) {\n        Select select = new Select(element);\n        select.selectByVisibleText(visibleText);\n    }\n\n    /**\n     * Deselects an element from a dropdown by index.\n     *\n     * @param element WebElement representing the dropdown\n     * @param index   Index of the option to deselect\n     */\n    public void deselectByIndex(WebElement element, int index) {\n        Select select = new Select(element);\n        select.deselectByIndex(index);\n    }\n\n    /**\n     * Deselects an element from a dropdown by value.\n     *\n     * @param element WebElement representing the dropdown\n     * @param value   Value of the option to deselect\n     */\n    public void deselectByValue(WebElement element, String value) {\n        Select select = new Select(element);\n        select.deselectByValue(value);\n    }\n\n    /**\n     * Deselects an element from a dropdown by visible text.\n     *\n     * @param element     WebElement representing the dropdown\n     * @param visibleText Visible text of the option to deselect\n     */\n    public void deselectByVisibleText(WebElement element, String visibleText) {\n        Select select = new Select(element);\n        select.deselectByVisibleText(visibleText);\n    }\n\n    /**\n     * Retrieves the tag name of the specified WebElement.\n     *\n     * @param element WebElement to retrieve tag name from\n     * @return Tag name of the element\n     */\n    public String getTagName(WebElement element) {\n        return element.getTagName();\n    }\n\n    /**\n     * Retrieves the visible text of the specified element.\n     *\n     * @param element WebElement to retrieve text from\n     * @return Visible text of the element\n     */\n    public String getText(WebElement element) {\n        return element.getText();\n    }\n\n    /**\n     * Highlights the specified element using JavascriptExecutor.\n     *\n     * @param element WebElement to highlight\n     */\n    public void highlightElement(WebElement element) {\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\n        js.executeScript(\"arguments[0].style.border='3px solid red'\", element);\n        js.executeScript(\"arguments[0].style.border= '1px white'\", element);\n    }\n\n    /**\n     * Performs a drag-and-drop action using Actions class.\n     *\n     * @param dragLocation Element to drag\n     * @param dropLocation Target drop location\n     */\n    public void dragAndDropAction(WebElement dragLocation, WebElement dropLocation) {\n        Actions action = new Actions(getDriver());\n        action.dragAndDrop(dragLocation, dropLocation).perform();\n    }\n\n    /**\n     * Checks if the specified element is displayed.\n     *\n     * @param element WebElement to check\n     * @return True if the element is displayed, false otherwise\n     */\n    public boolean isElementDisplayed(WebElement element) {\n        return element.isDisplayed();\n    }\n\n    /**\n     * Checks if the specified element is enabled.\n     *\n     * @param element WebElement to check\n     * @return True if the element is enabled, false otherwise\n     */\n    public boolean isElementEnabled(WebElement element) {\n        return element.isEnabled();\n    }\n\n    /**\n     * Checks if the specified element is selected.\n     *\n     * @param element WebElement to check\n     * @return True if the element is selected, false otherwise\n     */\n    public boolean isElementSelected(WebElement element) {\n        return element.isSelected();\n    }\n\n    /**\n     * Moves the mouse cursor to an element using Actions class.\n     *\n     * @param element Element to move to\n     */\n    public void moveToElementAction(WebElement element) {\n        Actions actions = new Actions(getDriver());\n        actions.moveToElement(element).build().perform();\n    }\n\n    /**\n     * Switches to a desired window based on its title.\n     *\n     * @param switchToWindow Title of the window to switch to\n     */\n    public void switchWindow(String switchToWindow) {\n        String currentWindow = getDriver().getWindowHandle();\n        Set<String> handles = getDriver().getWindowHandles();\n        for (String winHandle : handles) {\n            String currentWindowTitle = getDriver().switchTo().window(winHandle).getTitle();\n            if (currentWindowTitle.equals(switchToWindow)) {\n                break;\n            } else {\n                getDriver().switchTo().window(currentWindow);\n            }\n        }\n    }\n\n    /**\n     * Selects a calendar date using JavaScript by setting the 'value' attribute.\n     *\n     * @param date    Date value to set\n     * @param element Calendar element\n     */\n    public void selectCalendarDateWithJS(String date, WebElement element) {\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\n        js.executeScript(\"arguments[0].setAttribute('value', '\" + date + \"');\", element);\n    }\n\n    /**\n     * Clicks on an element using JavaScript.\n     *\n     * @param element Element to click\n     */\n    public void clickElementWithJS(WebElement element) {\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\n        js.executeScript(\"arguments[0].click();\", element);\n    }\n\n    /**\n     * Scrolls down the page using JavaScript.\n     */\n    public void scrollPageDownWithJS() {\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\n        js.executeScript(\"window.scrollTo(0, document.body.scrollHeight);\");\n    }\n\n    /**\n     * Clears the text of an element using JavaScript.\n     *\n     * @param element Element to clear\n     */\n    public void clearTextWithJS(WebElement element) {\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\n        js.executeScript(\"arguments[0].value = '';\", element);\n    }\n\n    /**\n     * Clears the text of an element using JavaScript and sends new text.\n     *\n     * @param element Element to clear and send text to\n     * @param value   Text value to send\n     */\n    public void clearAndSendWithJs(WebElement element, String value) {\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\n        js.executeScript(\"arguments[0].value = '';\", element);\n        element.sendKeys(value);\n    }\n\n    /**\n     * Refreshes the webpage.\n     */\n    public void refreshPage() {\n        getDriver().navigate().refresh();\n    }\n\n    /**\n     * Waits for an element to disappear from the page.\n     *\n     * @param element Element to wait for disappearance\n     */\n    public void waitForElementToDisappear(WebElement element) {\n        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(WEB_DRIVER_WAIT));\n        wait.until(ExpectedConditions.invisibilityOf(element));\n    }\n\n    /**\n     * Switches to an iframe using the iframe element.\n     *\n     * @param iframeElement The iframe element to switch to\n     */\n    public void switchToIframe(WebElement iframeElement) {\n        getDriver().switchTo().frame(iframeElement);\n    }\n\n    /**\n     * Switches back to the main content from an iframe.\n     */\n    public void switchToDefaultContent() {\n        getDriver().switchTo().defaultContent();\n    }\n\n    /**\n     * Accepts an alert dialog.\n     */\n    public void acceptAlertDialog() {\n        getDriver().switchTo().alert().accept();\n    }\n\n    /**\n     * Dismisses an alert dialog.\n     */\n    public void dismissAlertDialog() {\n        getDriver().switchTo().alert().dismiss();\n    }\n\n    /**\n     * Gets the value of a specific attribute of an element.\n     *\n     * @param element       Element to retrieve attribute from\n     * @param attributeName Name of the attribute to retrieve\n     * @return Value of the attribute\n     */\n    public String getAttribute(WebElement element, String attributeName) {\n        return element.getAttribute(attributeName);\n    }\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java b/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java
+--- a/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java	(date 1695520531598)
+@@ -6,8 +6,16 @@
+ import org.openqa.selenium.interactions.Actions;
+ import org.openqa.selenium.support.ui.*;
+ 
++import java.text.DateFormat;
++import java.text.SimpleDateFormat;
+ import java.time.Duration;
++<<<<<<< HEAD
+ import java.util.List;
++=======
++import java.util.Calendar;
++import java.util.Locale;
++import java.util.Random;
++>>>>>>> c9d3d48ecfedae874c1253e96e5f49214f831b72
+ import java.util.Set;
+ 
+ public class WebDriverUtils extends DriverFactory {
+@@ -45,6 +53,7 @@
+     /**
+      * Clicks on the provided element after ensuring it's clickable.
+      * implements waitTillVisible();
++     *
+      * @param element Element to be clicked
+      */
+     public void click(WebElement element) {
+@@ -268,14 +277,24 @@
+     }
+ 
+     /**
+-     * Selects a calendar date using JavaScript by setting the 'value' attribute.
++     * Sets a random calendar date between today and next year.
+      *
+      * @param date    Date value to set
+      * @param element Calendar element
+      */
+-    public void selectCalendarDateWithJS(String date, WebElement element) {
+-        JavascriptExecutor js = (JavascriptExecutor) getDriver();
+-        js.executeScript("arguments[0].setAttribute('value', '" + date + "');", element);
++    public void setRandomCalendarDate(WebElement element) {
++        // Generate calendar with random date between today and next year.
++        Calendar calendar = Calendar.getInstance();
++        calendar.add(Calendar.DAY_OF_YEAR, new Random().nextInt(365));
++
++        // Change format to Day of Week, Month Day
++        DateFormat dateFormat = new SimpleDateFormat("EEE, MMM d", Locale.US);
++        String randomDate = dateFormat.format(calendar.getTime());
++
++        // Use JavaScript to set the random date
++        JavascriptExecutor javascriptExecutor = ((JavascriptExecutor) getDriver());
++        javascriptExecutor.executeScript("arguments[0].innerText = arguments[1];", element, randomDate);
++
+     }
+ 
+     /**
