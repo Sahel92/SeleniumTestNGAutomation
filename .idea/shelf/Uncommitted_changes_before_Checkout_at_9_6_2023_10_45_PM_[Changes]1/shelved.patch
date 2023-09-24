@@ -1,0 +1,1178 @@
+Index: output/logs/testlog1.log
+===================================================================
+diff --git a/output/logs/testlog1.log b/output/logs/testlog1.log
+deleted file mode 100644
+--- a/output/logs/testlog1.log	
++++ /dev/null	
+@@ -1,2 +0,0 @@
+-2023-09-06 00:27:09,597 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+-2023-09-06 00:27:09,600 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
+Index: src/test/resources/extent-reports/Index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/extent-reports/Index.html b/src/test/resources/extent-reports/Index.html
+new file mode 100644
+--- /dev/null	
++++ b/src/test/resources/extent-reports/Index.html	
+@@ -0,0 +1,537 @@
++
++
++<!DOCTYPE html>
++<html>
++<head>
++<meta charset="UTF-8">
++<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
++<title>Booking Automation Testing Framework</title>
++<link rel="apple-touch-icon" href="spark/logo.png">
++<link rel="shortcut icon" href="spark/logo.png">
++<link rel="stylesheet" href="spark/spark-style.css">
++<link rel="stylesheet" href="spark/font-awesome.min.css">
++<script src="spark/jsontree.js"></script>
++<style type="text/css"></style></head><body class="spa -report dark">
++  <div class="app">
++    <div class="layout">
++<div class="header navbar">
++<div class="vheader">
++<div class="nav-logo">
++<a href="#">
++<div class="logo" style="background-image: url('spark/logo.png')"></div>
++</a>
++</div>
++<ul class="nav-left">
++<li class="search-box">
++<a class="search-toggle" href="#">
++<i class="search-icon fa fa-search"></i>
++<i class="search-icon-close fa fa-close"></i>
++</a>
++</li>
++<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
++</ul>
++<ul class="nav-right">
++<li class="m-r-10">
++<a href="#"><span class="badge badge-primary">Test Result's</span></a>
++</li>
++<li class="m-r-10">
++<a href="#"><span class="badge badge-primary">Sep 6, 2023 09:13:54 PM</span></a>
++</li>
++</ul>
++</div>
++</div><div class="side-nav">
++<div class="side-nav-inner">
++<ul class="side-nav-menu">
++<li class="nav-item dropdown" onclick="toggleView('test-view')">
++<a id="nav-test" class="dropdown-toggle" href="#">
++<span class="ico"><i class="fa fa-list"></i></span>
++</a>
++</li>
++<li class="nav-item dropdown" onclick="toggleView('category-view')">
++<a id="nav-category" class="dropdown-toggle" href="#">
++<span class="ico"><i class="fa fa-tag"></i></span>
++</a>
++</li>
++<li class="nav-item dropdown" onclick="toggleView('device-view')">
++<a id="nav-device" class="dropdown-toggle" href="#">
++<span class="ico"><i class="fa fa-tablet"></i></span>
++</a>
++</li>
++<li class="nav-item dropdown" onclick="toggleView('author-view')">
++<a id="nav-author" class="dropdown-toggle" href="#">
++<span class="ico"><i class="fa fa-user"></i></span>
++</a>
++</li>
++<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
++<a id="nav-dashboard" class="dropdown-toggle" href="#">
++<span class="ico"><i class="fa fa-bar-chart"></i></span>
++</a>
++</li>
++</ul>
++</div>
++</div>      <div class="vcontainer">
++        <div class="main-content">
++<div class="test-wrapper row view test-view">
++  <div class="test-list">
++    <div class="test-list-tools">
++<ul class="tools pull-left">
++<li><a href="#"><span class="font-size-14">Tests</span></a></li>
++</ul>
++<ul class="tools text-right">
++<li class="dropdown">
++<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
++<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
++<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
++<div class="dropdown-divider"></div>
++<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
++</ul>
++</li>
++<li class="dropdown">
++<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
++<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
++<a class="dropdown-item" href="#">Sahel92</a>
++</ul>
++</li>
++<li class="dropdown">
++<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
++<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
++<a class="dropdown-item" href="#">TestSuite</a>
++</ul>
++</li>
++<li class="dropdown">
++<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
++<ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
++<a class="dropdown-item" href="#">Windows11PC,ChromeBrowserv-116</a>
++</ul>
++</li>
++</ul>
++</div>    <div class="test-list-wrapper scrollable">
++      <ul class="test-list-item">
++        <li class="test-item"  status="pass" test-id="1"
++          author="Sahel92"
++          tag="TestSuite"
++          device="Windows11PC,ChromeBrowserv-116">
++          <div class="test-detail">
++            <p class="name">SearchFunctionalityTest</p>
++            <p class="text-sm">
++              <span>9:13:54 PM</span> / <span>00:00:17:913</span>
++              <span class="badge pass-bg log float-right">Pass</span>
++            </p>
++          </div>
++          <div class="test-contents d-none">
++<div class="detail-head">
++<div class="p-v-10">
++<div class="info">
++<h5 class="test-status text-pass">SearchFunctionalityTest</h5>
++<span class='badge badge-success'>09.06.2023 9:13:54 PM</span>
++<span class='badge badge-danger'>09.06.2023 9:14:12 PM</span>
++<span class='badge badge-default'>00:00:17:913</span>
++&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
++<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
++<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
++</div>
++<div class="m-t-15"><span class="badge badge-pill badge-default">Sahel92</span>
++<span class="badge badge-pill badge-default">TestSuite</span>
++<span class="badge badge-pill badge-default">Windows11PC,ChromeBrowserv-116</span></div>
++</div>
++</div><div class="detail-body mt-4">
++<table class="table table-sm">
++  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
++  <tbody>
++      <tr class="event-row">
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>9:14:12 PM</td>
++        <td>
++          Test Passed: validHotelSearch
++        </td>
++      </tr>
++      <tr class="event-row">
++        <td><span class="badge log info-bg">Info</span></td>
++        <td>9:14:12 PM</td>
++        <td>
++          Test Class: SearchFunctionalityTest
++        </td>
++      </tr>
++      <tr class="event-row">
++        <td><span class="badge log info-bg">Info</span></td>
++        <td>9:14:12 PM</td>
++        <td>
++          Test Name: validHotelSearch
++        </td>
++      </tr>
++      <tr class="event-row">
++        <td><span class="badge log info-bg">Info</span></td>
++        <td>9:14:12 PM</td>
++        <td>
++          Test Status: Passed
++        </td>
++      </tr>
++  </tbody>
++</table>
++</div>
++          </div>
++        </li>
++        <li class="test-item"  status="pass" test-id="2"
++          author=""
++          tag=""
++          device="">
++          <div class="test-detail">
++            <p class="name">SearchFunctionality</p>
++            <p class="text-sm">
++              <span>9:13:54 PM</span> / <span>00:00:17:792</span>
++              <span class="badge pass-bg log float-right">Pass</span>
++            </p>
++          </div>
++          <div class="test-contents d-none">
++<div class="detail-head">
++<div class="p-v-10">
++<div class="info">
++<h5 class="test-status text-pass">SearchFunctionality</h5>
++<span class='badge badge-success'>09.06.2023 9:13:54 PM</span>
++<span class='badge badge-danger'>09.06.2023 9:14:12 PM</span>
++<span class='badge badge-default'>00:00:17:792</span>
++&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
++<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
++<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
++</div>
++</div>
++</div><div class="detail-body mt-4">
++<table class="table table-sm">
++  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
++  <tbody>
++      <tr class="event-row">
++        <td><span class="badge log info-bg">Info</span></td>
++        <td>9:14:04 PM</td>
++        <td>
++          Test started: validHotelSearch
++        </td>
++      </tr>
++      <tr class="event-row">
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>9:14:12 PM</td>
++        <td>
++          Test passed: validHotelSearch
++        </td>
++      </tr>
++  </tbody>
++</table>
++</div>
++          </div>
++        </li>
++      </ul>
++    </div>
++  </div>
++<div class="test-content scrollable">
++<div class="test-content-tools">
++<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
++</div>
++<div class="test-content-detail"><div class="detail-body"></div></div>
++</div></div>
++<div class="test-wrapper row view category-view attributes-view">
++<div class="test-list">
++<div class="test-list-tools">
++<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
++<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
++</div>
++<div class="test-list-wrapper scrollable">
++<ul class="test-list-item">
++<li class="test-item">
++<div class="test-detail">
++<span class="meta">
++<span class='badge log pass-bg'>1</span>
++</span>
++<p class="name">TestSuite</p>
++<p class="duration text-sm">1 tests</p>
++</div>
++<div class="test-contents d-none">
++<div class="info">
++<h4>TestSuite</h4>
++<span status="pass" class='badge log pass-bg'>1 passed</span>
++</div>
++<table class='table table-sm mt-4'>
++<thead>
++<tr>
++<th class="status-col">Status</th>
++<th class="timestamp-col">Timestamp</th>
++<th>TestName</th>
++</tr>
++</thead>
++<tbody>
++<tr class="tag-test-status" status="pass">
++<td><span class="badge log pass-bg">Pass</span></td>
++<td>21:13:54 PM</td>
++<td>
++<a href="#" class="linked" test-id='1' id='1'>SearchFunctionalityTest</a>
++</td>
++</tr>
++</tbody>
++</table>
++</div>
++</li>
++</ul>
++</div>
++</div>
++<div class="test-content scrollable">
++<div class="test-content-detail">
++<div class="detail-body"></div>
++</div>
++</div>
++</div><div class="test-wrapper row view device-view attributes-view">
++<div class="test-list">
++<div class="test-list-tools">
++<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
++<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
++</div>
++<div class="test-list-wrapper scrollable">
++<ul class="test-list-item">
++<li class="test-item">
++<div class="test-detail">
++<span class="meta">
++<span class='badge log pass-bg'>1</span>
++</span>
++<p class="name">Windows11PC,ChromeBrowserv-116</p>
++<p class="duration text-sm">1 tests</p>
++</div>
++<div class="test-contents d-none">
++<div class="info">
++<h4>Windows11PC,ChromeBrowserv-116</h4>
++<span status="pass" class='badge log pass-bg'>1 passed</span>
++</div>
++<table class='table table-sm mt-4'>
++<thead>
++<tr>
++<th class="status-col">Status</th>
++<th class="timestamp-col">Timestamp</th>
++<th>TestName</th>
++</tr>
++</thead>
++<tbody>
++<tr class="tag-test-status" status="pass">
++<td><span class="badge log pass-bg">Pass</span></td>
++<td>21:13:54 PM</td>
++<td>
++<a href="#" class="linked" test-id='1' id='1'>SearchFunctionalityTest</a>
++</td>
++</tr>
++</tbody>
++</table>
++</div>
++</li>
++</ul>
++</div>
++</div>
++<div class="test-content scrollable">
++<div class="test-content-detail">
++<div class="detail-body"></div>
++</div>
++</div>
++</div><div class="test-wrapper row view author-view attributes-view">
++<div class="test-list">
++<div class="test-list-tools">
++<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
++<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
++</div>
++<div class="test-list-wrapper scrollable">
++<ul class="test-list-item">
++<li class="test-item">
++<div class="test-detail">
++<span class="meta">
++<span class='badge log pass-bg'>1</span>
++</span>
++<p class="name">Sahel92</p>
++<p class="duration text-sm">1 tests</p>
++</div>
++<div class="test-contents d-none">
++<div class="info">
++<h4>Sahel92</h4>
++<span status="pass" class='badge log pass-bg'>1 passed</span>
++</div>
++<table class='table table-sm mt-4'>
++<thead>
++<tr>
++<th class="status-col">Status</th>
++<th class="timestamp-col">Timestamp</th>
++<th>TestName</th>
++</tr>
++</thead>
++<tbody>
++<tr class="tag-test-status" status="pass">
++<td><span class="badge log pass-bg">Pass</span></td>
++<td>21:13:54 PM</td>
++<td>
++<a href="#" class="linked" test-id='1' id='1'>SearchFunctionalityTest</a>
++</td>
++</tr>
++</tbody>
++</table>
++</div>
++</li>
++</ul>
++</div>
++</div>
++<div class="test-content scrollable">
++<div class="test-content-detail">
++<div class="detail-body"></div>
++</div>
++</div>
++</div><div class="container-fluid p-4 view dashboard-view">
++<div class="row">
++<div class="col-md-3">
++<div class="card"><div class="card-body">
++<p class="m-b-0">Started</p>
++<h3>Sep 6, 2023 09:13:54 PM</h3>
++</div></div>
++</div>
++<div class="col-md-3">
++<div class="card"><div class="card-body">
++<p class="m-b-0">Ended</p>
++<h3>Sep 6, 2023 09:14:12 PM</h3>
++</div></div>
++</div>
++<div class="col-md-3">
++<div class="card"><div class="card-body">
++<p class="m-b-0 text-pass">Tests Passed</p>
++<h3>2</h3>
++</div></div>
++</div>
++<div class="col-md-3">
++<div class="card"><div class="card-body">
++<p class="m-b-0 text-fail">Tests Failed</p>
++<h3>0</h3>
++</div></div>
++</div>
++</div>
++<div class="row">
++<div class="col-md-6">
++<div class="card">
++<div class="card-header">
++<h6 class="card-title">Tests</h6>
++</div>
++<div class="card-body">
++<div class="">
++<canvas id='parent-analysis' width='115' height='90'></canvas>
++</div>
++</div>
++<div class="card-footer">
++<div><small data-tooltip='100%'>
++<b>2</b> tests passed
++</small>
++</div>
++<div>
++<small data-tooltip='0%'><b>0</b> tests failed,
++<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
++</small>
++</div>
++</div>
++</div>
++</div>
++<div class="col-md-6">
++<div class="card">
++<div class="card-header">
++<h6 class="card-title">Log events</h6>
++</div>
++<div class="card-body">
++<div class="">
++<canvas id='events-analysis' width='115' height='90'></canvas>
++</div>
++</div>
++<div class="card-footer">
++<div><small data-tooltip='33%'><b>2</b> events passed</small></div>
++<div>
++<small data-tooltip='0%'><b>0</b> events failed,
++<b data-tooltip='%'>4</b> others
++</small>
++</div>
++</div>
++</div>
++</div>
++</div>
++<div class="row">
++<div class="col-lg-6 col-md-12 author-container">
++<div class="card">
++<div class="card-header"><p>Author</p></div>
++<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
++<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
++<tbody>
++<tr>
++<td>Sahel92</td>
++<td>1</td>
++<td>0</td>
++<td>0</td>
++<td>0</td>
++<td>100%</td>
++</tr>
++</tbody>
++</table></div>
++</div>
++</div>
++<div class="col-lg-6 col-md-12 category-container">
++<div class="card">
++<div class="card-header"><p>Tags</p></div>
++<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
++<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
++<tr>
++<td>TestSuite</td>
++<td>1</td>
++<td>0</td>
++<td>0</td>
++<td>0</td>
++<td>100%</td>
++</tr>
++</tbody>
++</table></div>
++</div>
++</div>
++<div class="col-lg-6 col-md-12 device-container">
++<div class="card">
++<div class="card-header"><p>Device</p></div>
++<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
++<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
++<tbody>
++<tr>
++<td>Windows11PC,ChromeBrowserv-116</td>
++<td>1</td>
++<td>0</td>
++<td>0</td>
++<td>0</td>
++<td>100%</td>
++</tr>
++</tbody>
++</table></div>
++</div>
++</div>
++</div>
++</div>
++<script>
++var statusGroup = {
++parentCount: 5,
++passParent: 2,
++failParent: 0,
++warningParent: 0,
++skipParent: 0,
++childCount: 5,
++passChild: 0,
++failChild: 0,
++warningChild: 0,
++skipChild: 0,
++infoChild: 0,
++grandChildCount: 5,
++passGrandChild: 0,
++failGrandChild: 0,
++warningGrandChild: 0,
++skipGrandChild: 0,
++infoGrandChild: 0,
++eventsCount: 5,
++passEvents: 2,
++failEvents: 0,
++warningEvents: 0,
++skipEvents: 0,
++infoEvents: 4
++};
++</script>        </div>
++      </div>
++    </div>
++  </div>
++<script src="spark/spark-script.js"></script>
++<script type="text/javascript"></script></body>
++</html>
+\ No newline at end of file
+Index: src/main/java/com/sahel/booking/base/TestBase.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.base;\r\n\r\nimport com.aventstack.extentreports.ExtentTest;\r\nimport com.aventstack.extentreports.Status;\r\nimport com.sahel.booking.factory.BookingFactory;\r\nimport com.sahel.booking.utilities.WebDriverUtils;\r\nimport org.apache.logging.log4j.LogManager;\r\nimport org.apache.logging.log4j.Logger;\r\nimport org.testng.ITestResult;\r\nimport org.testng.annotations.AfterMethod;\r\nimport org.testng.annotations.BeforeMethod;\r\nimport org.testng.annotations.BeforeSuite;\r\n\r\nimport java.io.IOException;\r\n\r\n\r\npublic class TestBase extends WebDriverUtils {\r\n    protected static ExtentTest extentTest;\r\n    private static final String TEST_CATEGORY = \"Test Suite\";\r\n    private static final String TEST_AUTHOR = \"Sahel92\";\r\n    private static final String TEST_DEVICE = \"Windows 11 PC,  Chrome Browser v-116\";\r\n    protected static final Logger logger = LogManager.getLogger(TestBase.class);\r\n\r\n    protected static BookingFactory factory;\r\n\r\n    @BeforeSuite\r\n    public void setUpReporting() {\r\n        //Load Log4j2 configuration\r\n        System.setProperty(\"log4j.configurationFile\", \"src/main/resources/log4j2.xml\");\r\n        extentTest = WebDriverUtils.getReport().createTest(getClass().getSimpleName());\r\n        extentTest.assignCategory(TEST_CATEGORY);\r\n        extentTest.assignAuthor(TEST_AUTHOR);\r\n        extentTest.assignDevice(TEST_DEVICE);\r\n    }\r\n\r\n    @BeforeMethod\r\n    public void initializeTestExecution() throws IOException {\r\n        super.openBrowser();\r\n        factory = new BookingFactory();\r\n    }\r\n\r\n    /**\r\n     * Close WebDriver and do other teardown steps\r\n     */\r\n    // @AfterMethod\r\n    public void tearDown() {\r\n        super.quitBrowser();\r\n    }\r\n\r\n\r\n    // Generates the test results after test execution.\r\n    @AfterMethod\r\n    public void extentResults(ITestResult result) {\r\n        String testName = result.getName();\r\n        String methodName = result.getMethod().getMethodName();\r\n        String className = result.getTestClass().getName();\r\n        String status = getTestStatus(result.getStatus());\r\n        // Log test status and details\r\n        if (result.getStatus() == ITestResult.FAILURE) {\r\n            String errorMessage = result.getThrowable().getMessage();\r\n            logger.error(\"Test Failed: {}\", methodName);\r\n            logger.error(\"Error Message: {}\", errorMessage);\r\n            extentTest.log(Status.FAIL, \"Test Failed: \" + methodName);\r\n            extentTest.log(Status.FAIL, \"Error Message: \" + errorMessage);\r\n        } else if (result.getStatus() == ITestResult.SUCCESS) {\r\n            logger.info(\"Test Passed: {}\", methodName);\r\n            extentTest.log(Status.PASS, \"Test Passed: \" + methodName);\r\n        } else if (result.getStatus() == ITestResult.SKIP) {\r\n            logger.info(\"Test Skipped: {}\", methodName);\r\n            extentTest.log(Status.SKIP, \"Test Skipped: \" + methodName);\r\n        }\r\n\r\n        // Add more detailed information to the report\r\n        extentTest.info(\"Test Class: \" + className);\r\n        extentTest.info(\"Test Name: \" + testName);\r\n        extentTest.info(\"Test Status: \" + status);\r\n\r\n    }\r\n\r\n    // Helper method to convert test status to readable text\r\n    private String getTestStatus(int status) {\r\n        return switch (status) {\r\n            case ITestResult.FAILURE -> \"Failed\";\r\n            case ITestResult.SUCCESS -> \"Passed\";\r\n            case ITestResult.SKIP -> \"Skipped\";\r\n            default -> \"Unknown\";\r\n        };\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/base/TestBase.java b/src/main/java/com/sahel/booking/base/TestBase.java
+--- a/src/main/java/com/sahel/booking/base/TestBase.java	
++++ b/src/main/java/com/sahel/booking/base/TestBase.java	
+@@ -4,14 +4,20 @@
+ import com.aventstack.extentreports.Status;
+ import com.sahel.booking.factory.BookingFactory;
+ import com.sahel.booking.utilities.WebDriverUtils;
++import org.apache.commons.io.FileUtils;
+ import org.apache.logging.log4j.LogManager;
+ import org.apache.logging.log4j.Logger;
++import org.openqa.selenium.OutputType;
++import org.openqa.selenium.TakesScreenshot;
+ import org.testng.ITestResult;
+ import org.testng.annotations.AfterMethod;
+ import org.testng.annotations.BeforeMethod;
+ import org.testng.annotations.BeforeSuite;
+ 
++import java.io.File;
+ import java.io.IOException;
++import java.text.SimpleDateFormat;
++import java.util.Date;
+ 
+ 
+ public class TestBase extends WebDriverUtils {
+@@ -42,7 +48,7 @@
+     /**
+      * Close WebDriver and do other teardown steps
+      */
+-    // @AfterMethod
++  //  @AfterMethod
+     public void tearDown() {
+         super.quitBrowser();
+     }
+@@ -57,15 +63,18 @@
+         String status = getTestStatus(result.getStatus());
+         // Log test status and details
+         if (result.getStatus() == ITestResult.FAILURE) {
++           // captureScreenshot();
+             String errorMessage = result.getThrowable().getMessage();
+             logger.error("Test Failed: {}", methodName);
+             logger.error("Error Message: {}", errorMessage);
+             extentTest.log(Status.FAIL, "Test Failed: " + methodName);
+             extentTest.log(Status.FAIL, "Error Message: " + errorMessage);
+         } else if (result.getStatus() == ITestResult.SUCCESS) {
++           // captureScreenshot();
+             logger.info("Test Passed: {}", methodName);
+             extentTest.log(Status.PASS, "Test Passed: " + methodName);
+         } else if (result.getStatus() == ITestResult.SKIP) {
++          //  captureScreenshot();
+             logger.info("Test Skipped: {}", methodName);
+             extentTest.log(Status.SKIP, "Test Skipped: " + methodName);
+         }
+@@ -87,5 +96,26 @@
+         };
+     }
+ 
++    // Screenshot method
++    public static void captureScreenshot() {
++        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd_HHmmss");
++        String screenshotName = "screenshot_" + dateFormat.format(new Date()) + ".png";
++
++        // Convert WebDriver object to TakesScreenshot
++        TakesScreenshot ts = (TakesScreenshot) getDriver();
++
++        // Capture the screenshot as a File
++        File source = ts.getScreenshotAs(OutputType.FILE);
++
++        // Define the destination path for the screenshot
++        String destination = "src/test/resources/screenshots/" + screenshotName;
++
++        // Copy the screenshot file to the destination
++        try {
++            FileUtils.copyFile(source, new File(destination));
++        } catch (IOException e) {
++            logger.error("Failed to attach screenshot, check the file \ndestination.");
++        }
++    }
+ 
+ }
+Index: src/main/java/com/sahel/booking/base/DriverFactory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.base;\r\n\r\nimport com.aventstack.extentreports.ExtentReports;\r\nimport com.aventstack.extentreports.reporter.ExtentSparkReporter;\r\nimport com.aventstack.extentreports.reporter.configuration.Protocol;\r\nimport com.aventstack.extentreports.reporter.configuration.Theme;\r\nimport com.sahel.booking.browsers.ChromeBrowser;\r\nimport com.sahel.booking.browsers.EdgeBrowser;\r\nimport com.sahel.booking.browsers.FireFoxBrowser;\r\nimport org.apache.commons.io.IOIndexedException;\r\nimport org.openqa.selenium.WebDriver;\r\n\r\nimport java.io.File;\r\nimport java.io.FileInputStream;\r\nimport java.io.FileNotFoundException;\r\nimport java.io.IOException;\r\nimport java.time.Duration;\r\nimport java.time.temporal.ChronoUnit;\r\nimport java.util.Properties;\r\n\r\n/**\r\n * Factory class to initialize WebDriver\r\n */\r\n\r\npublic class DriverFactory {\r\n    private static WebDriver driver;\r\n    private static ExtentReports extent;\r\n\r\n    public static ExtentReports getReport() {\r\n        if (extent == null) {\r\n            ExtentSparkReporter spark = new ExtentSparkReporter(\"src/test/resources/extent-reports\");\r\n            spark.config().setTheme(Theme.DARK);\r\n            spark.config().setDocumentTitle(\"Booking Automation Testing Framework\");\r\n            spark.config().setReportName(\"Test Result's\");\r\n            spark.config().setProtocol(Protocol.HTTP);\r\n            spark.config().enableOfflineMode(true);\r\n            spark.config().setTimelineEnabled(false);\r\n            extent = new ExtentReports();\r\n            extent.attachReporter(spark);\r\n        }\r\n        return extent;\r\n    }\r\n\r\n    /**\r\n     * @return WebDriver\r\n     */\r\n    public WebDriver getDriver() {\r\n        return driver;\r\n    }\r\n\r\n\r\n    /**\r\n     * Loads and returns a Properties object from a specified properties file.\r\n     *\r\n     * @return A Properties object containing the loaded properties.\r\n     * @throws IOException If an I/O error occurs while reading the properties file.\r\n     */\r\n    private Properties loadProperties() throws IOException {\r\n        Properties properties = new Properties();\r\n        String propertiesFilePath = System.getProperty(\"user.dir\") + \"/src/main/resources/qa_env.properties\";\r\n\r\n        try (FileInputStream fileInputStream = getFileInput(propertiesFilePath)) {\r\n            properties.load(fileInputStream);\r\n        } catch (FileNotFoundException e) {\r\n            throw new FileNotFoundException(\"Properties file is not on this path : \" + propertiesFilePath + \" , check the location and try again.\");\r\n        } catch (IOIndexedException e) {\r\n            throw new IOException(\"Error while loading properties from file : \" + propertiesFilePath, e);\r\n        }\r\n        properties.load(getFileInput(propertiesFilePath));\r\n        return properties;\r\n    }\r\n\r\n    /**\r\n     * Retrieves an input stream for reading files.\r\n     *\r\n     * @param filepath The path to the file.\r\n     * @return An input stream for the specified file.\r\n     * @throws FileNotFoundException If the file at the given path is not found.\r\n     */\r\n    public static FileInputStream getFileInput(String filepath) throws FileNotFoundException {\r\n        try {\r\n            return new FileInputStream(new File(filepath));\r\n        } catch (FileNotFoundException e) {\r\n            throw new FileNotFoundException(\"The file could not be found on this path : \" + filepath);\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Retrieves the value of a property from the properties file.\r\n     *\r\n     * @param propertyKey-Key The key of the property to retrieve.\r\n     * @return The value of the specified property.\r\n     * @throws IOException If an I/O error occurs while loading the properties file.\r\n     */\r\n    private String getProperty(String propertyKey) throws IOException {\r\n        try {\r\n            return loadProperties().getProperty(propertyKey);\r\n        } catch (IOException e) {\r\n            throw new IOException(\"Error loading the properties, check the location of the file again\");\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Opens a web browser based on the properties provided.\r\n     *\r\n     * @throws IOException If an I/O error occurs while reading properties.\r\n     */\r\n    public void openBrowser() throws IOException {\r\n        String browser = this.getProperty(\"browser\");\r\n        String url = this.getProperty(\"url\");\r\n        String headless = this.getProperty(\"headless\");\r\n        driver = createWebDriver(browser, headless);\r\n        driver.manage().window().maximize();\r\n        driver.manage().timeouts().implicitlyWait(Duration.of(10, ChronoUnit.SECONDS));\r\n        driver.get(url);\r\n\r\n\r\n    }\r\n\r\n    /**\r\n     * Creates and returns a WebDriver instance based on the chosen browser and headless mode.\r\n     *\r\n     * @param browser  The name of the browser (e.g., \"chrome\", \"firefox\", \"edge\").\r\n     * @param headless Whether to run the browser in headless mode (\"true\" or \"false\").\r\n     * @return A WebDriver instance for the specified browser and mode.\r\n     * @throws IllegalArgumentException If an unsupported browser name is provided.\r\n     */\r\n    private static WebDriver createWebDriver(String browser, String headless) {\r\n        switch (browser.toLowerCase()) {\r\n            case \"chrome\" -> driver = ChromeBrowser.createChromeDriver(headless);\r\n            case \"firefox\" -> driver = FireFoxBrowser.createFireFoxDriver(headless);\r\n            case \"edge\" -> driver = EdgeBrowser.createEdgeDriver(headless);\r\n            default -> throw new IllegalArgumentException(\"Unsupported browser\");\r\n        }\r\n        return driver;\r\n    }\r\n\r\n    /**\r\n     * Quits the current instance of WebDriver if it is open.\r\n     */\r\n    public void quitBrowser() {\r\n        if (driver != null) {\r\n            driver.quit();\r\n        }\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/base/DriverFactory.java b/src/main/java/com/sahel/booking/base/DriverFactory.java
+--- a/src/main/java/com/sahel/booking/base/DriverFactory.java	
++++ b/src/main/java/com/sahel/booking/base/DriverFactory.java	
+@@ -10,7 +10,6 @@
+ import org.apache.commons.io.IOIndexedException;
+ import org.openqa.selenium.WebDriver;
+ 
+-import java.io.File;
+ import java.io.FileInputStream;
+ import java.io.FileNotFoundException;
+ import java.io.IOException;
+@@ -19,15 +18,17 @@
+ import java.util.Properties;
+ 
+ /**
+- * Factory class to initialize WebDriver
++ * Factory class to initialize WebDriver and ExtentReports
+  */
+ 
+ public class DriverFactory {
+     private static WebDriver driver;
+-    private static ExtentReports extent;
++    private static ExtentReports extentReports;
+ 
++
++    // ExtentReport configurations
+     public static ExtentReports getReport() {
+-        if (extent == null) {
++        if (extentReports == null) {
+             ExtentSparkReporter spark = new ExtentSparkReporter("src/test/resources/extent-reports");
+             spark.config().setTheme(Theme.DARK);
+             spark.config().setDocumentTitle("Booking Automation Testing Framework");
+@@ -35,16 +36,16 @@
+             spark.config().setProtocol(Protocol.HTTP);
+             spark.config().enableOfflineMode(true);
+             spark.config().setTimelineEnabled(false);
+-            extent = new ExtentReports();
+-            extent.attachReporter(spark);
++            extentReports = new ExtentReports();
++            extentReports.attachReporter(spark);
+         }
+-        return extent;
++        return extentReports;
+     }
+ 
+     /**
+      * @return WebDriver
+      */
+-    public WebDriver getDriver() {
++    public static WebDriver getDriver() {
+         return driver;
+     }
+ 
+@@ -79,7 +80,7 @@
+      */
+     public static FileInputStream getFileInput(String filepath) throws FileNotFoundException {
+         try {
+-            return new FileInputStream(new File(filepath));
++            return new FileInputStream(filepath);
+         } catch (FileNotFoundException e) {
+             throw new FileNotFoundException("The file could not be found on this path : " + filepath);
+         }
+@@ -125,14 +126,14 @@
+      * @return A WebDriver instance for the specified browser and mode.
+      * @throws IllegalArgumentException If an unsupported browser name is provided.
+      */
+-    private static WebDriver createWebDriver(String browser, String headless) {
++    private WebDriver createWebDriver(String browser, String headless) {
+         switch (browser.toLowerCase()) {
+             case "chrome" -> driver = ChromeBrowser.createChromeDriver(headless);
+             case "firefox" -> driver = FireFoxBrowser.createFireFoxDriver(headless);
+             case "edge" -> driver = EdgeBrowser.createEdgeDriver(headless);
+             default -> throw new IllegalArgumentException("Unsupported browser");
+         }
+-        return driver;
++        return DriverFactory.driver;
+     }
+ 
+     /**
+Index: pom.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project xmlns=\"http://maven.apache.org/POM/4.0.0\"\r\n         xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n         xsi:schemaLocation=\"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd\">\r\n    <modelVersion>4.0.0</modelVersion>\r\n\r\n    <groupId>com.sahel.booking</groupId>\r\n    <artifactId>BookingAutomation</artifactId>\r\n    <version>1.0-SNAPSHOT</version>\r\n\r\n    <properties>\r\n        <maven.compiler.source>17</maven.compiler.source>\r\n        <maven.compiler.target>17</maven.compiler.target>\r\n        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>\r\n    </properties>\r\n\r\n    <dependencies>\r\n        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->\r\n        <dependency>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n            <artifactId>maven-compiler-plugin</artifactId>\r\n            <version>3.11.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->\r\n        <dependency>\r\n            <groupId>org.apache.maven.plugins</groupId>\r\n            <artifactId>maven-resources-plugin</artifactId>\r\n            <version>3.3.1</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.testng/testng -->\r\n        <dependency>\r\n            <groupId>org.testng</groupId>\r\n            <artifactId>testng</artifactId>\r\n            <version>7.8.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->\r\n        <dependency>\r\n            <groupId>org.seleniumhq.selenium</groupId>\r\n            <artifactId>selenium-java</artifactId>\r\n            <version>4.11.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->\r\n        <dependency>\r\n            <groupId>io.github.bonigarcia</groupId>\r\n            <artifactId>webdrivermanager</artifactId>\r\n            <version>5.5.0</version>\r\n        </dependency>\r\n\r\n\r\n        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->\r\n        <dependency>\r\n            <groupId>org.apache.logging.log4j</groupId>\r\n            <artifactId>log4j-core</artifactId>\r\n            <version>2.20.0</version>\r\n        </dependency>\r\n\r\n        <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->\r\n        <dependency>\r\n            <groupId>com.aventstack</groupId>\r\n            <artifactId>extentreports</artifactId>\r\n            <version>5.1.0</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>com.aventstack</groupId>\r\n            <artifactId>extentreports-testng-adapter</artifactId>\r\n            <version>1.2.2</version>\r\n        </dependency>\r\n        <dependency>\r\n            <groupId>org.apache.logging.log4j</groupId>\r\n            <artifactId>log4j-api</artifactId>\r\n            <version>2.20.0</version>\r\n        </dependency>\r\n    </dependencies>\r\n    <build>\r\n        <plugins>\r\n\r\n            <!-- Maven Surefire Plugin -->\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-surefire-plugin</artifactId>\r\n                <version>3.0.0-M5</version> <!-- Use a compatible version with your Maven version -->\r\n                <configuration>\r\n                    <suiteXmlFiles>\r\n                        <suiteXmlFile>\r\n                            C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\testng-xml-files\\search-test.xml\r\n                        </suiteXmlFile>\r\n                    </suiteXmlFiles>\r\n                </configuration>\r\n            </plugin>\r\n            <plugin>\r\n                <groupId>org.apache.maven.plugins</groupId>\r\n                <artifactId>maven-compiler-plugin</artifactId>\r\n                <version>3.11.0</version> <!-- Use a compatible version -->\r\n                <configuration>\r\n                    <source>17</source>\r\n                    <target>17</target>\r\n                </configuration>\r\n            </plugin>\r\n        </plugins>\r\n    </build>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pom.xml b/pom.xml
+--- a/pom.xml	
++++ b/pom.xml	
+@@ -40,7 +40,7 @@
+         <dependency>
+             <groupId>org.seleniumhq.selenium</groupId>
+             <artifactId>selenium-java</artifactId>
+-            <version>4.11.0</version>
++            <version>4.12.0</version>
+         </dependency>
+ 
+         <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+@@ -86,7 +86,7 @@
+                 <configuration>
+                     <suiteXmlFiles>
+                         <suiteXmlFile>
+-                            C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\testng-xml-files\search-test.xml
++                            src/test/resources/testng-xml-files/search-tests.xml
+                         </suiteXmlFile>
+                     </suiteXmlFiles>
+                 </configuration>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e983239e-c951-4741-8f6d-0fc2efb3d0f9\" name=\"Changes\" comment=\"Test Harness Ready\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/search-tests.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/pom.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/pom.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/BookingLoginTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/BookingLoginTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/extent-reports/index.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-24.log\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-24.log\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/logintest.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"Sahel92 &lt;m.sahel.sadiq0526@outlook.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\"><![CDATA[{\r\n  \"history\": [\r\n    {\r\n      \"state\": \"CLOSED\",\r\n      \"assignee\": \"Sahel92\"\r\n    }\r\n  ],\r\n  \"lastFilter\": {\r\n    \"state\": \"CLOSED\",\r\n    \"assignee\": \"Sahel92\"\r\n  }\r\n}]]></component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"8f1b8192-28ea-483c-a857-e6d1648e684f\" />\r\n        <option name=\"url\" value=\"https://github.com/Sahel92/BookITAutomation.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0-sources.jar!/org/testng/ITestListener.java\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"useMavenConfig\" value=\"true\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2ULU0RwHIq9oWKCrzoxJaXxfgzj\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"SONARLINT_PRECOMMIT_ANALYSIS\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"ignore.virus.scanning.warn.message\": \"true\",\r\n    \"last_opened_file_path\": \"A:/IntelliJWorkspace/BookITAutomation/src/test/resources/testng-xml-files\",\r\n    \"project.structure.last.edited\": \"SDKs\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"configurable.group.appearance\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"A:\\IntelliJWorkspace\\BookITAutomation\\src\\test\\resources\\testng-xml-files\" />\r\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\log4j-reports\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\\src\\test\\resources\\testng-xml-files\" />\r\n      <recent name=\"C:\\Users\\msahe\\IdeaProjects\\BookingAutomation\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunAnythingCache\">\r\n    <option name=\"myCommands\">\r\n      <command value=\"mvn package -Dmaven.plugin.validation=brief\" />\r\n      <command value=\"mvn clean install\" />\r\n      <command value=\"mvn install\" />\r\n      <command value=\"mvn test\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.SearchFunctionalityTest.validHotelSearch\">\r\n    <configuration name=\"BookingAutomation [org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test]\" type=\"MavenRunConfiguration\" factoryName=\"Maven\">\r\n      <MavenSettings>\r\n        <option name=\"myGeneralSettings\">\r\n          <MavenGeneralSettings>\r\n            <option name=\"alwaysUpdateSnapshots\" value=\"false\" />\r\n            <option name=\"checksumPolicy\" value=\"NOT_SET\" />\r\n            <option name=\"emulateTerminal\" value=\"false\" />\r\n            <option name=\"failureBehavior\" value=\"NOT_SET\" />\r\n            <option name=\"localRepository\" value=\"\" />\r\n            <option name=\"mavenHome\" value=\"Bundled (Maven 3)\" />\r\n            <option name=\"nonRecursive\" value=\"false\" />\r\n            <option name=\"outputLevel\" value=\"INFO\" />\r\n            <option name=\"pluginUpdatePolicy\" value=\"DEFAULT\" />\r\n            <option name=\"printErrorStackTraces\" value=\"false\" />\r\n            <option name=\"showDialogWithAdvancedSettings\" value=\"false\" />\r\n            <option name=\"threads\" />\r\n            <option name=\"useMavenConfig\" value=\"true\" />\r\n            <option name=\"usePluginRegistry\" value=\"false\" />\r\n            <option name=\"userSettingsFile\" value=\"\" />\r\n            <option name=\"workOffline\" value=\"false\" />\r\n          </MavenGeneralSettings>\r\n        </option>\r\n        <option name=\"myRunnerSettings\">\r\n          <MavenRunnerSettings>\r\n            <option name=\"delegateBuildToMaven\" value=\"false\" />\r\n            <option name=\"environmentProperties\">\r\n              <map />\r\n            </option>\r\n            <option name=\"jreName\" value=\"#USE_PROJECT_JDK\" />\r\n            <option name=\"mavenProperties\">\r\n              <map />\r\n            </option>\r\n            <option name=\"passParentEnv\" value=\"true\" />\r\n            <option name=\"runMavenInBackground\" value=\"true\" />\r\n            <option name=\"skipTests\" value=\"false\" />\r\n            <option name=\"vmOptions\" value=\"\" />\r\n          </MavenRunnerSettings>\r\n        </option>\r\n        <option name=\"myRunnerParameters\">\r\n          <MavenRunnerParameters>\r\n            <option name=\"profiles\">\r\n              <set />\r\n            </option>\r\n            <option name=\"goals\">\r\n              <list>\r\n                <option value=\"org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test\" />\r\n              </list>\r\n            </option>\r\n            <option name=\"pomFileName\" value=\"pom.xml\" />\r\n            <option name=\"profilesMap\">\r\n              <map />\r\n            </option>\r\n            <option name=\"resolveToWorkspace\" value=\"false\" />\r\n            <option name=\"workingDirPath\" value=\"$PROJECT_DIR$\" />\r\n          </MavenRunnerParameters>\r\n        </option>\r\n      </MavenSettings>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"BookingLoginTest.performSignIn\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"BookingLoginTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"performSignIn\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"BookingLoginTest.test1\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"BookingLoginTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test1\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"SUITE_NAME\" value=\"$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml\" />\r\n      <option name=\"TEST_OBJECT\" value=\"SUITE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SearchFunctionalityTest.validHotelSearch\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"SearchFunctionalityTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"validHotelSearch\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"&lt;default&gt;\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"BookingAutomation\" />\r\n      <option name=\"PACKAGE_NAME\" value=\"\" />\r\n      <option name=\"TEST_OBJECT\" value=\"PACKAGE\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.SearchFunctionalityTest.validHotelSearch\" />\r\n        <item itemvalue=\"TestNG.BookingLoginTest.performSignIn\" />\r\n        <item itemvalue=\"TestNG.C:/Users/msahe/IdeaProjects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml\" />\r\n        <item itemvalue=\"TestNG.BookingLoginTest.test1\" />\r\n        <item itemvalue=\"TestNG.&lt;default&gt;\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e983239e-c951-4741-8f6d-0fc2efb3d0f9\" name=\"Changes\" comment=\"\" />\r\n      <created>1692718130805</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1692718130805</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Added Browser classes &amp; DriverFactory Class\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692757052264</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692757052264</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Implementing ExtentReports\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692771341672</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692771341672</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692779611949</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692779611949</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"reporters working properly\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692823147740</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692823147740</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Added Logger, fixed report fixed pom xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692841989416</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692841989416</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Added WebDriverUtils Methods :)\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692852705247</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692852705247</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"BookingFactory to initialize POM classes and UI elements.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692911873549</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692911873549</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692939987084</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692939987084</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692943226013</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692943226013</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692944465674</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692944465674</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692945977728</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692945977728</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692948030132</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692948030132</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Test Harness Ready\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1692962171359</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1692962171359</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"14\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"origin/BOOK-1-User-Story-1-Setup-Framework-Priority-High\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\r\n    <MESSAGE value=\"Added Browser classes &amp; DriverFactory Class\" />\r\n    <MESSAGE value=\"Implementing ExtentReports\" />\r\n    <MESSAGE value=\"Fixed issue with browser not launching. Smoke tests passed. The framework is ready for testing.\" />\r\n    <MESSAGE value=\"reporters working properly\" />\r\n    <MESSAGE value=\"Added Logger, fixed report fixed pom xml\" />\r\n    <MESSAGE value=\"Added WebDriverUtils Methods :)\" />\r\n    <MESSAGE value=\"BookingFactory to initialize POM classes and UI elements.\" />\r\n    <MESSAGE value=\"Test Harness Ready\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Test Harness Ready\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,28 +4,27 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Test Harness Ready">
+-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/search-tests.xml" afterDir="false" />
++    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Calendar random date pick test in progress">
++      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/screenshot_20230906_224409.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/screenshot_20230906_224412.png" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/test/resources/screenshots/screenshot_20230906_224414.png" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b586bf63a24db85bd6556041ef64c36361a4560" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/b/3b586bf63a24db85bd6556041ef64c36361a4560" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/output/logs/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/logs/Booking_Test_Logs.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/output/logs/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/output/logs/testlog.log" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/output/logs/testlog1.log" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/index.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/font-awesome.min.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/fontawesome-webfont.svg" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/jsontree.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-script.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/spark/spark-style.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/application-log.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log-2023-08-24.log" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-details-log.log" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log-2023-08-24.log" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/test-suite-log.log" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/logintest.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/search-tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/search-tests.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -47,18 +46,18 @@
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+-  "history": [
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;history&quot;: [
+     {
+-      "state": "CLOSED",
+-      "assignee": "Sahel92"
++      &quot;state&quot;: &quot;CLOSED&quot;,
++      &quot;assignee&quot;: &quot;Sahel92&quot;
+     }
+   ],
+-  "lastFilter": {
+-    "state": "CLOSED",
+-    "assignee": "Sahel92"
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;CLOSED&quot;,
++    &quot;assignee&quot;: &quot;Sahel92&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="GithubPullRequestsUISettings">
+     <option name="selectedUrlAndAccountId">
+       <UrlAndAccount>
+@@ -91,28 +90,29 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+-    "git-widget-placeholder": "master",
+-    "ignore.virus.scanning.warn.message": "true",
+-    "last_opened_file_path": "A:/IntelliJWorkspace/BookITAutomation/src/test/resources/testng-xml-files",
+-    "project.structure.last.edited": "SDKs",
+-    "project.structure.proportion": "0.15",
+-    "project.structure.side.proportion": "0.2",
+-    "settings.editor.selected.configurable": "configurable.group.appearance"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;A:/IntelliJWorkspace/BookITAutomation/src/test/resources/testng-xml-files&quot;,
++    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
++    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="A:\IntelliJWorkspace\BookITAutomation\src\test\resources\testng-xml-files" />
+       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\log4j-reports" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
++      <recent name="A:\IntelliJWorkspace\BookITAutomation\src\test\resources\screenshots" />
+       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\testng-xml-files" />
+       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation" />
+     </key>
+@@ -120,8 +120,8 @@
+   <component name="RunAnythingCache">
+     <option name="myCommands">
+       <command value="mvn package -Dmaven.plugin.validation=brief" />
+-      <command value="mvn clean install" />
+       <command value="mvn install" />
++      <command value="mvn clean install" />
+       <command value="mvn test" />
+     </option>
+   </component>
+@@ -364,7 +364,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1692962171359</updated>
+     </task>
+-    <option name="localTasksCounter" value="14" />
++    <task id="LOCAL-00014" summary="Calendar random date pick test in progress">
++      <created>1694051692467</created>
++      <option name="number" value="00014" />
++      <option name="presentableId" value="LOCAL-00014" />
++      <option name="project" value="LOCAL" />
++      <updated>1694051692467</updated>
++    </task>
++    <option name="localTasksCounter" value="15" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -400,7 +407,8 @@
+     <MESSAGE value="Added WebDriverUtils Methods :)" />
+     <MESSAGE value="BookingFactory to initialize POM classes and UI elements." />
+     <MESSAGE value="Test Harness Ready" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Test Harness Ready" />
++    <MESSAGE value="Calendar random date pick test in progress" />
++    <option name="LAST_COMMIT_MESSAGE" value="Calendar random date pick test in progress" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><component name=\"InspectionProjectProfileManager\">\r\n  <profile version=\"1.0\">\r\n    <option name=\"myName\" value=\"Project Default\" />\r\n    <inspection_tool class=\"VulnerableLibrariesLocal\" enabled=\"false\" level=\"WARNING\" enabled_by_default=\"false\" />\r\n    <inspection_tool class=\"unused\" enabled=\"false\" level=\"WARNING\" enabled_by_default=\"false\" checkParameterExcludingHierarchy=\"false\">\r\n      <option name=\"LOCAL_VARIABLE\" value=\"true\" />\r\n      <option name=\"FIELD\" value=\"true\" />\r\n      <option name=\"METHOD\" value=\"true\" />\r\n      <option name=\"CLASS\" value=\"true\" />\r\n      <option name=\"PARAMETER\" value=\"true\" />\r\n      <option name=\"REPORT_PARAMETER_FOR_PUBLIC_METHODS\" value=\"true\" />\r\n      <option name=\"ADD_MAINS_TO_ENTRIES\" value=\"true\" />\r\n      <option name=\"ADD_APPLET_TO_ENTRIES\" value=\"true\" />\r\n      <option name=\"ADD_SERVLET_TO_ENTRIES\" value=\"true\" />\r\n      <option name=\"ADD_NONJAVA_TO_ENTRIES\" value=\"true\" />\r\n    </inspection_tool>\r\n  </profile>\r\n</component>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+--- a/.idea/inspectionProfiles/Project_Default.xml	
++++ b/.idea/inspectionProfiles/Project_Default.xml	
+@@ -1,7 +1,29 @@
+ <component name="InspectionProjectProfileManager">
+   <profile version="1.0">
+     <option name="myName" value="Project Default" />
++    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="myValues">
++        <value>
++          <list size="4">
++            <item index="0" class="java.lang.String" itemvalue="bordercolor" />
++            <item index="1" class="java.lang.String" itemvalue="topmargin" />
++            <item index="2" class="java.lang.String" itemvalue="leftmargin" />
++            <item index="3" class="java.lang.String" itemvalue="charset" />
++          </list>
++        </value>
++      </option>
++      <option name="myCustomValuesEnabled" value="true" />
++    </inspection_tool>
+     <inspection_tool class="VulnerableLibrariesLocal" enabled="false" level="WARNING" enabled_by_default="false" />
++    <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="groups">
++        <value>
++          <list size="1">
++            <item index="0" class="java.lang.String" itemvalue="smoke" />
++          </list>
++        </value>
++      </option>
++    </inspection_tool>
+     <inspection_tool class="unused" enabled="false" level="WARNING" enabled_by_default="false" checkParameterExcludingHierarchy="false">
+       <option name="LOCAL_VARIABLE" value="true" />
+       <option name="FIELD" value="true" />
+Index: .idea/sonarlint/securityhotspotstore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nS\n#.idea/sonarlint/issuestore/index.pb\u0012,9\\f\\9fe84ebb15faf917b7def6236dba604453cc61e0\n]\n-.idea/sonarlint/securityhotspotstore/index.pb\u0012,8\\8\\88a9255124c95bdc913197c120a8d560edc59c8e\n<\n\fsettings.xml\u0012,1\\d\\1d784fce58c3719506730fb9749600554125b511\n^\n.src/test/resources/testng-xml-files/testng.xml\u0012,3\\b\\3b586bf63a24db85bd6556041ef64c36361a4560\nl\n<src/main/java/com/sahel/booking/browsers/FireFoxBrowser.java\u0012,8\\c\\8cbcaf7c41ed72ccd235d1a12de2510d4891da61\ni\n9src/main/java/com/sahel/booking/browsers/EdgeBrowser.java\u0012,0\\7\\07c48ad3fe37585eec3718195730beefa0d01d5e\n;\n\u000Bqodana.yaml\u0012,8\\5\\85c3a901608a6b9adf48d245fa84828b66304e51\nt\nDsrc/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java\u0012,5\\5\\55e54efb7865556c64833127efaa64a4c2a8a076\n\\\n,.idea/inspectionProfiles/Project_Default.xml\u0012,4\\9\\496a238a6afa168dbaf6efd37bb459331589579c
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/securityhotspotstore/index.pb b/.idea/sonarlint/securityhotspotstore/index.pb
+--- a/.idea/sonarlint/securityhotspotstore/index.pb	
++++ b/.idea/sonarlint/securityhotspotstore/index.pb	
+@@ -5,8 +5,6 @@
+ -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+ <
+ settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
+-^
+-.src/test/resources/testng-xml-files/testng.xml,3\b\3b586bf63a24db85bd6556041ef64c36361a4560
+ l
+ <src/main/java/com/sahel/booking/browsers/FireFoxBrowser.java,8\c\8cbcaf7c41ed72ccd235d1a12de2510d4891da61
+ i
+Index: src/main/java/com/sahel/booking/utilities/WebDriverUtils.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.utilities;\r\n\r\n\r\nimport com.sahel.booking.base.DriverFactory;\r\nimport org.openqa.selenium.*;\r\nimport org.openqa.selenium.interactions.Actions;\r\nimport org.openqa.selenium.support.ui.*;\r\n\r\nimport java.text.DateFormat;\r\nimport java.text.SimpleDateFormat;\r\nimport java.time.Duration;\r\nimport java.util.Calendar;\r\nimport java.util.Locale;\r\nimport java.util.Random;\r\nimport java.util.Set;\r\n\r\npublic class WebDriverUtils extends DriverFactory {\r\n    static final int WEB_DRIVER_WAIT = 15;\r\n\r\n    /**\r\n     * Returns a WebDriverWait instance with the given duration in seconds.\r\n     *\r\n     * @return WebDriverWait instance\r\n     */\r\n    public WebDriverWait getWait() {\r\n        return new WebDriverWait(getDriver(), Duration.ofSeconds(WEB_DRIVER_WAIT));\r\n    }\r\n\r\n    /**\r\n     * Waits until the provided element is clickable.\r\n     *\r\n     * @param element Element to wait for\r\n     * @return Clickable element\r\n     */\r\n    public WebElement waitTillClickable(WebElement element) {\r\n        return this.getWait().until(ExpectedConditions.elementToBeClickable(element));\r\n    }\r\n\r\n    /**\r\n     * Waits until the provided element is visible.\r\n     *\r\n     * @param element Element to wait for\r\n     * @return Visible element\r\n     */\r\n    public WebElement waitTillVisible(WebElement element) {\r\n        return this.getWait().until(ExpectedConditions.visibilityOf(element));\r\n    }\r\n\r\n    /**\r\n     * Clicks on the provided element after ensuring it's clickable.\r\n     * implements waitTillVisible();\r\n     *\r\n     * @param element Element to be clicked\r\n     */\r\n    public void click(WebElement element) {\r\n        this.waitTillClickable(element).click();\r\n    }\r\n\r\n    /**\r\n     * Enters the given text into the provided element after ensuring it's visible.\r\n     *\r\n     * @param element Element to which text will be sent\r\n     * @param value   Text value to send\r\n     */\r\n    public void sendText(WebElement element, String value) {\r\n        this.waitTillVisible(element).sendKeys(value);\r\n    }\r\n\r\n    /**\r\n     * Retrieves the text of the provided element after ensuring it's visible.\r\n     *\r\n     * @param element Element from which text will be retrieved\r\n     * @return Text of the element\r\n     */\r\n    public String getElementTextString(WebElement element) {\r\n        return this.waitTillVisible(element).getText();\r\n    }\r\n\r\n    /**\r\n     * Retrieves the title of the current page.\r\n     *\r\n     * @return Title of the current page\r\n     */\r\n    public String getTitle() {\r\n        return getDriver().getTitle();\r\n    }\r\n\r\n    /**\r\n     * Uses JavascriptExecutor to set a value to the provided element.\r\n     *\r\n     * @param element Element to which value will be set\r\n     * @param value   Value to set\r\n     */\r\n    public void sendValueUsingJS(WebElement element, String value) {\r\n        JavascriptExecutor executor = ((JavascriptExecutor) getDriver());\r\n        executor.executeScript(\"arguments[0].value='\" + value + \"';\", element);\r\n    }\r\n\r\n    /**\r\n     * Clears the text of the provided element using a combination of key presses.\r\n     *\r\n     * @param toClear Element to clear\r\n     */\r\n    public void clearTextUsingSendKeys(WebElement toClear) {\r\n        toClear.sendKeys(Keys.CONTROL + \"a\");\r\n        toClear.sendKeys(Keys.DELETE);\r\n    }\r\n\r\n    /**\r\n     * Selects an element from a dropdown using its index number.\r\n     *\r\n     * @param element Dropdown element\r\n     * @param index   Index of the option to select\r\n     */\r\n    public void selectByIndex(WebElement element, int index) {\r\n        Select select = new Select(element);\r\n        select.selectByIndex(index);\r\n    }\r\n\r\n    /**\r\n     * Selects an element from a dropdown by specified value.\r\n     *\r\n     * @param element Dropdown element\r\n     * @param value   Value of the option to select\r\n     */\r\n    public void selectByValue(WebElement element, String value) {\r\n        Select select = new Select(element);\r\n        select.selectByValue(value);\r\n    }\r\n\r\n    /**\r\n     * Selects an element from a dropdown by visible text.\r\n     *\r\n     * @param element     WebElement representing the dropdown\r\n     * @param visibleText Visible text of the option to select\r\n     */\r\n    public void selectByVisibleText(WebElement element, String visibleText) {\r\n        Select select = new Select(element);\r\n        select.selectByVisibleText(visibleText);\r\n    }\r\n\r\n    /**\r\n     * Deselects an element from a dropdown by index.\r\n     *\r\n     * @param element WebElement representing the dropdown\r\n     * @param index   Index of the option to deselect\r\n     */\r\n    public void deselectByIndex(WebElement element, int index) {\r\n        Select select = new Select(element);\r\n        select.deselectByIndex(index);\r\n    }\r\n\r\n    /**\r\n     * Deselects an element from a dropdown by value.\r\n     *\r\n     * @param element WebElement representing the dropdown\r\n     * @param value   Value of the option to deselect\r\n     */\r\n    public void deselectByValue(WebElement element, String value) {\r\n        Select select = new Select(element);\r\n        select.deselectByValue(value);\r\n    }\r\n\r\n    /**\r\n     * Deselects an element from a dropdown by visible text.\r\n     *\r\n     * @param element     WebElement representing the dropdown\r\n     * @param visibleText Visible text of the option to deselect\r\n     */\r\n    public void deselectByVisibleText(WebElement element, String visibleText) {\r\n        Select select = new Select(element);\r\n        select.deselectByVisibleText(visibleText);\r\n    }\r\n\r\n    /**\r\n     * Retrieves the tag name of the specified WebElement.\r\n     *\r\n     * @param element WebElement to retrieve tag name from\r\n     * @return Tag name of the element\r\n     */\r\n    public String getTagName(WebElement element) {\r\n        return element.getTagName();\r\n    }\r\n\r\n    /**\r\n     * Retrieves the visible text of the specified element.\r\n     *\r\n     * @param element WebElement to retrieve text from\r\n     * @return Visible text of the element\r\n     */\r\n    public String getText(WebElement element) {\r\n        return element.getText();\r\n    }\r\n\r\n    /**\r\n     * Highlights the specified element using JavascriptExecutor.\r\n     *\r\n     * @param element WebElement to highlight\r\n     */\r\n    public void highlightElement(WebElement element) {\r\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\r\n        js.executeScript(\"arguments[0].style.border='3px solid red'\", element);\r\n        js.executeScript(\"arguments[0].style.border= '1px white'\", element);\r\n    }\r\n\r\n    /**\r\n     * Performs a drag-and-drop action using Actions class.\r\n     *\r\n     * @param dragLocation Element to drag\r\n     * @param dropLocation Target drop location\r\n     */\r\n    public void dragAndDropAction(WebElement dragLocation, WebElement dropLocation) {\r\n        Actions action = new Actions(getDriver());\r\n        action.dragAndDrop(dragLocation, dropLocation).perform();\r\n    }\r\n\r\n    /**\r\n     * Checks if the specified element is displayed.\r\n     *\r\n     * @param element WebElement to check\r\n     * @return True if the element is displayed, false otherwise\r\n     */\r\n    public boolean isElementDisplayed(WebElement element) {\r\n        return element.isDisplayed();\r\n    }\r\n\r\n    /**\r\n     * Checks if the specified element is enabled.\r\n     *\r\n     * @param element WebElement to check\r\n     * @return True if the element is enabled, false otherwise\r\n     */\r\n    public boolean isElementEnabled(WebElement element) {\r\n        return element.isEnabled();\r\n    }\r\n\r\n    /**\r\n     * Checks if the specified element is selected.\r\n     *\r\n     * @param element WebElement to check\r\n     * @return True if the element is selected, false otherwise\r\n     */\r\n    public boolean isElementSelected(WebElement element) {\r\n        return element.isSelected();\r\n    }\r\n\r\n    /**\r\n     * Moves the mouse cursor to an element using Actions class.\r\n     *\r\n     * @param element Element to move to\r\n     */\r\n    public void moveToElementAction(WebElement element) {\r\n        Actions actions = new Actions(getDriver());\r\n        actions.moveToElement(element).build().perform();\r\n    }\r\n\r\n    /**\r\n     * Switches to a desired window based on its title.\r\n     *\r\n     * @param switchToWindow Title of the window to switch to\r\n     */\r\n    public void switchWindow(String switchToWindow) {\r\n        String currentWindow = getDriver().getWindowHandle();\r\n        Set<String> handles = getDriver().getWindowHandles();\r\n        for (String winHandle : handles) {\r\n            String currentWindowTitle = getDriver().switchTo().window(winHandle).getTitle();\r\n            if (currentWindowTitle.equals(switchToWindow)) {\r\n                break;\r\n            } else {\r\n                getDriver().switchTo().window(currentWindow);\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * Sets a random calendar date between today and next year.\r\n     *\r\n     * @param date    Date value to set\r\n     * @param element Calendar element\r\n     */\r\n    public void setRandomCalendarDate(WebElement element) {\r\n        // Generate calendar with random date between today and next year.\r\n        Calendar calendar = Calendar.getInstance();\r\n        calendar.add(Calendar.DAY_OF_YEAR, new Random().nextInt(365));\r\n\r\n        // Change format to Day of Week, Month Day\r\n        DateFormat dateFormat = new SimpleDateFormat(\"EEE, MMM d\", Locale.US);\r\n        String randomDate = dateFormat.format(calendar.getTime());\r\n\r\n        // Use JavaScript to set the random date\r\n        JavascriptExecutor javascriptExecutor = ((JavascriptExecutor) getDriver());\r\n        javascriptExecutor.executeScript(\"arguments[0].innerText = arguments[1];\", element, randomDate);\r\n\r\n    }\r\n\r\n    /**\r\n     * Clicks on an element using JavaScript.\r\n     *\r\n     * @param element Element to click\r\n     */\r\n    public void clickElementWithJS(WebElement element) {\r\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\r\n        js.executeScript(\"arguments[0].click();\", element);\r\n    }\r\n\r\n    /**\r\n     * Scrolls down the page using JavaScript.\r\n     */\r\n    public void scrollPageDownWithJS() {\r\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\r\n        js.executeScript(\"window.scrollTo(0, document.body.scrollHeight);\");\r\n    }\r\n\r\n    /**\r\n     * Clears the text of an element using JavaScript.\r\n     *\r\n     * @param element Element to clear\r\n     */\r\n    public void clearTextWithJS(WebElement element) {\r\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\r\n        js.executeScript(\"arguments[0].value = '';\", element);\r\n    }\r\n\r\n    /**\r\n     * Clears the text of an element using JavaScript and sends new text.\r\n     *\r\n     * @param element Element to clear and send text to\r\n     * @param value   Text value to send\r\n     */\r\n    public void clearAndSendWithJs(WebElement element, String value) {\r\n        JavascriptExecutor js = (JavascriptExecutor) getDriver();\r\n        js.executeScript(\"arguments[0].value = '';\", element);\r\n        element.sendKeys(value);\r\n    }\r\n\r\n    /**\r\n     * Refreshes the webpage.\r\n     */\r\n    public void refreshPage() {\r\n        getDriver().navigate().refresh();\r\n    }\r\n\r\n    /**\r\n     * Waits for an element to disappear from the page.\r\n     *\r\n     * @param element Element to wait for disappearance\r\n     */\r\n    public void waitForElementToDisappear(WebElement element) {\r\n        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(WEB_DRIVER_WAIT));\r\n        wait.until(ExpectedConditions.invisibilityOf(element));\r\n    }\r\n\r\n    /**\r\n     * Switches to an iframe using the iframe element.\r\n     *\r\n     * @param iframeElement The iframe element to switch to\r\n     */\r\n    public void switchToIframe(WebElement iframeElement) {\r\n        getDriver().switchTo().frame(iframeElement);\r\n    }\r\n\r\n    /**\r\n     * Switches back to the main content from an iframe.\r\n     */\r\n    public void switchToDefaultContent() {\r\n        getDriver().switchTo().defaultContent();\r\n    }\r\n\r\n    /**\r\n     * Accepts an alert dialog.\r\n     */\r\n    public void acceptAlertDialog() {\r\n        getDriver().switchTo().alert().accept();\r\n    }\r\n\r\n    /**\r\n     * Dismisses an alert dialog.\r\n     */\r\n    public void dismissAlertDialog() {\r\n        getDriver().switchTo().alert().dismiss();\r\n    }\r\n\r\n    /**\r\n     * Gets the value of a specific attribute of an element.\r\n     *\r\n     * @param element       Element to retrieve attribute from\r\n     * @param attributeName Name of the attribute to retrieve\r\n     * @return Value of the attribute\r\n     */\r\n    public String getAttribute(WebElement element, String attributeName) {\r\n        return element.getAttribute(attributeName);\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java b/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java
+--- a/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java	
++++ b/src/main/java/com/sahel/booking/utilities/WebDriverUtils.java	
+@@ -2,17 +2,17 @@
+ 
+ 
+ import com.sahel.booking.base.DriverFactory;
++import org.apache.commons.io.FileUtils;
+ import org.openqa.selenium.*;
+ import org.openqa.selenium.interactions.Actions;
+ import org.openqa.selenium.support.ui.*;
+ 
++import java.io.File;
++import java.io.IOException;
+ import java.text.DateFormat;
+ import java.text.SimpleDateFormat;
+ import java.time.Duration;
+-import java.util.Calendar;
+-import java.util.Locale;
+-import java.util.Random;
+-import java.util.Set;
++import java.util.*;
+ 
+ public class WebDriverUtils extends DriverFactory {
+     static final int WEB_DRIVER_WAIT = 15;
+@@ -93,7 +93,8 @@
+      */
+     public void sendValueUsingJS(WebElement element, String value) {
+         JavascriptExecutor executor = ((JavascriptExecutor) getDriver());
+-        executor.executeScript("arguments[0].value='" + value + "';", element);
++        executor.executeScript("arguments[0].innerText = arguments[1];", element, value);
++
+     }
+ 
+     /**
+@@ -275,7 +276,6 @@
+     /**
+      * Sets a random calendar date between today and next year.
+      *
+-     * @param date    Date value to set
+      * @param element Calendar element
+      */
+     public void setRandomCalendarDate(WebElement element) {
+Index: src/main/resources/log4j2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Configuration status=\"WARN\">\r\n\r\n    <!-- Define the appenders for different types of logs -->\r\n    <Appenders>\r\n        <!-- Console Appender to log to the console -->\r\n        <Console name=\"CONSOLE\" target=\"SYSTEM_OUT\">\r\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n\"/>\r\n        </Console>\r\n\r\n        <!-- RollingFile Appender for daily log files (reset every 2 days) -->\r\n        <RollingFile name=\"R\" fileName=\"src/test/resources/log4j-reports/test-suite-log.log\"\r\n                     filePattern=\"src/test/resources/log4j-reports/test-suite-log-%d{yyyy-MM-dd}.log\">\r\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n\"/>\r\n            <Policies>\r\n                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->\r\n                <TimeBasedTriggeringPolicy interval=\"2\"/>\r\n            </Policies>\r\n            <DefaultRolloverStrategy max=\"10\"/>\r\n        </RollingFile>\r\n\r\n        <!-- Additional RollingFile Appender for a different log file -->\r\n        <RollingFile name=\"TTCC\" fileName=\"src/test/resources/log4j-reports/test-details-log.log\"\r\n                     filePattern=\"src/test/resources/log4j-reports/test-details-log-%d{yyyy-MM-dd}.log\">\r\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n\"/>\r\n            <Policies>\r\n                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->\r\n                <TimeBasedTriggeringPolicy interval=\"2\"/>\r\n            </Policies>\r\n            <DefaultRolloverStrategy max=\"10\"/>\r\n        </RollingFile>\r\n\r\n        <!-- File Appender to log to an HTML file -->\r\n        <File name=\"HTML\" fileName=\"src/test/resources/log4j-reports/application-log.html\">\r\n            <HTMLLayout charset=\"UTF-8\">\r\n                <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n\"/>\r\n                <Title>Booking Automation Testing Log</Title>\r\n            </HTMLLayout>\r\n        </File>\r\n    </Appenders>\r\n\r\n    <!-- Define the loggers and their appenders -->\r\n    <Loggers>\r\n        <!-- Root logger level is set to INFO -->\r\n        <Root level=\"INFO\">\r\n            <AppenderRef ref=\"CONSOLE\"/>\r\n            <AppenderRef ref=\"R\"/>\r\n            <AppenderRef ref=\"TTCC\"/>\r\n            <AppenderRef ref=\"HTML\"/>\r\n        </Root>\r\n    </Loggers>\r\n\r\n</Configuration>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/log4j2.xml b/src/main/resources/log4j2.xml
+--- a/src/main/resources/log4j2.xml	
++++ b/src/main/resources/log4j2.xml	
+@@ -1,47 +1,21 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <Configuration status="WARN">
+-
+-    <!-- Define the appenders for different types of logs -->
+     <Appenders>
+-        <!-- Console Appender to log to the console -->
+         <Console name="CONSOLE" target="SYSTEM_OUT">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
++            <PatternLayout pattern="%5p [%t] (%F:%L) - %m%n"/>
+         </Console>
+-
+-        <!-- RollingFile Appender for daily log files (reset every 2 days) -->
+-        <RollingFile name="R" fileName="src/test/resources/log4j-reports/test-suite-log.log"
+-                     filePattern="src/test/resources/log4j-reports/test-suite-log-%d{yyyy-MM-dd}.log">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
+-            <Policies>
+-                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+-                <TimeBasedTriggeringPolicy interval="2"/>
+-            </Policies>
+-            <DefaultRolloverStrategy max="10"/>
+-        </RollingFile>
+-
+-        <!-- Additional RollingFile Appender for a different log file -->
+-        <RollingFile name="TTCC" fileName="src/test/resources/log4j-reports/test-details-log.log"
+-                     filePattern="src/test/resources/log4j-reports/test-details-log-%d{yyyy-MM-dd}.log">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
++        <RollingFile name="R" fileName="./output/logs/testlog.log" filePattern="./output/logs/testlog-%d{yyyy-MM-dd}.log">
++            <PatternLayout pattern="%d - %c - %p - %m%n"/>
+             <Policies>
+-                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+-                <TimeBasedTriggeringPolicy interval="2"/>
++                <TimeBasedTriggeringPolicy/>
+             </Policies>
+             <DefaultRolloverStrategy max="10"/>
+         </RollingFile>
+-
+-        <!-- File Appender to log to an HTML file -->
+-        <File name="HTML" fileName="src/test/resources/log4j-reports/application-log.html">
+-            <HTMLLayout charset="UTF-8">
+-                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
+-                <Title>Booking Automation Testing Log</Title>
+-            </HTMLLayout>
++        <File name="HTML" fileName="./output/logs/Booking_Test_Logs.html">
++            <HTMLLayout title="Application log" locationInfo="true"/>
+         </File>
+     </Appenders>
+-
+-    <!-- Define the loggers and their appenders -->
+     <Loggers>
+-        <!-- Root logger level is set to INFO -->
+         <Root level="INFO">
+             <AppenderRef ref="CONSOLE"/>
+             <AppenderRef ref="R"/>
+@@ -49,5 +23,4 @@
+             <AppenderRef ref="HTML"/>
+         </Root>
+     </Loggers>
+-
+-</Configuration>
++</Configuration>
+\ No newline at end of file
+Index: .idea/sonarlint/issuestore/index.pb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nS\n#.idea/sonarlint/issuestore/index.pb\u0012,9\\f\\9fe84ebb15faf917b7def6236dba604453cc61e0\n]\n-.idea/sonarlint/securityhotspotstore/index.pb\u0012,8\\8\\88a9255124c95bdc913197c120a8d560edc59c8e\n<\n\fsettings.xml\u0012,1\\d\\1d784fce58c3719506730fb9749600554125b511\n^\n.src/test/resources/testng-xml-files/testng.xml\u0012,3\\b\\3b586bf63a24db85bd6556041ef64c36361a4560\n\\\n,.idea/inspectionProfiles/Project_Default.xml\u0012,4\\9\\496a238a6afa168dbaf6efd37bb459331589579c\ni\n9src/main/java/com/sahel/booking/browsers/EdgeBrowser.java\u0012,0\\7\\07c48ad3fe37585eec3718195730beefa0d01d5e\nt\nDsrc/main/java/com/sahel/booking/utilities/ExtentTestNGListeners.java\u0012,5\\5\\55e54efb7865556c64833127efaa64a4c2a8a076\nl\n<src/main/java/com/sahel/booking/browsers/FireFoxBrowser.java\u0012,8\\c\\8cbcaf7c41ed72ccd235d1a12de2510d4891da61\n;\n\u000Bqodana.yaml\u0012,8\\5\\85c3a901608a6b9adf48d245fa84828b66304e51
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+--- a/.idea/sonarlint/issuestore/index.pb	
++++ b/.idea/sonarlint/issuestore/index.pb	
+@@ -5,8 +5,6 @@
+ -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+ <
+ settings.xml,1\d\1d784fce58c3719506730fb9749600554125b511
+-^
+-.src/test/resources/testng-xml-files/testng.xml,3\b\3b586bf63a24db85bd6556041ef64c36361a4560
+ \
+ ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
+ i
+Index: src/test/java/SearchFunctionalityTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.sahel.booking.base.TestBase;\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.JavascriptExecutor;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.testng.annotations.Test;\r\n\r\nimport java.text.DateFormat;\r\nimport java.text.SimpleDateFormat;\r\nimport java.util.Calendar;\r\nimport java.util.Locale;\r\nimport java.util.Random;\r\n\r\npublic class SearchFunctionalityTest extends TestBase {\r\n\r\n    /**\r\n     * Search for a Hotel in a Specific Location:\r\n     * As a user, I want to search for a hotel in a specific location.\r\n     * Acceptance Criteria:\r\n     * I can enter the destination city or location.\r\n     * I can specify check-in and check-out dates.\r\n     * The search results should display available hotels in the selected location and dates.\r\n     */\r\n\r\n    @Test\r\n    public void validHotelSearch() {\r\n        sendText(factory.homePage().locationSearchBox, \"Seattle\");\r\n        WebElement checkInMonth = getDriver().findElement(By.xpath(\"(//button[@class = 'd47738b911 e246f833f7 fe211c0731'])[1]\"));\r\n        WebElement checkOutMonth = getDriver().findElement(By.xpath(\"(//button[@class = 'd47738b911 e246f833f7 fe211c0731'])[2]\"));\r\n        setRandomCalendarDate(checkInMonth);\r\n        setRandomCalendarDate(checkOutMonth);\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/SearchFunctionalityTest.java b/src/test/java/SearchFunctionalityTest.java
+--- a/src/test/java/SearchFunctionalityTest.java	
++++ b/src/test/java/SearchFunctionalityTest.java	
+@@ -1,15 +1,8 @@
+ import com.sahel.booking.base.TestBase;
+ import org.openqa.selenium.By;
+-import org.openqa.selenium.JavascriptExecutor;
+ import org.openqa.selenium.WebElement;
+ import org.testng.annotations.Test;
+ 
+-import java.text.DateFormat;
+-import java.text.SimpleDateFormat;
+-import java.util.Calendar;
+-import java.util.Locale;
+-import java.util.Random;
+-
+ public class SearchFunctionalityTest extends TestBase {
+ 
+     /**
+@@ -21,13 +14,28 @@
+      * The search results should display available hotels in the selected location and dates.
+      */
+ 
+-    @Test
+-    public void validHotelSearch() {
+-        sendText(factory.homePage().locationSearchBox, "Seattle");
++    @Test (groups = "smoke")
++    public void validHotelSearch() throws InterruptedException {
++        sendText(factory.homePage().locationSearchBox, "Mykonos");
+         WebElement checkInMonth = getDriver().findElement(By.xpath("(//button[@class = 'd47738b911 e246f833f7 fe211c0731'])[1]"));
+         WebElement checkOutMonth = getDriver().findElement(By.xpath("(//button[@class = 'd47738b911 e246f833f7 fe211c0731'])[2]"));
++        WebElement searchButton = getDriver().findElement(By.xpath("//button[@type = 'submit']"));
++        WebElement occupancyButton = getDriver().findElement(By.xpath("//button[@data-testid ='occupancy-config']"));
++
++
++        captureScreenshot();
+         setRandomCalendarDate(checkInMonth);
+         setRandomCalendarDate(checkOutMonth);
++        captureScreenshot();
++        Thread.sleep(2500);
++        captureScreenshot();
++        click(occupancyButton);
++
++        WebElement doneBtn = getDriver().findElement(By.xpath("//span[text() = 'Done']"));
++        click(doneBtn);
++        click(searchButton);
++        captureScreenshot();
++
+     }
+ 
+ 

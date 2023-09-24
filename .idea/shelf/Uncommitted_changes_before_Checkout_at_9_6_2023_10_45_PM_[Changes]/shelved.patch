@@ -1,0 +1,239 @@
+Index: output/logs/application.html
+===================================================================
+diff --git a/output/logs/application.html b/output/logs/Booking_Test_Logs.html
+rename from output/logs/application.html
+rename to output/logs/Booking_Test_Logs.html
+--- a/output/logs/application.html	
++++ b/output/logs/Booking_Test_Logs.html	
+@@ -12,7 +12,7 @@
+ </head>
+ <body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+ <hr size="1" noshade="noshade">
+-Log session start time Wed Sep 06 00:26:47 PDT 2023<br>
++Log session start time Wed Sep 06 21:55:58 PDT 2023<br>
+ <br>
+ <table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+ <tr>
+@@ -25,21 +25,153 @@
+ </tr>
+ 
+ <tr>
+-<td>28167</td>
++<td>19469</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>18501</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>16066</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>18172</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>19400</td>
++<td title="main thread">main</td>
++<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:68</td>
++<td title="Message">Test Failed: validHotelSearch</td>
++</tr>
++
++<tr>
++<td>19402</td>
++<td title="main thread">main</td>
++<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:69</td>
++<td title="Message">Error Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//span[@class = 'd723d73d5f' ])[1]&quot;}<br />  (Session info: chrome=116.0.5845.142)<br />For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception<br />Build info: version: '4.12.0', revision: '249f2a7d1b*'<br />System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'<br />Driver info: org.openqa.selenium.chrome.ChromeDriver<br />Command: [0d6317bfba7860152e5ba31e95c6522a, findElement {using=xpath, value=(//span[@class = 'd723d73d5f' ])[1]}]<br />Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.142, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sahel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65385/devtoo..., se:cdpVersion: 116.0.5845.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br />Session ID: 0d6317bfba7860152e5ba31e95c6522a</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>16382</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>20644</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>17557</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>15558</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>16724</td>
++<td title="main thread">main</td>
++<td title="Level">INFO</td>
++<td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
++</tr>
++</table>
++<br>
++</body></html>
++
++<tr>
++<td>22731</td>
+ <td title="main thread">main</td>
+ <td title="Level">INFO</td>
+ <td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>BookingLoginTest.java:15</td>
+-<td title="Message">User is on Booking.com homepage</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
+ </tr>
++</table>
++<br>
++</body></html>
+ 
+ <tr>
+-<td>28170</td>
++<td>19874</td>
+ <td title="main thread">main</td>
+ <td title="Level">INFO</td>
+ <td title="com.sahel.booking.base.TestBase logger">com.sahel.booking.base.TestBase</td>
+-<td>TestBase.java:71</td>
+-<td title="Message">Test Passed: performSignIn</td>
++<td>TestBase.java:74</td>
++<td title="Message">Test Passed: validHotelSearch</td>
+ </tr>
+ </table>
+ <br>
+Index: output/logs/testlog.log
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>2023-09-06 00:27:09,597 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage\r\n2023-09-06 00:27:09,600 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn\r\n
+===================================================================
+diff --git a/output/logs/testlog.log b/output/logs/testlog.log
+--- a/output/logs/testlog.log	
++++ b/output/logs/testlog.log	
+@@ -1,2 +1,21 @@
+-2023-09-06 00:27:09,597 - com.sahel.booking.base.TestBase - INFO - User is on Booking.com homepage
+-2023-09-06 00:27:09,600 - com.sahel.booking.base.TestBase - INFO - Test Passed: performSignIn
++2023-09-06 21:56:17,261 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 21:57:08,783 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:02:49,672 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:06:48,676 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:12:31,811 - com.sahel.booking.base.TestBase - ERROR - Test Failed: validHotelSearch
++2023-09-06 22:12:31,813 - com.sahel.booking.base.TestBase - ERROR - Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[@class = 'd723d73d5f' ])[1]"}
++  (Session info: chrome=116.0.5845.142)
++For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
++Build info: version: '4.12.0', revision: '249f2a7d1b*'
++System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
++Driver info: org.openqa.selenium.chrome.ChromeDriver
++Command: [0d6317bfba7860152e5ba31e95c6522a, findElement {using=xpath, value=(//span[@class = 'd723d73d5f' ])[1]}]
++Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.142, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\sahel\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65385}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65385/devtoo..., se:cdpVersion: 116.0.5845.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
++Session ID: 0d6317bfba7860152e5ba31e95c6522a
++2023-09-06 22:13:51,884 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:28:24,487 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:29:56,597 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:38:29,287 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:39:18,755 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:41:19,365 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
++2023-09-06 22:44:14,835 - com.sahel.booking.base.TestBase - INFO - Test Passed: validHotelSearch
+Index: src/test/resources/testng-xml-files/search-tests.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<!DOCTYPE suite SYSTEM \"http://testng.org/testng-1.0.dtd\">\r\n<suite name=\"Smoke\">\r\n    <listeners>\r\n        <listener class-name=\"com.sahel.booking.utilities.ExtentTestNGListeners\"/>\r\n    </listeners>\r\n\r\n    <test name=\"SearchFunctionality\">\r\n\r\n\r\n        <classes>\r\n            <class name=\"SearchFunctionalityTest\"/>\r\n        </classes>\r\n        -->\r\n        <!-- Add more test classes as needed -->\r\n\r\n    </test>\r\n\r\n    <!-- ... Define more <test> blocks and configurations ... -->\r\n\r\n</suite>\r\n
+===================================================================
+diff --git a/src/test/resources/testng-xml-files/search-tests.xml b/src/test/resources/testng-xml-files/search-tests.xml
+--- a/src/test/resources/testng-xml-files/search-tests.xml	
++++ b/src/test/resources/testng-xml-files/search-tests.xml	
+@@ -6,16 +6,14 @@
+     </listeners>
+ 
+     <test name="SearchFunctionality">
+-
+-
++        <groups>
++            <run>
++                <include name="smoke"/>
++                <!-- Include the "smoke" group -->
++            </run>
++        </groups>
+         <classes>
+             <class name="SearchFunctionalityTest"/>
+         </classes>
+-        -->
+-        <!-- Add more test classes as needed -->
+-
+     </test>
+-
+-    <!-- ... Define more <test> blocks and configurations ... -->
+-
+ </suite>
