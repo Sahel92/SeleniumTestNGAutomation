@@ -1,0 +1,617 @@
+Index: src/main/resources/log4j2.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Configuration status=\"WARN\">\n\n    <!-- Define the appenders for different types of logs -->\n    <Appenders>\n        <!-- Console Appender to log to the console -->\n        <Console name=\"CONSOLE\" target=\"SYSTEM_OUT\">\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n\"/>\n        </Console>\n\n        <!-- RollingFile Appender for daily log files (reset every 2 days) -->\n        <RollingFile name=\"R\" fileName=\"src/test/resources/log4j-reports/test-suite-log.log\"\n                     filePattern=\"src/test/resources/log4j-reports/test-suite-log-%d{yyyy-MM-dd}.log\">\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n\"/>\n            <Policies>\n                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->\n                <TimeBasedTriggeringPolicy interval=\"2\"/>\n            </Policies>\n            <DefaultRolloverStrategy max=\"10\"/>\n        </RollingFile>\n\n        <!-- Additional RollingFile Appender for a different log file -->\n        <RollingFile name=\"TTCC\" fileName=\"src/test/resources/log4j-reports/test-details-log.log\"\n                     filePattern=\"src/test/resources/log4j-reports/test-details-log-%d{yyyy-MM-dd}.log\">\n            <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n\"/>\n            <Policies>\n                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->\n                <TimeBasedTriggeringPolicy interval=\"2\"/>\n            </Policies>\n            <DefaultRolloverStrategy max=\"10\"/>\n        </RollingFile>\n\n        <!-- File Appender to log to an HTML file -->\n        <File name=\"HTML\" fileName=\"src/test/resources/log4j-reports/application-log.html\">\n            <HTMLLayout charset=\"UTF-8\">\n                <PatternLayout pattern=\"%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n\"/>\n                <Title>Booking Automation Testing Log</Title>\n            </HTMLLayout>\n        </File>\n    </Appenders>\n\n    <!-- Define the loggers and their appenders -->\n    <Loggers>\n        <!-- Root logger level is set to INFO -->\n        <Root level=\"INFO\">\n            <AppenderRef ref=\"CONSOLE\"/>\n            <AppenderRef ref=\"R\"/>\n            <AppenderRef ref=\"TTCC\"/>\n            <AppenderRef ref=\"HTML\"/>\n        </Root>\n    </Loggers>\n\n</Configuration>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/log4j2.xml b/src/main/resources/log4j2.xml
+--- a/src/main/resources/log4j2.xml	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/src/main/resources/log4j2.xml	(date 1695520531598)
+@@ -1,47 +1,21 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <Configuration status="WARN">
+-
+-    <!-- Define the appenders for different types of logs -->
+     <Appenders>
+-        <!-- Console Appender to log to the console -->
+         <Console name="CONSOLE" target="SYSTEM_OUT">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
++            <PatternLayout pattern="%5p [%t] (%F:%L) - %m%n"/>
+         </Console>
+-
+-        <!-- RollingFile Appender for daily log files (reset every 2 days) -->
+-        <RollingFile name="R" fileName="src/test/resources/log4j-reports/test-suite-log.log"
+-                     filePattern="src/test/resources/log4j-reports/test-suite-log-%d{yyyy-MM-dd}.log">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
+-            <Policies>
+-                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+-                <TimeBasedTriggeringPolicy interval="2"/>
+-            </Policies>
+-            <DefaultRolloverStrategy max="10"/>
+-        </RollingFile>
+-
+-        <!-- Additional RollingFile Appender for a different log file -->
+-        <RollingFile name="TTCC" fileName="src/test/resources/log4j-reports/test-details-log.log"
+-                     filePattern="src/test/resources/log4j-reports/test-details-log-%d{yyyy-MM-dd}.log">
+-            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} - %c - %p - %m%n"/>
++        <RollingFile name="R" fileName="./output/logs/testlog.log" filePattern="./output/logs/testlog-%d{yyyy-MM-dd}.log">
++            <PatternLayout pattern="%d - %c - %p - %m%n"/>
+             <Policies>
+-                <!-- Use TimeBasedTriggeringPolicy with a custom interval -->
+-                <TimeBasedTriggeringPolicy interval="2"/>
++                <TimeBasedTriggeringPolicy/>
+             </Policies>
+             <DefaultRolloverStrategy max="10"/>
+         </RollingFile>
+-
+-        <!-- File Appender to log to an HTML file -->
+-        <File name="HTML" fileName="src/test/resources/log4j-reports/application-log.html">
+-            <HTMLLayout charset="UTF-8">
+-                <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5p %c{1.} - %m%n"/>
+-                <Title>Booking Automation Testing Log</Title>
+-            </HTMLLayout>
++        <File name="HTML" fileName="./output/logs/Booking_Test_Logs.html">
++            <HTMLLayout title="Application log" locationInfo="true"/>
+         </File>
+     </Appenders>
+-
+-    <!-- Define the loggers and their appenders -->
+     <Loggers>
+-        <!-- Root logger level is set to INFO -->
+         <Root level="INFO">
+             <AppenderRef ref="CONSOLE"/>
+             <AppenderRef ref="R"/>
+@@ -49,5 +23,4 @@
+             <AppenderRef ref="HTML"/>
+         </Root>
+     </Loggers>
+-
+-</Configuration>
++</Configuration>
+\ No newline at end of file
+Index: src/test/resources/extent-reports/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\n\n<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n<title>Booking Automation Testing Framework</title>\n<link rel=\"apple-touch-icon\" href=\"spark/logo.png\">\n<link rel=\"shortcut icon\" href=\"spark/logo.png\">\n<link rel=\"stylesheet\" href=\"spark/spark-style.css\">\n<link rel=\"stylesheet\" href=\"spark/font-awesome.min.css\">\n<script src=\"spark/jsontree.js\"></script>\n<style type=\"text/css\"></style></head><body class=\"spa -report dark\">\n  <div class=\"app\">\n    <div class=\"layout\">\n<div class=\"header navbar\">\n<div class=\"vheader\">\n<div class=\"nav-logo\">\n<a href=\"#\">\n<div class=\"logo\" style=\"background-image: url('spark/logo.png')\"></div>\n</a>\n</div>\n<ul class=\"nav-left\">\n<li class=\"search-box\">\n<a class=\"search-toggle\" href=\"#\">\n<i class=\"search-icon fa fa-search\"></i>\n<i class=\"search-icon-close fa fa-close\"></i>\n</a>\n</li>\n<li class=\"search-input\"><input id=\"search-tests\" class=\"form-control\" type=\"text\" placeholder=\"Search...\"></li>\n</ul>\n<ul class=\"nav-right\">\n<li class=\"m-r-10\">\n<a href=\"#\"><span class=\"badge badge-primary\">Test Result's</span></a>\n</li>\n<li class=\"m-r-10\">\n<a href=\"#\"><span class=\"badge badge-primary\">Sep 12, 2023 03:33:12 PM</span></a>\n</li>\n</ul>\n</div>\n</div><div class=\"side-nav\">\n<div class=\"side-nav-inner\">\n<ul class=\"side-nav-menu\">\n<li class=\"nav-item dropdown\" onclick=\"toggleView('test-view')\">\n<a id=\"nav-test\" class=\"dropdown-toggle\" href=\"#\">\n<span class=\"ico\"><i class=\"fa fa-list\"></i></span>\n</a>\n</li>\n<li class=\"nav-item dropdown\" onclick=\"toggleView('category-view')\">\n<a id=\"nav-category\" class=\"dropdown-toggle\" href=\"#\">\n<span class=\"ico\"><i class=\"fa fa-tag\"></i></span>\n</a>\n</li>\n<li class=\"nav-item dropdown\" onclick=\"toggleView('device-view')\">\n<a id=\"nav-device\" class=\"dropdown-toggle\" href=\"#\">\n<span class=\"ico\"><i class=\"fa fa-tablet\"></i></span>\n</a>\n</li>\n<li class=\"nav-item dropdown\" onclick=\"toggleView('author-view')\">\n<a id=\"nav-author\" class=\"dropdown-toggle\" href=\"#\">\n<span class=\"ico\"><i class=\"fa fa-user\"></i></span>\n</a>\n</li>\n<li class=\"nav-item dropdown\" onclick=\"toggleView('dashboard-view')\">\n<a id=\"nav-dashboard\" class=\"dropdown-toggle\" href=\"#\">\n<span class=\"ico\"><i class=\"fa fa-bar-chart\"></i></span>\n</a>\n</li>\n</ul>\n</div>\n</div>      <div class=\"vcontainer\">\n        <div class=\"main-content\">\n<div class=\"test-wrapper row view test-view\">\n  <div class=\"test-list\">\n    <div class=\"test-list-tools\">\n<ul class=\"tools pull-left\">\n<li><a href=\"#\"><span class=\"font-size-14\">Tests</span></a></li>\n</ul>\n<ul class=\"tools text-right\">\n<li class=\"dropdown\">\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-exclamation-circle\"></i></a>\n<ul id=\"status-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\n<a class=\"dropdown-item\" status=\"fail\" href=\"#\"><span>Fail</span><span class=\"status danger\"></span></a>\n<div class=\"dropdown-divider\"></div>\n<a status=\"clear\" class=\"dropdown-item\" href=\"#\"><span>Clear</span><span class=\"pull-right\"><i class=\"fa fa-close\"></i></span></a>\n</ul>\n</li>\n<li class=\"dropdown\">\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-user\"></i></a>\n<ul id=\"author-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\n<a class=\"dropdown-item\" href=\"#\">Sahel</a>\n</ul>\n</li>\n<li class=\"dropdown\">\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-tag\"></i></a>\n<ul id=\"tag-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\n<a class=\"dropdown-item\" href=\"#\">TestSuite</a>\n</ul>\n</li>\n<li class=\"dropdown\">\n<a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\"><i class=\"fa fa-tablet\"></i></a>\n<ul id=\"device-toggle\" class=\"dropdown-menu dropdown-md p-v-0\">\n<a class=\"dropdown-item\" href=\"#\">Windows11PC,ChromeBrowserv-116</a>\n</ul>\n</li>\n</ul>\n</div>    <div class=\"test-list-wrapper scrollable\">\n      <ul class=\"test-list-item\">\n        <li class=\"test-item\"  status=\"fail\" test-id=\"1\"\n          author=\"Sahel\"\n          tag=\"TestSuite\"\n          device=\"Windows11PC,ChromeBrowserv-116\">\n          <div class=\"test-detail\">\n            <p class=\"name\">BookingLoginTest</p>\n            <p class=\"text-sm\">\n              <span>3:33:13 PM</span> / <span>00:00:27:027</span>\n              <span class=\"badge fail-bg log float-right\">Fail</span>\n            </p>\n          </div>\n          <div class=\"test-contents d-none\">\n<div class=\"detail-head\">\n<div class=\"p-v-10\">\n<div class=\"info\">\n<h5 class=\"test-status text-fail\">BookingLoginTest</h5>\n<span class='badge badge-success'>09.12.2023 3:33:13 PM</span>\n<span class='badge badge-danger'>09.12.2023 3:33:40 PM</span>\n<span class='badge badge-default'>00:00:27:027</span>\n&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>\n<span class='badge badge-default pointer float-right ml-1 et'><i class=\"fa fa-chevron-down\"></i></span>\n<span class='badge badge-default pointer float-right ct'><i class=\"fa fa-chevron-up\"></i></span>\n</div>\n<div class=\"m-t-15\"><span class=\"badge badge-pill badge-default\">Sahel</span>\n<span class=\"badge badge-pill badge-default\">TestSuite</span>\n<span class=\"badge badge-pill badge-default\">Windows11PC,ChromeBrowserv-116</span></div>\n</div>\n</div><div class=\"detail-body mt-4\">\n<table class=\"table table-sm\">\n  <thead><tr><th class=\"status-col\">Status</th><th class=\"timestamp-col\">Timestamp</th><th class=\"details-col\">Details</th></tr></thead>\n  <tbody>\n      <tr class=\"event-row\">\n        <td><span class=\"badge log fail-bg\">Fail</span></td>\n        <td>3:33:40 PM</td>\n        <td>\n          Test Failed: performSignIn\n        </td>\n      </tr>\n      <tr class=\"event-row\">\n        <td><span class=\"badge log fail-bg\">Fail</span></td>\n        <td>3:33:40 PM</td>\n        <td>\n          Error Message: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@aria-label = 'Dismiss sign-in info.']\"}\n  (Session info: chrome=116.0.5845.188)\nFor documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception\nBuild info: version: '4.11.0', revision: '040bc5406b'\nSystem info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [ed64ac7ee3851c8a855921e70a07d015, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\WINDOWS\\SystemTemp\\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65473/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: ed64ac7ee3851c8a855921e70a07d015\n        </td>\n      </tr>\n      <tr class=\"event-row\">\n        <td><span class=\"badge log info-bg\">Info</span></td>\n        <td>3:33:40 PM</td>\n        <td>\n          Test Class: BookingLoginTest\n        </td>\n      </tr>\n      <tr class=\"event-row\">\n        <td><span class=\"badge log info-bg\">Info</span></td>\n        <td>3:33:40 PM</td>\n        <td>\n          Test Name: performSignIn\n        </td>\n      </tr>\n      <tr class=\"event-row\">\n        <td><span class=\"badge log info-bg\">Info</span></td>\n        <td>3:33:40 PM</td>\n        <td>\n          Test Status: Failed\n        </td>\n      </tr>\n  </tbody>\n</table>\n</div>\n          </div>\n        </li>\n        <li class=\"test-item\"  status=\"fail\" test-id=\"2\"\n          author=\"\"\n          tag=\"\"\n          device=\"\">\n          <div class=\"test-detail\">\n            <p class=\"name\">Login-Test</p>\n            <p class=\"text-sm\">\n              <span>3:33:13 PM</span> / <span>00:00:26:835</span>\n              <span class=\"badge fail-bg log float-right\">Fail</span>\n            </p>\n          </div>\n          <div class=\"test-contents d-none\">\n<div class=\"detail-head\">\n<div class=\"p-v-10\">\n<div class=\"info\">\n<h5 class=\"test-status text-fail\">Login-Test</h5>\n<span class='badge badge-success'>09.12.2023 3:33:13 PM</span>\n<span class='badge badge-danger'>09.12.2023 3:33:40 PM</span>\n<span class='badge badge-default'>00:00:26:835</span>\n&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>\n<span class='badge badge-default pointer float-right ml-1 et'><i class=\"fa fa-chevron-down\"></i></span>\n<span class='badge badge-default pointer float-right ct'><i class=\"fa fa-chevron-up\"></i></span>\n</div>\n</div>\n</div><div class=\"detail-body mt-4\">\n<table class=\"table table-sm\">\n  <thead><tr><th class=\"status-col\">Status</th><th class=\"timestamp-col\">Timestamp</th><th class=\"details-col\">Details</th></tr></thead>\n  <tbody>\n      <tr class=\"event-row\">\n        <td><span class=\"badge log info-bg\">Info</span></td>\n        <td>3:33:29 PM</td>\n        <td>\n          Test started: performSignIn\n        </td>\n      </tr>\n      <tr class=\"event-row\">\n        <td><span class=\"badge log fail-bg\">Fail</span></td>\n        <td>3:33:40 PM</td>\n        <td>\n          Test failed: performSignIn\n        </td>\n      </tr>\n  </tbody>\n</table>\n</div>\n          </div>\n        </li>\n      </ul>\n    </div>\n  </div>\n<div class=\"test-content scrollable\">\n<div class=\"test-content-tools\">\n<ul><li><a class=\"back-to-test\" href=\"#\"><i class=\"fa fa-arrow-left\"></i></a></li></ul>\n</div>\n<div class=\"test-content-detail\"><div class=\"detail-body\"></div></div>\n</div></div>\n<div class=\"test-wrapper row view category-view attributes-view\">\n<div class=\"test-list\">\n<div class=\"test-list-tools\">\n<ul class=\"tools pull-left\"><li><a href=\"\"><span class=\"font-size-14\">Category</span></a></li></ul>\n<ul class=\"tools text-right\"><li><a href=\"#\"><span class=\"badge badge-primary\">1</span></a></li></ul>\n</div>\n<div class=\"test-list-wrapper scrollable\">\n<ul class=\"test-list-item\">\n<li class=\"test-item\">\n<div class=\"test-detail\">\n<span class=\"meta\">\n<span class='badge log badge-danger'>1</span>\n</span>\n<p class=\"name\">TestSuite</p>\n<p class=\"duration text-sm\">1 tests</p>\n</div>\n<div class=\"test-contents d-none\">\n<div class=\"info\">\n<h4>TestSuite</h4>\n<span status=\"fail\" class='badge log badge-danger'>1 failed</span>\n</div>\n<table class='table table-sm mt-4'>\n<thead>\n<tr>\n<th class=\"status-col\">Status</th>\n<th class=\"timestamp-col\">Timestamp</th>\n<th>TestName</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"tag-test-status\" status=\"fail\">\n<td><span class=\"badge log fail-bg\">Fail</span></td>\n<td>15:33:13 PM</td>\n<td>\n<a href=\"#\" class=\"linked\" test-id='1' id='1'>BookingLoginTest</a>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</li>\n</ul>\n</div>\n</div>\n<div class=\"test-content scrollable\">\n<div class=\"test-content-detail\">\n<div class=\"detail-body\"></div>\n</div>\n</div>\n</div><div class=\"test-wrapper row view device-view attributes-view\">\n<div class=\"test-list\">\n<div class=\"test-list-tools\">\n<ul class=\"tools pull-left\"><li><a href=\"\"><span class=\"font-size-14\">Device</span></a></li></ul>\n<ul class=\"tools text-right\"><li><a href=\"#\"><span class=\"badge badge-primary\">1</span></a></li></ul>\n</div>\n<div class=\"test-list-wrapper scrollable\">\n<ul class=\"test-list-item\">\n<li class=\"test-item\">\n<div class=\"test-detail\">\n<span class=\"meta\">\n<span class='badge log badge-danger'>1</span>\n</span>\n<p class=\"name\">Windows11PC,ChromeBrowserv-116</p>\n<p class=\"duration text-sm\">1 tests</p>\n</div>\n<div class=\"test-contents d-none\">\n<div class=\"info\">\n<h4>Windows11PC,ChromeBrowserv-116</h4>\n<span status=\"fail\" class='badge log badge-danger'>1 failed</span>\n</div>\n<table class='table table-sm mt-4'>\n<thead>\n<tr>\n<th class=\"status-col\">Status</th>\n<th class=\"timestamp-col\">Timestamp</th>\n<th>TestName</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"tag-test-status\" status=\"fail\">\n<td><span class=\"badge log fail-bg\">Fail</span></td>\n<td>15:33:13 PM</td>\n<td>\n<a href=\"#\" class=\"linked\" test-id='1' id='1'>BookingLoginTest</a>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</li>\n</ul>\n</div>\n</div>\n<div class=\"test-content scrollable\">\n<div class=\"test-content-detail\">\n<div class=\"detail-body\"></div>\n</div>\n</div>\n</div><div class=\"test-wrapper row view author-view attributes-view\">\n<div class=\"test-list\">\n<div class=\"test-list-tools\">\n<ul class=\"tools pull-left\"><li><a href=\"\"><span class=\"font-size-14\">Author</span></a></li></ul>\n<ul class=\"tools text-right\"><li><a href=\"#\"><span class=\"badge badge-primary\">1</span></a></li></ul>\n</div>\n<div class=\"test-list-wrapper scrollable\">\n<ul class=\"test-list-item\">\n<li class=\"test-item\">\n<div class=\"test-detail\">\n<span class=\"meta\">\n<span class='badge log badge-danger'>1</span>\n</span>\n<p class=\"name\">Sahel</p>\n<p class=\"duration text-sm\">1 tests</p>\n</div>\n<div class=\"test-contents d-none\">\n<div class=\"info\">\n<h4>Sahel</h4>\n<span status=\"fail\" class='badge log badge-danger'>1 failed</span>\n</div>\n<table class='table table-sm mt-4'>\n<thead>\n<tr>\n<th class=\"status-col\">Status</th>\n<th class=\"timestamp-col\">Timestamp</th>\n<th>TestName</th>\n</tr>\n</thead>\n<tbody>\n<tr class=\"tag-test-status\" status=\"fail\">\n<td><span class=\"badge log fail-bg\">Fail</span></td>\n<td>15:33:13 PM</td>\n<td>\n<a href=\"#\" class=\"linked\" test-id='1' id='1'>BookingLoginTest</a>\n</td>\n</tr>\n</tbody>\n</table>\n</div>\n</li>\n</ul>\n</div>\n</div>\n<div class=\"test-content scrollable\">\n<div class=\"test-content-detail\">\n<div class=\"detail-body\"></div>\n</div>\n</div>\n</div><div class=\"container-fluid p-4 view dashboard-view\">\n<div class=\"row\">\n<div class=\"col-md-3\">\n<div class=\"card\"><div class=\"card-body\">\n<p class=\"m-b-0\">Started</p>\n<h3>Sep 12, 2023 03:33:12 PM</h3>\n</div></div>\n</div>\n<div class=\"col-md-3\">\n<div class=\"card\"><div class=\"card-body\">\n<p class=\"m-b-0\">Ended</p>\n<h3>Sep 12, 2023 03:33:40 PM</h3>\n</div></div>\n</div>\n<div class=\"col-md-3\">\n<div class=\"card\"><div class=\"card-body\">\n<p class=\"m-b-0 text-pass\">Tests Passed</p>\n<h3>0</h3>\n</div></div>\n</div>\n<div class=\"col-md-3\">\n<div class=\"card\"><div class=\"card-body\">\n<p class=\"m-b-0 text-fail\">Tests Failed</p>\n<h3>2</h3>\n</div></div>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-md-6\">\n<div class=\"card\">\n<div class=\"card-header\">\n<h6 class=\"card-title\">Tests</h6>\n</div>\n<div class=\"card-body\">\n<div class=\"\">\n<canvas id='parent-analysis' width='115' height='90'></canvas>\n</div>\n</div>\n<div class=\"card-footer\">\n<div><small data-tooltip='0%'>\n<b>0</b> tests passed\n</small>\n</div>\n<div>\n<small data-tooltip='100%'><b>2</b> tests failed,\n<b>0</b> skipped, <b data-tooltip='0%'>0</b> others\n</small>\n</div>\n</div>\n</div>\n</div>\n<div class=\"col-md-6\">\n<div class=\"card\">\n<div class=\"card-header\">\n<h6 class=\"card-title\">Log events</h6>\n</div>\n<div class=\"card-body\">\n<div class=\"\">\n<canvas id='events-analysis' width='115' height='90'></canvas>\n</div>\n</div>\n<div class=\"card-footer\">\n<div><small data-tooltip='0%'><b>0</b> events passed</small></div>\n<div>\n<small data-tooltip='42%'><b>3</b> events failed,\n<b data-tooltip='%'>4</b> others\n</small>\n</div>\n</div>\n</div>\n</div>\n</div>\n<div class=\"row\">\n<div class=\"col-lg-6 col-md-12 author-container\">\n<div class=\"card\">\n<div class=\"card-header\"><p>Author</p></div>\n<div class=\"card-body pb-0 pt-0\"><table class=\"table table-sm table-bordered\">\n<thead><tr class=\"bg-gray\"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>\n<tbody>\n<tr>\n<td>Sahel</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0%</td>\n</tr>\n</tbody>\n</table></div>\n</div>\n</div>\n<div class=\"col-lg-6 col-md-12 category-container\">\n<div class=\"card\">\n<div class=\"card-header\"><p>Tags</p></div>\n<div class=\"card-body pb-0 pt-0\"><table class=\"table table-sm table-bordered\">\n<thead><tr class=\"bg-gray\"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>\n<tr>\n<td>TestSuite</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0%</td>\n</tr>\n</tbody>\n</table></div>\n</div>\n</div>\n<div class=\"col-lg-6 col-md-12 device-container\">\n<div class=\"card\">\n<div class=\"card-header\"><p>Device</p></div>\n<div class=\"card-body pb-0 pt-0\"><table class=\"table table-sm table-bordered\">\n<thead><tr class=\"bg-gray\"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>\n<tbody>\n<tr>\n<td>Windows11PC,ChromeBrowserv-116</td>\n<td>0</td>\n<td>1</td>\n<td>0</td>\n<td>0</td>\n<td>0%</td>\n</tr>\n</tbody>\n</table></div>\n</div>\n</div>\n</div>\n</div>\n<script>\nvar statusGroup = {\nparentCount: 5,\npassParent: 0,\nfailParent: 2,\nwarningParent: 0,\nskipParent: 0,\nchildCount: 5,\npassChild: 0,\nfailChild: 0,\nwarningChild: 0,\nskipChild: 0,\ninfoChild: 0,\ngrandChildCount: 5,\npassGrandChild: 0,\nfailGrandChild: 0,\nwarningGrandChild: 0,\nskipGrandChild: 0,\ninfoGrandChild: 0,\neventsCount: 5,\npassEvents: 0,\nfailEvents: 3,\nwarningEvents: 0,\nskipEvents: 0,\ninfoEvents: 4\n};\n</script>        </div>\n      </div>\n    </div>\n  </div>\n<script src=\"spark/spark-script.js\"></script>\n<script type=\"text/javascript\"></script></body>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/extent-reports/index.html b/src/test/resources/extent-reports/index.html
+--- a/src/test/resources/extent-reports/index.html	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/src/test/resources/extent-reports/index.html	(date 1695520579327)
+@@ -35,7 +35,7 @@
+ <a href="#"><span class="badge badge-primary">Test Result's</span></a>
+ </li>
+ <li class="m-r-10">
+-<a href="#"><span class="badge badge-primary">Sep 12, 2023 03:33:12 PM</span></a>
++<a href="#"><span class="badge badge-primary">Aug 26, 2023 12:43:00 AM</span></a>
+ </li>
+ </ul>
+ </div>
+@@ -81,7 +81,7 @@
+ <li class="dropdown">
+ <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+ <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
++<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+ <div class="dropdown-divider"></div>
+ <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+ </ul>
+@@ -107,25 +107,25 @@
+ </ul>
+ </div>    <div class="test-list-wrapper scrollable">
+       <ul class="test-list-item">
+-        <li class="test-item"  status="fail" test-id="1"
++        <li class="test-item"  status="pass" test-id="1"
+           author="Sahel"
+           tag="TestSuite"
+           device="Windows11PC,ChromeBrowserv-116">
+           <div class="test-detail">
+             <p class="name">BookingLoginTest</p>
+             <p class="text-sm">
+-              <span>3:33:13 PM</span> / <span>00:00:27:027</span>
+-              <span class="badge fail-bg log float-right">Fail</span>
++              <span>12:43:00 AM</span> / <span>00:00:10:206</span>
++              <span class="badge pass-bg log float-right">Pass</span>
+             </p>
+           </div>
+           <div class="test-contents d-none">
+ <div class="detail-head">
+ <div class="p-v-10">
+ <div class="info">
+-<h5 class="test-status text-fail">BookingLoginTest</h5>
+-<span class='badge badge-success'>09.12.2023 3:33:13 PM</span>
+-<span class='badge badge-danger'>09.12.2023 3:33:40 PM</span>
+-<span class='badge badge-default'>00:00:27:027</span>
++<h5 class="test-status text-pass">BookingLoginTest</h5>
++<span class='badge badge-success'>08.26.2023 12:43:00 AM</span>
++<span class='badge badge-danger'>08.26.2023 12:43:11 AM</span>
++<span class='badge badge-default'>00:00:10:206</span>
+ &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+ <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+ <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+@@ -139,46 +139,31 @@
+   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+   <tbody>
+       <tr class="event-row">
+-        <td><span class="badge log fail-bg">Fail</span></td>
+-        <td>3:33:40 PM</td>
+-        <td>
+-          Test Failed: performSignIn
+-        </td>
+-      </tr>
+-      <tr class="event-row">
+-        <td><span class="badge log fail-bg">Fail</span></td>
+-        <td>3:33:40 PM</td>
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>12:43:11 AM</td>
+         <td>
+-          Error Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@aria-label = 'Dismiss sign-in info.']"}
+-  (Session info: chrome=116.0.5845.188)
+-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+-Build info: version: '4.11.0', revision: '040bc5406b'
+-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18'
+-Driver info: org.openqa.selenium.chrome.ChromeDriver
+-Command: [ed64ac7ee3851c8a855921e70a07d015, findElement {using=xpath, value=//button[@aria-label = 'Dismiss sign-in info.']}]
+-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65473/devtoo..., se:cdpVersion: 116.0.5845.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+-Session ID: ed64ac7ee3851c8a855921e70a07d015
++          Test Passed: performSignIn
+         </td>
+       </tr>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>3:33:40 PM</td>
++        <td>12:43:11 AM</td>
+         <td>
+           Test Class: BookingLoginTest
+         </td>
+       </tr>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>3:33:40 PM</td>
++        <td>12:43:11 AM</td>
+         <td>
+           Test Name: performSignIn
+         </td>
+       </tr>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>3:33:40 PM</td>
++        <td>12:43:11 AM</td>
+         <td>
+-          Test Status: Failed
++          Test Status: Passed
+         </td>
+       </tr>
+   </tbody>
+@@ -186,25 +171,25 @@
+ </div>
+           </div>
+         </li>
+-        <li class="test-item"  status="fail" test-id="2"
++        <li class="test-item"  status="pass" test-id="2"
+           author=""
+           tag=""
+           device="">
+           <div class="test-detail">
+             <p class="name">Login-Test</p>
+             <p class="text-sm">
+-              <span>3:33:13 PM</span> / <span>00:00:26:835</span>
+-              <span class="badge fail-bg log float-right">Fail</span>
++              <span>12:43:00 AM</span> / <span>00:00:10:201</span>
++              <span class="badge pass-bg log float-right">Pass</span>
+             </p>
+           </div>
+           <div class="test-contents d-none">
+ <div class="detail-head">
+ <div class="p-v-10">
+ <div class="info">
+-<h5 class="test-status text-fail">Login-Test</h5>
+-<span class='badge badge-success'>09.12.2023 3:33:13 PM</span>
+-<span class='badge badge-danger'>09.12.2023 3:33:40 PM</span>
+-<span class='badge badge-default'>00:00:26:835</span>
++<h5 class="test-status text-pass">Login-Test</h5>
++<span class='badge badge-success'>08.26.2023 12:43:00 AM</span>
++<span class='badge badge-danger'>08.26.2023 12:43:11 AM</span>
++<span class='badge badge-default'>00:00:10:201</span>
+ &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+ <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+ <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+@@ -216,16 +201,16 @@
+   <tbody>
+       <tr class="event-row">
+         <td><span class="badge log info-bg">Info</span></td>
+-        <td>3:33:29 PM</td>
++        <td>12:43:07 AM</td>
+         <td>
+           Test started: performSignIn
+         </td>
+       </tr>
+       <tr class="event-row">
+-        <td><span class="badge log fail-bg">Fail</span></td>
+-        <td>3:33:40 PM</td>
++        <td><span class="badge log pass-bg">Pass</span></td>
++        <td>12:43:11 AM</td>
+         <td>
+-          Test failed: performSignIn
++          Test passed: performSignIn
+         </td>
+       </tr>
+   </tbody>
+@@ -253,7 +238,7 @@
+ <li class="test-item">
+ <div class="test-detail">
+ <span class="meta">
+-<span class='badge log badge-danger'>1</span>
++<span class='badge log pass-bg'>1</span>
+ </span>
+ <p class="name">TestSuite</p>
+ <p class="duration text-sm">1 tests</p>
+@@ -261,7 +246,7 @@
+ <div class="test-contents d-none">
+ <div class="info">
+ <h4>TestSuite</h4>
+-<span status="fail" class='badge log badge-danger'>1 failed</span>
++<span status="pass" class='badge log pass-bg'>1 passed</span>
+ </div>
+ <table class='table table-sm mt-4'>
+ <thead>
+@@ -272,9 +257,9 @@
+ </tr>
+ </thead>
+ <tbody>
+-<tr class="tag-test-status" status="fail">
+-<td><span class="badge log fail-bg">Fail</span></td>
+-<td>15:33:13 PM</td>
++<tr class="tag-test-status" status="pass">
++<td><span class="badge log pass-bg">Pass</span></td>
++<td>00:43:00 AM</td>
+ <td>
+ <a href="#" class="linked" test-id='1' id='1'>BookingLoginTest</a>
+ </td>
+@@ -302,7 +287,7 @@
+ <li class="test-item">
+ <div class="test-detail">
+ <span class="meta">
+-<span class='badge log badge-danger'>1</span>
++<span class='badge log pass-bg'>1</span>
+ </span>
+ <p class="name">Windows11PC,ChromeBrowserv-116</p>
+ <p class="duration text-sm">1 tests</p>
+@@ -310,7 +295,7 @@
+ <div class="test-contents d-none">
+ <div class="info">
+ <h4>Windows11PC,ChromeBrowserv-116</h4>
+-<span status="fail" class='badge log badge-danger'>1 failed</span>
++<span status="pass" class='badge log pass-bg'>1 passed</span>
+ </div>
+ <table class='table table-sm mt-4'>
+ <thead>
+@@ -321,9 +306,9 @@
+ </tr>
+ </thead>
+ <tbody>
+-<tr class="tag-test-status" status="fail">
+-<td><span class="badge log fail-bg">Fail</span></td>
+-<td>15:33:13 PM</td>
++<tr class="tag-test-status" status="pass">
++<td><span class="badge log pass-bg">Pass</span></td>
++<td>00:43:00 AM</td>
+ <td>
+ <a href="#" class="linked" test-id='1' id='1'>BookingLoginTest</a>
+ </td>
+@@ -351,7 +336,7 @@
+ <li class="test-item">
+ <div class="test-detail">
+ <span class="meta">
+-<span class='badge log badge-danger'>1</span>
++<span class='badge log pass-bg'>1</span>
+ </span>
+ <p class="name">Sahel</p>
+ <p class="duration text-sm">1 tests</p>
+@@ -359,7 +344,7 @@
+ <div class="test-contents d-none">
+ <div class="info">
+ <h4>Sahel</h4>
+-<span status="fail" class='badge log badge-danger'>1 failed</span>
++<span status="pass" class='badge log pass-bg'>1 passed</span>
+ </div>
+ <table class='table table-sm mt-4'>
+ <thead>
+@@ -370,9 +355,9 @@
+ </tr>
+ </thead>
+ <tbody>
+-<tr class="tag-test-status" status="fail">
+-<td><span class="badge log fail-bg">Fail</span></td>
+-<td>15:33:13 PM</td>
++<tr class="tag-test-status" status="pass">
++<td><span class="badge log pass-bg">Pass</span></td>
++<td>00:43:00 AM</td>
+ <td>
+ <a href="#" class="linked" test-id='1' id='1'>BookingLoginTest</a>
+ </td>
+@@ -394,25 +379,25 @@
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0">Started</p>
+-<h3>Sep 12, 2023 03:33:12 PM</h3>
++<h3>Aug 26, 2023 12:43:00 AM</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0">Ended</p>
+-<h3>Sep 12, 2023 03:33:40 PM</h3>
++<h3>Aug 26, 2023 12:43:11 AM</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0 text-pass">Tests Passed</p>
+-<h3>0</h3>
++<h3>2</h3>
+ </div></div>
+ </div>
+ <div class="col-md-3">
+ <div class="card"><div class="card-body">
+ <p class="m-b-0 text-fail">Tests Failed</p>
+-<h3>2</h3>
++<h3>0</h3>
+ </div></div>
+ </div>
+ </div>
+@@ -428,12 +413,12 @@
+ </div>
+ </div>
+ <div class="card-footer">
+-<div><small data-tooltip='0%'>
+-<b>0</b> tests passed
++<div><small data-tooltip='100%'>
++<b>2</b> tests passed
+ </small>
+ </div>
+ <div>
+-<small data-tooltip='100%'><b>2</b> tests failed,
++<small data-tooltip='0%'><b>0</b> tests failed,
+ <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+ </small>
+ </div>
+@@ -451,9 +436,9 @@
+ </div>
+ </div>
+ <div class="card-footer">
+-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
++<div><small data-tooltip='33%'><b>2</b> events passed</small></div>
+ <div>
+-<small data-tooltip='42%'><b>3</b> events failed,
++<small data-tooltip='0%'><b>0</b> events failed,
+ <b data-tooltip='%'>4</b> others
+ </small>
+ </div>
+@@ -470,11 +455,11 @@
+ <tbody>
+ <tr>
+ <td>Sahel</td>
+-<td>0</td>
+ <td>1</td>
+ <td>0</td>
+ <td>0</td>
+-<td>0%</td>
++<td>0</td>
++<td>100%</td>
+ </tr>
+ </tbody>
+ </table></div>
+@@ -487,11 +472,11 @@
+ <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+ <tr>
+ <td>TestSuite</td>
++<td>1</td>
+ <td>0</td>
+-<td>1</td>
+ <td>0</td>
+ <td>0</td>
+-<td>0%</td>
++<td>100%</td>
+ </tr>
+ </tbody>
+ </table></div>
+@@ -505,11 +490,11 @@
+ <tbody>
+ <tr>
+ <td>Windows11PC,ChromeBrowserv-116</td>
++<td>1</td>
+ <td>0</td>
+-<td>1</td>
+ <td>0</td>
+ <td>0</td>
+-<td>0%</td>
++<td>100%</td>
+ </tr>
+ </tbody>
+ </table></div>
+@@ -520,8 +505,8 @@
+ <script>
+ var statusGroup = {
+ parentCount: 5,
+-passParent: 0,
+-failParent: 2,
++passParent: 2,
++failParent: 0,
+ warningParent: 0,
+ skipParent: 0,
+ childCount: 5,
+@@ -537,8 +522,8 @@
+ skipGrandChild: 0,
+ infoGrandChild: 0,
+ eventsCount: 5,
+-passEvents: 0,
+-failEvents: 3,
++passEvents: 2,
++failEvents: 0,
+ warningEvents: 0,
+ skipEvents: 0,
+ infoEvents: 4
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># BookITAutomation\nBooking.com Test Automation Framework\nThis repository contains a test automation framework for the booking.com website. The framework is designed to automate various scenarios related to user interactions on the website using Selenium WebDriver, Java, TestNG, and the Page Object Model (POM) design pattern.\n\nTools and Frameworks Used\nSelenium WebDriver: A popular open-source library for automating web browsers. It provides APIs to interact with web elements, simulate user actions, and perform assertions.\n\nJava: The programming language used to write the automation scripts. Java offers a rich set of libraries, object-oriented features, and platform independence.\n\nTestNG: A testing framework that enhances and extends JUnit. It provides features like parallel test execution, grouping, and reporting.\n\nExtentReports: A reporting library that generates detailed and visually appealing test reports. It provides insights into test execution results, logs, and screenshots.\n\nPage Object Model (POM): A design pattern that separates the representation of web elements and their interactions from the test scripts. POM enhances code modularity, reusability, and maintainability.\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/README.md	(date 1695520531594)
+@@ -12,3 +12,7 @@
+ ExtentReports: A reporting library that generates detailed and visually appealing test reports. It provides insights into test execution results, logs, and screenshots.
+ 
+ Page Object Model (POM): A design pattern that separates the representation of web elements and their interactions from the test scripts. POM enhances code modularity, reusability, and maintainability.
++
++09/06/2023 
++The test run using this framework went pretty well. This framework is scalable and can be integrated with CI/CD pipeline to automate tests and get to deployment faster.
++Feel free to clone this project and use the testing framework as your base.
+Index: src/main/java/com/sahel/booking/base/DriverFactory.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.sahel.booking.base;\n\nimport com.aventstack.extentreports.ExtentReports;\nimport com.aventstack.extentreports.reporter.ExtentSparkReporter;\nimport com.aventstack.extentreports.reporter.configuration.Protocol;\nimport com.aventstack.extentreports.reporter.configuration.Theme;\nimport com.sahel.booking.browsers.ChromeBrowser;\nimport com.sahel.booking.browsers.EdgeBrowser;\nimport com.sahel.booking.browsers.FireFoxBrowser;\nimport org.apache.commons.io.IOIndexedException;\nimport org.openqa.selenium.WebDriver;\n\nimport java.io.File;\nimport java.io.FileInputStream;\nimport java.io.FileNotFoundException;\nimport java.io.IOException;\nimport java.time.Duration;\nimport java.time.temporal.ChronoUnit;\nimport java.util.Properties;\n\n/**\n * Factory class to initialize WebDriver\n */\n\npublic class DriverFactory {\n    private static WebDriver driver;\n    private static ExtentReports extent;\n\n    public static ExtentReports getReport() {\n        if (extent == null) {\n            ExtentSparkReporter spark = new ExtentSparkReporter(\"src/test/resources/extent-reports\");\n            spark.config().setTheme(Theme.DARK);\n            spark.config().setDocumentTitle(\"Booking Automation Testing Framework\");\n            spark.config().setReportName(\"Test Result's\");\n            spark.config().setProtocol(Protocol.HTTP);\n            spark.config().enableOfflineMode(true);\n            spark.config().setTimelineEnabled(false);\n            extent = new ExtentReports();\n            extent.attachReporter(spark);\n        }\n        return extent;\n    }\n\n    /**\n     * @return WebDriver\n     */\n    public WebDriver getDriver() {\n        return driver;\n    }\n\n\n    /**\n     * Loads and returns a Properties object from a specified properties file.\n     *\n     * @return A Properties object containing the loaded properties.\n     * @throws IOException If an I/O error occurs while reading the properties file.\n     */\n    private Properties loadProperties() throws IOException {\n        Properties properties = new Properties();\n        String propertiesFilePath = System.getProperty(\"user.dir\") + \"/src/main/resources/qa_env.properties\";\n\n        try (FileInputStream fileInputStream = getFileInput(propertiesFilePath)) {\n            properties.load(fileInputStream);\n        } catch (FileNotFoundException e) {\n            throw new FileNotFoundException(\"Properties file is not on this path : \" + propertiesFilePath + \" , check the location and try again.\");\n        } catch (IOIndexedException e) {\n            throw new IOException(\"Error while loading properties from file : \" + propertiesFilePath, e);\n        }\n        properties.load(getFileInput(propertiesFilePath));\n        return properties;\n    }\n\n    /**\n     * Retrieves an input stream for reading files.\n     *\n     * @param filepath The path to the file.\n     * @return An input stream for the specified file.\n     * @throws FileNotFoundException If the file at the given path is not found.\n     */\n    public static FileInputStream getFileInput(String filepath) throws FileNotFoundException {\n        try {\n            return new FileInputStream(new File(filepath));\n        } catch (FileNotFoundException e) {\n            throw new FileNotFoundException(\"The file could not be found on this path : \" + filepath);\n        }\n    }\n\n    /**\n     * Retrieves the value of a property from the properties file.\n     *\n     * @param propertyKey-Key The key of the property to retrieve.\n     * @return The value of the specified property.\n     * @throws IOException If an I/O error occurs while loading the properties file.\n     */\n    private String getProperty(String propertyKey) throws IOException {\n        try {\n            return loadProperties().getProperty(propertyKey);\n        } catch (IOException e) {\n            throw new IOException(\"Error loading the properties, check the location of the file again\");\n        }\n    }\n\n    /**\n     * Opens a web browser based on the properties provided.\n     *\n     * @throws IOException If an I/O error occurs while reading properties.\n     */\n    public void openBrowser() throws IOException {\n        String browser = this.getProperty(\"browser\");\n        String url = this.getProperty(\"url\");\n        String headless = this.getProperty(\"headless\");\n        driver = createWebDriver(browser, headless);\n        driver.manage().window().maximize();\n        driver.manage().timeouts().implicitlyWait(Duration.of(10, ChronoUnit.SECONDS));\n        driver.get(url);\n\n\n    }\n\n    /**\n     * Creates and returns a WebDriver instance based on the chosen browser and headless mode.\n     *\n     * @param browser  The name of the browser (e.g., \"chrome\", \"firefox\", \"edge\").\n     * @param headless Whether to run the browser in headless mode (\"true\" or \"false\").\n     * @return A WebDriver instance for the specified browser and mode.\n     * @throws IllegalArgumentException If an unsupported browser name is provided.\n     */\n    private static WebDriver createWebDriver(String browser, String headless) {\n        switch (browser.toLowerCase()) {\n            case \"chrome\" -> driver = ChromeBrowser.createChromeDriver(headless);\n            case \"firefox\" -> driver = FireFoxBrowser.createFireFoxDriver(headless);\n            case \"edge\" -> driver = EdgeBrowser.createEdgeDriver(headless);\n            default -> throw new IllegalArgumentException(\"Unsupported browser\");\n        }\n        return driver;\n    }\n\n    /**\n     * Quits the current instance of WebDriver if it is open.\n     */\n    public void quitBrowser() {\n        if (driver != null) {\n            driver.quit();\n        }\n    }\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/com/sahel/booking/base/DriverFactory.java b/src/main/java/com/sahel/booking/base/DriverFactory.java
+--- a/src/main/java/com/sahel/booking/base/DriverFactory.java	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/src/main/java/com/sahel/booking/base/DriverFactory.java	(date 1695520531598)
+@@ -10,7 +10,6 @@
+ import org.apache.commons.io.IOIndexedException;
+ import org.openqa.selenium.WebDriver;
+ 
+-import java.io.File;
+ import java.io.FileInputStream;
+ import java.io.FileNotFoundException;
+ import java.io.IOException;
+@@ -19,15 +18,17 @@
+ import java.util.Properties;
+ 
+ /**
+- * Factory class to initialize WebDriver
++ * Factory class to initialize WebDriver and ExtentReports
+  */
+ 
+ public class DriverFactory {
+     private static WebDriver driver;
+-    private static ExtentReports extent;
++    private static ExtentReports extentReports;
+ 
++
++    // ExtentReport configurations
+     public static ExtentReports getReport() {
+-        if (extent == null) {
++        if (extentReports == null) {
+             ExtentSparkReporter spark = new ExtentSparkReporter("src/test/resources/extent-reports");
+             spark.config().setTheme(Theme.DARK);
+             spark.config().setDocumentTitle("Booking Automation Testing Framework");
+@@ -35,16 +36,16 @@
+             spark.config().setProtocol(Protocol.HTTP);
+             spark.config().enableOfflineMode(true);
+             spark.config().setTimelineEnabled(false);
+-            extent = new ExtentReports();
+-            extent.attachReporter(spark);
++            extentReports = new ExtentReports();
++            extentReports.attachReporter(spark);
+         }
+-        return extent;
++        return extentReports;
+     }
+ 
+     /**
+      * @return WebDriver
+      */
+-    public WebDriver getDriver() {
++    public static WebDriver getDriver() {
+         return driver;
+     }
+ 
+@@ -79,7 +80,7 @@
+      */
+     public static FileInputStream getFileInput(String filepath) throws FileNotFoundException {
+         try {
+-            return new FileInputStream(new File(filepath));
++            return new FileInputStream(filepath);
+         } catch (FileNotFoundException e) {
+             throw new FileNotFoundException("The file could not be found on this path : " + filepath);
+         }
+@@ -125,14 +126,14 @@
+      * @return A WebDriver instance for the specified browser and mode.
+      * @throws IllegalArgumentException If an unsupported browser name is provided.
+      */
+-    private static WebDriver createWebDriver(String browser, String headless) {
++    private WebDriver createWebDriver(String browser, String headless) {
+         switch (browser.toLowerCase()) {
+             case "chrome" -> driver = ChromeBrowser.createChromeDriver(headless);
+             case "firefox" -> driver = FireFoxBrowser.createFireFoxDriver(headless);
+             case "edge" -> driver = EdgeBrowser.createEdgeDriver(headless);
+             default -> throw new IllegalArgumentException("Unsupported browser");
+         }
+-        return driver;
++        return DriverFactory.driver;
+     }
+ 
+     /**
+Index: src/test/java/BookingLoginTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import com.sahel.booking.base.TestBase;\n\nimport org.testng.Assert;\nimport org.testng.annotations.Parameters;\nimport org.testng.annotations.Test;\n\npublic class BookingLoginTest extends TestBase {\n/**\n * This is a sample of how to implement the login functionality.\n * Booking.com uses captcha technology to prevent automated login.\n */\n    // Performs login action.\n    // Login scenarios cannot be automated for Booking.com. Unfortunate.....\n//    @Parameters({\"email\", \"password\"})\n//    @Test\n//    public void performSignIn(String email, String password) {\n//        Assert.assertEquals(factory.homePage().getTitle(), \"Booking.com | Official site | The best hotels, flights, car rentals\" + \" & \" + \"accommodations\");\n//        logger.info(\"User is on Booking.com homepage\");\n//        factory.homePage().clickSignIn();\n//        logger.info(\"User clicked on 'SignIn' button\");\n//        factory.signInPage().enterEmail(email);\n//        logger.info(\"User entered valid email\");\n//        factory.signInPage().clickContinueWithEmail();\n//        logger.info(\"User clicked 'Continue with email' button\");\n//        factory.signInPage().enterPassword(password);\n//        logger.info(\"User entered valid password\");\n//        factory.signInPage().clickSignIn();\n//        logger.info(\"User clicked 'Sign in' button on the sign page\");\n//    }\n//\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/BookingLoginTest.java b/src/test/java/BookingLoginTest.java
+--- a/src/test/java/BookingLoginTest.java	(revision a03da502e1567efa800ca0b544f075e56dbfa7bf)
++++ b/src/test/java/BookingLoginTest.java	(date 1695520555710)
+@@ -5,28 +5,25 @@
+ import org.testng.annotations.Test;
+ 
+ public class BookingLoginTest extends TestBase {
+-/**
+- * This is a sample of how to implement the login functionality.
+- * Booking.com uses captcha technology to prevent automated login.
+- */
++
+     // Performs login action.
+     // Login scenarios cannot be automated for Booking.com. Unfortunate.....
+-//    @Parameters({"email", "password"})
+-//    @Test
+-//    public void performSignIn(String email, String password) {
+-//        Assert.assertEquals(factory.homePage().getTitle(), "Booking.com | Official site | The best hotels, flights, car rentals" + " & " + "accommodations");
+-//        logger.info("User is on Booking.com homepage");
+-//        factory.homePage().clickSignIn();
+-//        logger.info("User clicked on 'SignIn' button");
+-//        factory.signInPage().enterEmail(email);
+-//        logger.info("User entered valid email");
+-//        factory.signInPage().clickContinueWithEmail();
+-//        logger.info("User clicked 'Continue with email' button");
+-//        factory.signInPage().enterPassword(password);
+-//        logger.info("User entered valid password");
+-//        factory.signInPage().clickSignIn();
+-//        logger.info("User clicked 'Sign in' button on the sign page");
+-//    }
+-//
++    @Parameters({"email", "password"})
++    @Test
++    public void performSignIn(String email, String password) {
++        Assert.assertEquals(factory.homePage().getTitle(), "Booking.com | Official site | The best hotels, flights, car rentals" + " & " + "accommodations");
++        logger.info("User is on Booking.com homepage");
++        factory.homePage().clickSignIn();
++        logger.info("User clicked on 'SignIn' button");
++        factory.signInPage().enterEmail(email);
++        logger.info("User entered valid email");
++        factory.signInPage().clickContinueWithEmail();
++        logger.info("User clicked 'Continue with email' button");
++        factory.signInPage().enterPassword(password);
++        logger.info("User entered valid password");
++        factory.signInPage().clickSignIn();
++        logger.info("User clicked 'Sign in' button on the sign page");
++    }
++
+ 
+ }
