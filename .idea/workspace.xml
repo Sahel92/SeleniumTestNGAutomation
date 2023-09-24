@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Merge">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Jenkins">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/qa_env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/qa_env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/EdgeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/EdgeBrowser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -392,7 +391,8 @@
     <MESSAGE value="Login Functionalities cannot be automated dur to captcha challenge." />
     <MESSAGE value="Search Functionality Test" />
     <MESSAGE value="Merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
+    <MESSAGE value="Jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jenkins" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
