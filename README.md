@@ -18,12 +18,6 @@ Page Object Model (POM): A design pattern that separates the representation of w
 Base class of the framework
 ![Screenshot_20230923_201415](https://github.com/Sahel92/BookITAutomation/assets/125098911/eea2f42c-aa2d-40ef-9190-7dd6bb45a87f)
 
-Extent Report 
-[Failed Test]
-![Screenshot_20230923_201415](https://github.com/Sahel92/BookITAutomation/assets/125098911/48bbfc0d-5942-4906-ad31-07765a0139f5)
-
-[Success Test]
-![Screenshot_20230923_201415](https://github.com/Sahel92/BookITAutomation/assets/125098911/0e3ec2a2-dce9-4c0b-a496-04ed989c6381)
 
 Log4j log
 ![Screenshot_20230923_231802](https://github.com/Sahel92/BookITAutomation/assets/125098911/73cd9ea2-c123-463f-a0dc-15b5383e2d2b)
