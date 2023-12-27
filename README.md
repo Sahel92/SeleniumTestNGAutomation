@@ -1,7 +1,4 @@
-# BookITAutomation
 
-Booking.com Test Automation Framework
-This repository contains a test automation framework for the booking.com website.
 The framework is designed to automate various scenarios related to user interactions on a website using Selenium WebDriver, Java, TestNG, and the Page Object Model (POM) design pattern.
 
 Tools and Frameworks Used
