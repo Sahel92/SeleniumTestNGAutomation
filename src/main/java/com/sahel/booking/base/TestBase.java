@@ -2,7 +2,7 @@ package com.sahel.booking.base;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.sahel.booking.factory.BookingFactory;
+import com.sahel.booking.factory.POMFactory;
 import com.sahel.booking.utilities.WebDriverUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,19 +15,19 @@ import java.io.IOException;
 
 
 public class TestBase extends WebDriverUtils {
-    protected static ExtentTest test;
+    protected  ExtentTest test;
     private static final String TEST_CATEGORY = "Test Suite";
     private static final String TEST_AUTHOR = "SahelAutomationEngineer";
-    private static final String TEST_DEVICE = "Ubuntu 22.04, Chrome Browser v-117";
+    private static final String TEST_DEVICE = "Ubuntu 22.04";
     protected static final Logger logger = LogManager.getLogger(TestBase.class);
 
-    protected static BookingFactory factory;
+    protected POMFactory factory;
 
 
     @BeforeMethod
     public void launchTests() throws IOException {
         super.openBrowser();
-        factory = new BookingFactory();
+        factory = new POMFactory();
     }
 
     /**
@@ -43,17 +43,13 @@ public class TestBase extends WebDriverUtils {
     public void setUpReporting() {
         //Load Log4j2 configuration
         System.setProperty("log4j.configurationFile", "src/main/resources/log4j2.xml");
-        test = WebDriverUtils.getReport().createTest(getClass().getSimpleName());
+        test = DriverFactory.getReport().createTest(getClass().getSimpleName());
         test.assignCategory(TEST_CATEGORY);
         test.assignAuthor(TEST_AUTHOR);
         test.assignDevice(TEST_DEVICE);
     }
 
-    /**
-     * creates the extent report for us
-     *
-     * @param result extent report
-     */
+
     @AfterMethod
     public void extentResults(ITestResult result) {
         String testName = result.getName();
@@ -79,7 +75,6 @@ public class TestBase extends WebDriverUtils {
         test.info("Test Class: " + className);
         test.info("Test Name: " + testName);
         test.info("Test Status: " + status);
-
     }
 
     // Helper method to convert test status to readable text

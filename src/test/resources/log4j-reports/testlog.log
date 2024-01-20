@@ -1,26 +1,71 @@
-2023-09-24 02:09:07,018 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 02:09:07,021 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 02:13:46,473 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 02:13:46,476 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 02:14:17,917 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 02:14:17,921 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 02:15:08,808 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 02:15:08,812 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 15:37:44,060 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 15:37:44,065 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 15:38:05,813 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 15:38:05,818 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 15:40:06,764 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 15:40:06,769 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 15:41:52,723 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 15:41:52,728 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 16:11:35,922 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 16:11:35,938 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 16:27:54,961 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
-2023-09-24 16:27:54,963 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Booking.com: Hotels in Athens. Book your hotel now!] but found [10 Best Athens Hotels, Greece (From $35)]
-2023-09-24 16:28:13,146 - com.sahel.booking.base.TestBase - ERROR - Test Failed: searchDestination
-2023-09-24 16:28:13,147 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Booking.com: Hotels in Athens. Book your hotel now!] but found [10 Best Athens Hotels, Greece (From $35)]
-2023-09-24 16:29:07,891 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 16:29:07,906 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
-2023-09-24 16:29:41,922 - com.sahel.booking.base.TestBase - INFO - User searched for desired destination
-2023-09-24 16:29:41,937 - com.sahel.booking.base.TestBase - INFO - Test Passed: searchDestination
+2024-01-17 19:09:31,062 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:12:00,974 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:12:24,759 - com.sahel.booking.base.TestBase - ERROR - Test Failed: assertTitle
+2024-01-17 19:12:24,761 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Diamond Rfdesume] but found [Diamond Resume]
+2024-01-17 19:12:49,541 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:18:59,292 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:20:24,487 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:31:02,926 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:32:11,548 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:33:08,015 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:47:16,216 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:50:11,283 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:52:22,896 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:55:58,004 - com.sahel.booking.base.TestBase - INFO - Resume Builder application smoke test passed
+2024-01-17 19:55:58,007 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:56:13,747 - com.sahel.booking.base.TestBase - INFO - Resume Builder application smoke test passed
+2024-01-17 19:56:13,749 - com.sahel.booking.base.TestBase - INFO - Test Passed: assertTitle
+2024-01-17 19:59:55,265 - com.sahel.booking.base.TestBase - INFO - Resume Builder application smoke test passed
+2024-01-17 19:59:55,268 - com.sahel.booking.base.TestBase - INFO - assertTitle Test Passed
+2024-01-17 20:00:54,016 - com.sahel.booking.base.TestBase - INFO - Resume Builder application smoke test passed
+2024-01-17 20:00:54,019 - com.sahel.booking.base.TestBase - INFO - assertTitle Test Passed
+2024-01-20 02:29:24,938 - com.sahel.booking.base.TestBase - ERROR - Test Failed: assertTitle
+2024-01-20 02:29:24,940 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [Diamond Resume] but found [My Retail App]
+2024-01-20 02:37:29,575 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 02:37:29,577 - com.sahel.booking.base.TestBase - INFO - Test Passed: homePageLoads
+2024-01-20 02:39:39,485 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 02:39:39,490 - com.sahel.booking.base.TestBase - INFO - Test Passed: homePageLoads
+2024-01-20 02:51:59,975 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 02:52:00,590 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 02:52:00,591 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 02:52:01,312 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 02:53:52,805 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 02:53:53,404 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 02:53:53,405 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 02:53:54,081 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 02:54:10,244 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 02:54:10,859 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 02:54:10,860 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 02:54:11,471 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 02:54:35,427 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 02:54:35,427 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 02:54:35,429 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 02:55:18,024 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 02:55:18,623 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 02:55:18,625 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 02:55:19,234 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 02:56:48,561 - com.sahel.booking.base.TestBase - INFO - Header is displayed on the homepage :[[EdgeDriver: MicrosoftEdge on linux (fe5ff0c509cbf1e82444669c969c997e)] -> xpath: //h1[@class ='header']]
+2024-01-20 02:56:48,564 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 02:57:10,121 - com.sahel.booking.base.TestBase - INFO - Header is displayed on the homepage :Home Page
+2024-01-20 02:57:10,124 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 03:06:13,773 - com.sahel.booking.base.TestBase - INFO - Header is displayed on the homepage : Home Page
+2024-01-20 03:06:13,778 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 03:06:14,386 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 03:06:14,387 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 03:06:15,005 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 03:08:39,444 - com.sahel.booking.base.TestBase - INFO - Header is displayed on the homepage : Home Page
+2024-01-20 03:08:39,447 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 03:08:40,081 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 03:08:40,082 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 03:08:40,706 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 03:25:46,345 - com.sahel.booking.base.TestBase - ERROR - Test Failed: userCanNavigateToShopPage
+2024-01-20 03:25:46,347 - com.sahel.booking.base.TestBase - ERROR - Error Message: expected [false] but found [true]
+2024-01-20 03:34:02,423 - com.sahel.booking.base.TestBase - INFO - Header is displayed on the homepage : Home Page
+2024-01-20 03:34:02,429 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHeaderExist
+2024-01-20 03:34:03,065 - com.sahel.booking.base.TestBase - INFO - Homepage exists and the boss is happy
+2024-01-20 03:34:03,065 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesHomepageExist
+2024-01-20 03:34:03,701 - com.sahel.booking.base.TestBase - INFO - Test Passed: doesLinkToProductPageExist
+2024-01-20 03:34:04,305 - com.sahel.booking.base.TestBase - INFO - The link to the products page is enabled and displayed
+2024-01-20 03:34:04,331 - com.sahel.booking.base.TestBase - INFO - Link to product page was clicked
+2024-01-20 03:34:04,343 - com.sahel.booking.base.TestBase - INFO - User has successfully been navigated to the Products page.
+2024-01-20 03:34:04,344 - com.sahel.booking.base.TestBase - INFO - Test Passed: userCanNavigateToShopPage

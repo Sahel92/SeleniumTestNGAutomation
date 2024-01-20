@@ -10,7 +10,7 @@ public class EdgeBrowser {
         EdgeOptions edgeOptions = new EdgeOptions();
         if ("true".equalsIgnoreCase(headless)) {
          //   edgeOptions.addArguments("--no-sandbox");
-        //    edgeOptions.addArguments("--disable-dev-shm-usage");
+         //    edgeOptions.addArguments("--disable-dev-shm-usage");
             edgeOptions.addArguments("--headless");
         }
         return new EdgeDriver(edgeOptions);

@@ -7,8 +7,7 @@
         <RollingFile name="R" fileName="src/test/resources/log4j-reports/testlog.log" filePattern="src/test/resources/log4j-reports/testlog-%d{yyyy-MM-dd}.log">
             <PatternLayout pattern="%d - %c - %p - %m%n"/>
             <Policies>
-                <TimeBasedTriggeringPolicy/>in	INFO	com.sahel.booking.base.TestBase	SearchFunctionalityTest.java:11	User searched for desired destination
-6456	main	INFO	com.sahel.booking.base.TestBase	TestBase.java:71	Test Passed: searchDestination
+                <TimeBasedTriggeringPolicy/>
 
             </Policies>
             <DefaultRolloverStrategy max="10"/>
@@ -16,8 +15,7 @@
         <File name="HTML" fileName="src/test/resources/log4j-reports/Booking_Test_Logs.html">
             <HTMLLayout title="Application log" locationInfo="true"/>
         </File>
-    </Appenders>in	INFO	com.sahel.booking.base.TestBase	SearchFunctionalityTest.java:11	User searched for desired destination
-6456	main	INFO	com.sahel.booking.base.TestBase	TestBase.java:71	Test Passed: searchDestination
+    </Appenders>
 
     <Loggers>
         <Root level="INFO">

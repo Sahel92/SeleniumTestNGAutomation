@@ -7,6 +7,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.sahel.booking.browsers.ChromeBrowser;
 import com.sahel.booking.browsers.EdgeBrowser;
 import com.sahel.booking.browsers.FireFoxBrowser;
+import lombok.Getter;
 import org.apache.commons.io.IOIndexedException;
 import org.openqa.selenium.WebDriver;
 
@@ -21,15 +22,16 @@ import java.util.Properties;
  * Factory class to initialize WebDriver and ExtentReports
  */
 
+@Getter
 public class DriverFactory {
-    private static WebDriver driver;
+    private WebDriver driver;
     private static ExtentReports extentReports;
+    private static final String EXTENT_REPORT_PATH = "src/test/resources/extent-reports";
 
 
-    // ExtentReport configurations
     public static ExtentReports getReport() {
         if (extentReports == null) {
-            ExtentSparkReporter spark = new ExtentSparkReporter("src/test/resources/extent-reports");
+            ExtentSparkReporter spark = new ExtentSparkReporter(EXTENT_REPORT_PATH);
             spark.config().setTheme(Theme.DARK);
             spark.config().setDocumentTitle("Booking Automation Testing Framework");
             spark.config().setReportName("Test Result's");
@@ -42,20 +44,6 @@ public class DriverFactory {
         return extentReports;
     }
 
-    /**
-     * @return WebDriver
-     */
-    public static WebDriver getDriver() {
-        return driver;
-    }
-
-
-    /**
-     * Loads and returns a Properties object from a specified properties file.
-     *
-     * @return A Properties object containing the loaded properties.
-     * @throws IOException If an I/O error occurs while reading the properties file.
-     */
     private Properties loadProperties() throws IOException {
         Properties properties = new Properties();
         String propertiesFilePath = System.getProperty("user.dir") + "/src/main/resources/qa_env.properties";
@@ -71,13 +59,7 @@ public class DriverFactory {
         return properties;
     }
 
-    /**
-     * Retrieves an input stream for reading files.
-     *
-     * @param filepath The path to the file.
-     * @return An input stream for the specified file.
-     * @throws FileNotFoundException If the file at the given path is not found.
-     */
+
     public static FileInputStream getFileInput(String filepath) throws FileNotFoundException {
         try {
             return new FileInputStream(filepath);
@@ -86,13 +68,6 @@ public class DriverFactory {
         }
     }
 
-    /**
-     * Retrieves the value of a property from the properties file.
-     *
-     * @param propertyKey
-     * @return The value of the specified property.
-     * @throws IOException If an I/O error occurs while loading the properties file.
-     */
     private String getProperty(String propertyKey) throws IOException {
         try {
             return loadProperties().getProperty(propertyKey);
@@ -101,11 +76,6 @@ public class DriverFactory {
         }
     }
 
-    /**
-     * Opens a web browser based on the properties provided.
-     *
-     * @throws IOException If an I/O error occurs while reading properties.
-     */
     public void openBrowser() throws IOException {
         String browser = this.getProperty("browser");
         String url = this.getProperty("url");
@@ -116,14 +86,7 @@ public class DriverFactory {
         driver.get(url);
     }
 
-    /**
-     * Creates and returns a WebDriver instance based on the chosen browser and headless mode.
-     *
-     * @param browser  The name of the browser (e.g., "chrome", "firefox", "edge").
-     * @param headless Whether to run the browser in headless mode ("true" or "false").
-     * @return A WebDriver instance for the specified browser and mode.
-     * @throws IllegalArgumentException If an unsupported browser name is provided.
-     */
+
     private WebDriver createWebDriver(String browser, String headless) {
         switch (browser.toLowerCase()) {
             case "chrome" -> driver = ChromeBrowser.createChromeDriver(headless);
@@ -131,12 +94,10 @@ public class DriverFactory {
             case "edge" -> driver = EdgeBrowser.createEdgeDriver(headless);
             default -> throw new IllegalArgumentException("Unsupported browser");
         }
-        return DriverFactory.driver;
+        return DriverFactory.this.driver;
     }
 
-    /**
-     * Quits the current instance of WebDriver if it is open.
-     */
+
     public void quitBrowser() {
         if (driver != null) {
             driver.quit();

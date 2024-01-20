@@ -5,7 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e983239e-c951-4741-8f6d-0fc2efb3d0f9" name="Changes" comment="Merge">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/POMFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/utilities/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/smoke/suite/HomePageSmokeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04f83da61cf08d75cf045f9e775cc504aa45caaa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/4/04f83da61cf08d75cf045f9e775cc504aa45caaa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/336f23ac99bb62b66e304aa1e741c2aceeb3dc48" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/336f23ac99bb62b66e304aa1e741c2aceeb3dc48" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/567df4ee245d21f82a628d495607ec16e1bbaeec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/64ee619491a04378b4afb96c4cd697dfbdc8e22c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a516200e478de9462278306cdf066a8e2b6f2d76" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a516200e478de9462278306cdf066a8e2b6f2d76" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/b/ab1de7a72e46a207f0f401bd264e981aef76c342" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/efca4632cfaca2697ffbaa2684bc297b2e2fea98" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/b/fbffdefc27e345edd9cbe528f02325f287f39f79" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/6/567df4ee245d21f82a628d495607ec16e1bbaeec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/4/64ee619491a04378b4afb96c4cd697dfbdc8e22c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/b/ab1de7a72e46a207f0f401bd264e981aef76c342" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/f/efca4632cfaca2697ffbaa2684bc297b2e2fea98" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/b/fbffdefc27e345edd9cbe528f02325f287f39f79" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/base/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/ChromeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/ChromeBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/EdgeBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/EdgeBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/FireFoxBrowser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sahel/booking/browsers/FireFoxBrowser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/factory/BookingFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sahel/booking/page/models/SignInPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/qa_env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/qa_env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookingLoginTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchFunctionalityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/Booking_Test_Logs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/Booking_Test_Logs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/log4j-reports/Booking_Test_Logs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/log4j-reports/testlog.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog-2023-09-23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j-reports/testlog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +73,16 @@
     &quot;assignee&quot;: &quot;Sahel92&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -43,13 +92,17 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/testng/testng/7.8.0/testng-7.8.0-sources.jar!/org/testng/ITestListener.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/4.16.1/selenium-api-4.16.1.jar!/org/openqa/selenium/WebElement.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/extent-reports/Index.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -64,21 +117,34 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/sahel92/Desktop/Screenshot_20230923_201415.png&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.MyWebPageTest.executor": "Run",
+    "Application.Person.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "TestNG./home/sahel92/Desktop/Projects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml.executor": "Run",
+    "TestNG.HomePageSmokeTest.doesHeaderExist.executor": "Run",
+    "TestNG.HomePageSmokeTest.executor": "Run",
+    "TestNG.HomePageSmokeTest.userCanNavigateToShopPage.executor": "Debug",
+    "TestNG.ResumeBuilderSmokeTest.assertTitle.executor": "Run",
+    "TestNG.ResumeBuilderSmokeTest.executor": "Run",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/sahel92/Desktop/Screenshot_20230923_201415.png",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\msahe\IdeaProjects\BookingAutomation\src\test\resources\log4j-reports" />
@@ -96,7 +162,20 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SearchFunctionalityTest">
+  <component name="RunManager" selected="Application.Person">
+    <configuration name="Person" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sahel.booking.utilities.Person" />
+      <module name="ResumeBuilder-Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sahel.booking.utilities.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BookingAutomation [org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test]" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -107,13 +186,15 @@
             <option name="failureBehavior" value="NOT_SET" />
             <option name="localRepository" value="" />
             <option name="mavenHome" value="Bundled (Maven 3)" />
+            <option name="mavenHomeType">
+              <MavenHomeType />
+            </option>
             <option name="nonRecursive" value="false" />
             <option name="outputLevel" value="INFO" />
             <option name="printErrorStackTraces" value="false" />
             <option name="showDialogWithAdvancedSettings" value="false" />
             <option name="threads" />
             <option name="useMavenConfig" value="true" />
-            <option name="usePluginRegistry" value="false" />
             <option name="userSettingsFile" value="" />
             <option name="workOffline" value="false" />
           </MavenGeneralSettings>
@@ -145,6 +226,7 @@
                 <option value="org.apache.maven.plugins:maven-surefire-plugin:3.0.0:test" />
               </list>
             </option>
+            <option name="multimoduleDir" />
             <option name="pomFileName" value="pom.xml" />
             <option name="profilesMap">
               <map />
@@ -159,33 +241,34 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="SearchFunctionalityTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BookingAutomation" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage" sample_coverage="false" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchFunctionalityTest" />
-      <option name="GROUP_NAME" value="" />
+    <configuration name="HomePageSmokeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ResumeBuilder-Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="smoke.suite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="smoke.suite" />
+      <option name="MAIN_CLASS_NAME" value="smoke.suite.HomePageSmokeTest" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchFunctionalityTest.searchDestination" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BookingAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchFunctionalityTest" />
-      <option name="METHOD_NAME" value="searchDestination" />
+    <configuration name="HomePageSmokeTest.doesHeaderExist" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ResumeBuilder-Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="smoke.suite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="smoke.suite" />
+      <option name="MAIN_CLASS_NAME" value="smoke.suite.HomePageSmokeTest" />
+      <option name="METHOD_NAME" value="doesHeaderExist" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -193,30 +276,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt; (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BookingAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+    <configuration name="HomePageSmokeTest.userCanNavigateToShopPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ResumeBuilder-Selenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="smoke.suite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="smoke.suite" />
+      <option name="MAIN_CLASS_NAME" value="smoke.suite.HomePageSmokeTest" />
+      <option name="METHOD_NAME" value="userCanNavigateToShopPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="&lt;default&gt; (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BookingAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BookingAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+    <configuration name="/home/sahel92/Desktop/Projects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ResumeBuilder-Selenium" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng-xml-files/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -225,13 +306,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SearchFunctionalityTest" />
-        <item itemvalue="TestNG.SearchFunctionalityTest.searchDestination" />
-        <item itemvalue="TestNG.&lt;default&gt; (2)" />
-        <item itemvalue="TestNG.&lt;default&gt; (1)" />
-        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="Application.Person" />
+        <item itemvalue="TestNG./home/sahel92/Desktop/Projects/BookingAutomation/src/test/resources/testng-xml-files/testng.xml" />
+        <item itemvalue="TestNG.HomePageSmokeTest.userCanNavigateToShopPage" />
+        <item itemvalue="TestNG.HomePageSmokeTest.doesHeaderExist" />
+        <item itemvalue="TestNG.HomePageSmokeTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-liberica-17.0.9-249ae16d76d6-ecf3cdd7" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -378,7 +466,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="160" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="46" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -396,30 +491,22 @@
     <MESSAGE value="Test Harness Ready" />
     <MESSAGE value="Login Functionalities cannot be automated dur to captcha challenge." />
     <MESSAGE value="Search Functionality Test" />
-    <MESSAGE value="Merge" />
     <MESSAGE value="Jenkins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkins" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sahel/booking/base/DriverFactory.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BookingAutomation$ResumeBuilderSmokeTest_assertTitle.ic" NAME="ResumeBuilderSmokeTest.assertTitle Coverage Results" MODIFIED="1705547519267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>smoke.suite.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BookingAutomation$_default___2_.ic" NAME="&lt;default&gt; (2) Coverage Results" MODIFIED="1695595305313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/BookingAutomation$_default___1_.ic" NAME="&lt;default&gt; (1) Coverage Results" MODIFIED="1695595199280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/BookingAutomation$SearchFunctionalityTest_searchDestination.ic" NAME="SearchFunctionalityTest.searchDestination Coverage Results" MODIFIED="1695598066272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/BookingAutomation$SearchFunctionalityTest.ic" NAME="SearchFunctionalityTest Coverage Results" MODIFIED="1695598173985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/BookingAutomation$_default_.ic" NAME="&lt;default&gt; Coverage Results" MODIFIED="1695595078331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/BookingAutomation$_default___2_.ic" NAME="&lt;default&gt; (2) Coverage Results" MODIFIED="1695595305313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/BookingAutomation$SearchFunctionalityTest_searchDestination.ic" NAME="SearchFunctionalityTest.searchDestination Coverage Results" MODIFIED="1695598066272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

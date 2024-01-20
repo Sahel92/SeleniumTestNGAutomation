@@ -13,6 +13,4 @@ public class FireFoxBrowser {
         }
         return new FirefoxDriver(firefoxOptions);
     }
-
-
 }
